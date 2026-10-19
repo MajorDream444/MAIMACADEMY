@@ -13,3 +13,4 @@ dt{font-weight:700;color:var(--gold)}dd{margin:0 0 18px;max-width:72ch}section[i
 .week-panel:nth-child(1){--week:1}.week-panel:nth-child(2){--week:2}.week-panel:nth-child(3){--week:3}.week-panel:nth-child(4){--week:4}
 
 .moves-intro h1{font-size:clamp(2.7rem,4.7vw,4.2rem)}.motion-scene{padding-top:100px}@media(max-width:900px){.journey-visual{grid-row:auto}.moves-narrative{display:contents}.moves-intro{grid-row:1}.journey-visual{grid-row:2}.journey-opening{grid-row:3}.week-stack{grid-row:4}.journey-afterword{grid-row:5}.motion-scene{padding-top:10px}.moves-intro h1{font-size:clamp(2.6rem,7.6vw,4.4rem)}}
+.preview{max-width:none}

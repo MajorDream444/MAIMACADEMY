@@ -39,3 +39,11 @@ No existing MAIM deployment, domain or commerce setting was changed. Do not prom
 ## Work continuation: 30-Day Major Moves
 
 The work/academy-curriculum-2026-10-19 continuation adds a fifth route, /major-moves. Fresh checks this session: build PASS, HTML validation and build-script syntax PASS, 4/4 Node tests PASS, whitespace check PASS. Route/link/collection and checkout-unavailable tests include the new page. Prior four-page browser/axe results above are historical Codex results and do not cover the new route. Browser/mobile/screen-reader and deployed-route verification for this continuation remain OPEN until recorded. No new dependency versions, account/data flows, payment integration or production changes.
+
+## Guided funnel redesign — 19 October 2026
+
+Founder approved the guided-story / lifting-panel direction. /major-moves now exposes three expandable sample days, four weekly outcomes, a pinned native motion graphic, enquiry and FAQs. No paid lesson HTML/JSON is generated for Days 4–30. Editorial drafts remain in the public Git history; private authenticated lesson delivery is still required before a paid launch.
+
+Fresh validation: build, HTML validation, JavaScript syntax and 5/5 Node tests PASS; whitespace PASS. Connected Chrome checks at 1470px, 1440px and 390px: no horizontal overflow. Page identity and meaningful DOM confirmed; no app error overlay or console errors/warnings. Primary CTA navigated to samples; Day 1 expanded and displayed the expected activity. Desktop scroll showed sticky panels and right graphic pinned at 38px; mobile panels use ordinary flow. Screenshots inspected for desktop hero, stacked panels and mobile hero. Motion is brief/non-looping; reduced-motion fallback is implemented but OS preference switching and screen-reader review remain untested.
+
+Preview receipt is recorded in PR #4 with exact GitHub SHA and Vercel URL. Provider READY and deployed samples/checkout checked there. No production promotion, checkout activation or member accounts. The marketing CTA opens an email enquiry; it does not enroll or charge.
