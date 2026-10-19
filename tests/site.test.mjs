@@ -1,7 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
-const routes=['index','library','spark-lab','foundry'];
+const routes=['index','library','spark-lab','foundry','major-moves'];
 test('informational routes resolve local links and prohibit active commerce/PII collection',async()=>{for(const route of routes){const s=await readFile(`dist/${route}.html`,'utf8');assert.match(s,/noindex,nofollow/);assert.match(s,/Skip to content/);assert.equal((s.match(/<h1>/g)||[]).length,1);assert.doesNotMatch(s,/<(?:form|input|script|iframe)\b|buy\.stripe|gumroad|convertkit|shopify/i);for(const [,href]of s.matchAll(/href="(\/[^"]*)"/g)){const p=href.split('#')[0];await access(`dist${p==='/'?'/index.html':p.includes('.')?p:p+'.html'}`);}}});
 test('checkout is explicitly unavailable and no payment functions are configured',async()=>{assert.equal(JSON.parse(await readFile('dist/api/checkout.json')).available,false);const config=JSON.parse(await readFile('vercel.json'));assert.equal(config.functions,undefined);assert.equal(config.env,undefined);});
 test('Foundry and book maturity remain qualified',async()=>{assert.match(await readFile('dist/foundry.html','utf8'),/proposed|Proposed/);assert.match(await readFile('dist/library.html','utf8'),/Foundation stage/);assert.match(await readFile('dist/library.html','utf8'),/Books in production/);});
+
+test('journey has 30 distinct days, all pillars, private defaults and source review flags',async()=>{const lessons=JSON.parse(await readFile('data/major-moves.json'));assert.deepEqual(lessons.map(l=>l.day),Array.from({length:30},(_,i)=>i+1));assert.deepEqual([...new Set(lessons.flatMap(l=>l.pillars))].sort((a,b)=>a-b),[1,2,3,4,5,6,7,8,9,10]);for(const l of lessons){for(const key of ['learn','explore','major_move','artifact','reflection','completion','age_adaptation'])assert.ok(l[key]);assert.match(l.source_status,/OPEN/);}const page=await readFile('dist/major-moves.html','utf8');for(const l of lessons)assert.ok(page.includes(`id="day-${l.day}"`));assert.match(page,/No account or progress is saved/);});

@@ -35,3 +35,7 @@ No existing MAIM deployment, domain or commerce setting was changed. Do not prom
 `npm ci --ignore-scripts && npm run check && npm audit --audit-level=high`
 
 `npm run dev` serves the built site at 127.0.0.1:4173 for browser QA. Vercel builds from package.json/vercel.json; no .env values needed. Generated output, browser artifacts, local provider linkage and .env files are ignored.
+
+## Work continuation: 30-Day Major Moves
+
+The work/academy-curriculum-2026-10-19 continuation adds a fifth route, /major-moves. Fresh checks this session: build PASS, HTML validation and build-script syntax PASS, 4/4 Node tests PASS, whitespace check PASS. Route/link/collection and checkout-unavailable tests include the new page. Prior four-page browser/axe results above are historical Codex results and do not cover the new route. Browser/mobile/screen-reader and deployed-route verification for this continuation remain OPEN until recorded. No new dependency versions, account/data flows, payment integration or production changes.
