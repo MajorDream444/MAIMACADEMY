@@ -25,3 +25,11 @@ Before a learner pilot: attach approved original passages and permissions; devel
 ## Evaluation proposal
 
 Use a small facilitated pilot. Review whether learners can explain a choice, check a claim, improve a prototype and choose a next step. Record optional aggregate feedback under an approved protocol; avoid mandatory streaks or public leaderboards. Spark Lab and Foundry participation require their own separate scope and authorization.
+
+## Public funnel redesign — founder-approved 19 October 2026
+
+Public /major-moves now shows outcomes for four weeks and only Days 1–3 as native expandable samples. Days 4–30 are excluded from generated HTML and all static assets; output is cleaned before each build to avoid stale files. The lesson JSON remains editorial source in this public repository, including historical Git commits: this redesign is not a paywall and does not make previously published draft content secret. Real paid lessons must move to private storage with server-side account/entitlement checks before release. No account, paid access or checkout is activated here.
+
+Design follows MAIM brand tokens and the available design-taste-frontend reference (variance 7 / motion 5 / density 3). An Aura-branded skill was not located. The motion graphic is native HTML/CSS, not a finished narrated video: a question becomes an experiment and a useful creation, with a brief non-looping entrance. Four desktop panels stack using sticky positioning; supported browsers add scroll-driven lifting. Mobile and reduced-motion use ordinary document flow. Samples and FAQs use keyboard-accessible native details. No scroll hijacking, external animation library or script permission was added.
+
+Copy leads with achievable learning actions and concrete artifacts, without fabricated testimonials, scarcity, pricing or guaranteed outcomes. Enrollment enquiry is a clearly labeled mailto link; no waiting-list submission is claimed.
