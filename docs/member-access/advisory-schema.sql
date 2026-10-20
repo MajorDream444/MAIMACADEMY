@@ -7,7 +7,7 @@ revoke all on academy_session_credits,academy_briefs,academy_advisory_slots,acad
 -- Credit issue trigger: single founding credit per journey grant, payment timestamp
 -- (grant.starts_at) determines window. Hold/revoke checked again by API each request.
 create function academy_founding_credit() returns trigger language plpgsql as $$
-begin if new.resource='journey' and new.status='active' then insert into academy_session_credits(user_id,grant_id,status,starts_at,expires_at) values(new.user_id,new.id,'available',new.starts_at,new.starts_at+interval '90 days') on conflict(grant_id) do nothing;end if;return new;end;$$;
+begin if new.resource='journey' and new.status='active' then insert into academy_session_credits(user_id,grant_id,status,starts_at,expires_at) values(new.user_id,new.id,'available',new.starts_at,new.starts_at+interval '2160 hours') on conflict(grant_id) do nothing;end if;return new;end;$$;
 create trigger academy_founding_credit_insert after insert on academy_grants for each row execute function academy_founding_credit();
 -- Backfill only reviewed existing active grants. No data seeded automatically.
 -- Reviewer approval and published appointment availability remain operator-only.
