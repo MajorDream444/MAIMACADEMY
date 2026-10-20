@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import member from '../api/member.js';import checkout from '../api/academy-checkout.js';import webhook from '../api/academy-webhook.js';import auth from '../api/academy-auth/[...all].js';
+function response(){return {code:200,headers:{},setHeader(k,v){this.headers[k]=v;},status(c){this.code=c;return this;},json(x){this.data=x;return this;},end(){return this;}};}
+test('all member/payment/auth handlers fail closed with configuration absent',async()=>{const saved=process.env.ENABLE_ACADEMY_MEMBERS;delete process.env.ENABLE_ACADEMY_MEMBERS;try{for(const handler of [member,checkout,webhook,auth]){const res=response();await handler({method:'POST',headers:{}},res);assert.equal(res.code,503);assert.match(res.headers['Cache-Control'],/no-store/);assert.ok(!res.data.url);}}finally{if(saved!==undefined)process.env.ENABLE_ACADEMY_MEMBERS=saved;}});
