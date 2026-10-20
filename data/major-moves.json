@@ -1,0 +1,497 @@
+[
+  {
+    "day": 1,
+    "title": "Start where you are",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      2
+    ],
+    "learn": "Explore start where you are through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Describe one thing you want to learn and why it matters.",
+    "artifact": "Starting-point note",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a starting-point note and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 2,
+    "title": "Map your strengths",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      2
+    ],
+    "learn": "Explore map your strengths through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "List three strengths and one example of using each.",
+    "artifact": "Strengths map",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a strengths map and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 3,
+    "title": "Culture carries knowledge",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      1
+    ],
+    "learn": "Explore culture carries knowledge through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Describe a community practice from your own experience; distinguish your account from a general claim.",
+    "artifact": "Culture reflection",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a culture reflection and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 4,
+    "title": "Map your community",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      1,
+      5
+    ],
+    "learn": "Explore map your community through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Map roles and resources without publishing names or contact details.",
+    "artifact": "Community map",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a community map and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 5,
+    "title": "Question a limiting belief",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      2
+    ],
+    "learn": "Explore question a limiting belief through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Rewrite one learning worry as a small question you can test.",
+    "artifact": "Belief experiment",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a belief experiment and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 6,
+    "title": "Choose a useful goal",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      2,
+      9
+    ],
+    "learn": "Explore choose a useful goal through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Choose a goal you can influence and one observable sign of progress.",
+    "artifact": "Goal card",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a goal card and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 7,
+    "title": "Pause and review",
+    "stage": "Awareness & Belief",
+    "pillars": [
+      7,
+      2
+    ],
+    "learn": "Explore pause and review through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Review your first six artifacts and choose a sustainable pace.",
+    "artifact": "Weekly reflection",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a weekly reflection and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 8,
+    "title": "Ask AI with context",
+    "stage": "Context & Skills",
+    "pillars": [
+      6
+    ],
+    "learn": "Explore ask ai with context through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Draft a prompt with a goal, context and desired format; remove private information.",
+    "artifact": "Prompt draft",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a prompt draft and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 9,
+    "title": "Check an AI answer",
+    "stage": "Context & Skills",
+    "pillars": [
+      6,
+      8
+    ],
+    "learn": "Explore check an ai answer through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Compare an AI claim with an original source or facilitator-provided example; record uncertainty.",
+    "artifact": "Claim-check note",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a claim-check note and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 10,
+    "title": "Find a problem worth solving",
+    "stage": "Context & Skills",
+    "pillars": [
+      6
+    ],
+    "learn": "Explore find a problem worth solving through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Describe a local problem, who experiences it, and one way technology might help.",
+    "artifact": "Problem statement",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a problem statement and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 11,
+    "title": "Language belongs to people",
+    "stage": "Context & Skills",
+    "pillars": [
+      6,
+      1
+    ],
+    "learn": "Explore language belongs to people through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Use an invented or permission-cleared phrase; record attribution and permission limits.",
+    "artifact": "Language example",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a language example and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 12,
+    "title": "Build a skill tree",
+    "stage": "Context & Skills",
+    "pillars": [
+      3
+    ],
+    "learn": "Explore build a skill tree through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Break your goal into three skills and a small practice step for each.",
+    "artifact": "Skill tree",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a skill tree and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 13,
+    "title": "Design healthy game rules",
+    "stage": "Context & Skills",
+    "pillars": [
+      3,
+      7
+    ],
+    "learn": "Explore design healthy game rules through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Create a learning challenge with useful feedback, optional rewards and no penalty for taking a break.",
+    "artifact": "Challenge rules",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a challenge rules and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 14,
+    "title": "Practice and reflect",
+    "stage": "Context & Skills",
+    "pillars": [
+      3,
+      7
+    ],
+    "learn": "Explore practice and reflect through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Try one practice step and record what helped or confused you.",
+    "artifact": "Practice review",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a practice review and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 15,
+    "title": "Know what is private",
+    "stage": "Direction & Protection",
+    "pillars": [
+      8
+    ],
+    "learn": "Explore know what is private through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Sort fictional examples into public, private and sensitive information.",
+    "artifact": "Privacy map",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a privacy map and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 16,
+    "title": "Protect your accounts",
+    "stage": "Direction & Protection",
+    "pillars": [
+      8
+    ],
+    "learn": "Explore protect your accounts through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Use a fictional account checklist to identify safer sign-in and recovery choices; never record passwords.",
+    "artifact": "Security checklist",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a security checklist and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 17,
+    "title": "Recognize a risky request",
+    "stage": "Direction & Protection",
+    "pillars": [
+      8
+    ],
+    "learn": "Explore recognize a risky request through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Explain how you would respond to a fictional scam without opening links or contacting anyone.",
+    "artifact": "Scenario response",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a scenario response and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 18,
+    "title": "Measure what matters",
+    "stage": "Direction & Protection",
+    "pillars": [
+      9
+    ],
+    "learn": "Explore measure what matters through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Choose two useful measures tied to your goal and explain what they cannot prove.",
+    "artifact": "Measurement plan",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a measurement plan and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 19,
+    "title": "Make a simple dashboard",
+    "stage": "Direction & Protection",
+    "pillars": [
+      9
+    ],
+    "learn": "Explore make a simple dashboard through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Build a paper or local-file tracker using fictional or non-sensitive practice data.",
+    "artifact": "Progress tracker",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a progress tracker and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 20,
+    "title": "Plan your experiment",
+    "stage": "Direction & Protection",
+    "pillars": [
+      9,
+      6
+    ],
+    "learn": "Explore plan your experiment through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Write a question, small test, success criterion and stop condition.",
+    "artifact": "Experiment plan",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a experiment plan and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 21,
+    "title": "Check readiness and balance",
+    "stage": "Direction & Protection",
+    "pillars": [
+      7,
+      8
+    ],
+    "learn": "Explore check readiness and balance through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Review time, permission and privacy limits; choose solo or supervised collaboration.",
+    "artifact": "Readiness checklist",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a readiness checklist and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 22,
+    "title": "Agree on how to work",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      5
+    ],
+    "learn": "Explore agree on how to work through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Choose a solo project or supervised team; define roles and feedback boundaries.",
+    "artifact": "Project agreement",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a project agreement and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 23,
+    "title": "Who controls the creation?",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      4
+    ],
+    "learn": "Explore who controls the creation? through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Compare access, export and ownership in two fictional systems; no wallet or purchase.",
+    "artifact": "Ownership comparison",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a ownership comparison and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 24,
+    "title": "Make the smallest version",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      5,
+      6
+    ],
+    "learn": "Explore make the smallest version through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Create a paper sketch or local prototype with invented data.",
+    "artifact": "Prototype v1",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a prototype v1 and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 25,
+    "title": "Ask for useful feedback",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      5,
+      9
+    ],
+    "learn": "Explore ask for useful feedback through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Use facilitator feedback or self-review; record one strength and one improvement without personal identifiers.",
+    "artifact": "Feedback note",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a feedback note and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 26,
+    "title": "Improve and demonstrate",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      5,
+      9
+    ],
+    "learn": "Explore improve and demonstrate through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Revise one feature and demonstrate privately or to an authorized facilitator.",
+    "artifact": "Prototype v2",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a prototype v2 and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 27,
+    "title": "Record the contribution",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      4,
+      5
+    ],
+    "learn": "Explore record the contribution through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Create a simulated contribution record and explain what it does and does not establish.",
+    "artifact": "Contribution record",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a contribution record and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 28,
+    "title": "Build without burning out",
+    "stage": "Spark Lab: Experiment & Legacy",
+    "pillars": [
+      7,
+      10
+    ],
+    "learn": "Explore build without burning out through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Review effort and wellbeing; decide what to stop, continue or simplify.",
+    "artifact": "Sustainable practice plan",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a sustainable practice plan and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 29,
+    "title": "Preserve something useful",
+    "stage": "Reflection & Next Move",
+    "pillars": [
+      10
+    ],
+    "learn": "Explore preserve something useful through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Organize your artifacts, attribution and permissions; choose what stays private.",
+    "artifact": "Portfolio index",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a portfolio index and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  },
+  {
+    "day": 30,
+    "title": "Choose your next Major Move",
+    "stage": "Reflection & Next Move",
+    "pillars": [
+      10,
+      2
+    ],
+    "learn": "Explore choose your next major move through a facilitator-approved story or example.",
+    "explore": "Connect this idea to your goal and explain one question you still have.",
+    "major_move": "Reflect on what changed and choose your next step; optionally write your own commitment.",
+    "artifact": "Next-move plan",
+    "reflection": "What did you notice, and what would you change?",
+    "completion": "Create a next-move plan and explain one choice you made.",
+    "source_status": "OPEN: approved chapter or passage mapping required",
+    "age_adaptation": "Youth: facilitator-provided examples, offline option and supervised collaboration. Adults: optional self-directed practice. No public sharing required."
+  }
+]

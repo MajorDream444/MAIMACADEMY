@@ -17,3 +17,9 @@ Checkout returns unavailable; there is no payment or identity integration.
 No production release, live membership service or AI tutor is established here.
 Preview promotion, MAIM-site navigation integration and future learner data
 features require separate review. Existing MAIM website behavior is preserved.
+
+Proposed 30-Day Major Moves activities: `/major-moves`, authored from
+`data/major-moves.json`. No progress is stored. Book passage mapping and
+age-specific instructional review remain open. See
+[the curriculum proposal](docs/CURRICULUM-30-DAY-MAJOR-MOVES-PROPOSAL.md)
+and [the Work task board](docs/WORK-AGENTS-OPERATING-PLAN.md).
