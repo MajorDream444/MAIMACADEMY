@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-21",
+  "status": "approved_target_pending_readiness",
+  "enrollment_open": false,
+  "timezone": "Asia/Makassar",
+  "price_usd": 249,
+  "capacity": 20,
+  "duration_minutes": 60,
+  "sessions": [
+    "2026-11-11T14:00:00Z",
+    "2026-11-18T14:00:00Z",
+    "2026-11-25T14:00:00Z",
+    "2026-12-02T14:00:00Z"
+  ],
+  "refund_request_days": 7,
+  "brief_lead_hours": 48,
+  "reschedule_notice_hours": 24,
+  "courtesy_late_changes": 1,
+  "private_session_minutes": 45,
+  "private_session_window_days": 90,
+  "replay_publication_target_hours": 48,
+  "cohort_replays_require_vault_pass": false
+}

@@ -1,11 +1,11 @@
 # Founding journey — owner decisions
-Updated: 20 October 2026, Asia/Makassar. Source: founder interview in the Academy build conversation. Approved offer direction; not proof of operational delivery or enrollment.
+Updated: 21 October 2026, Asia/Makassar. Source: founder interview in the Academy build conversation. Approved offer direction; not proof of operational delivery or enrollment.
 
 ## Confirmed founding offer
 
 | Item | Owner decision |
 | --- | --- |
-| Purchase | One-time payment; price decided after scope |
+| Purchase | One-time payment of US$249 for the founding offer |
 | Journey access | This journey and its future revisions, with no routine content-access expiry |
 | Outcome | Solve one real problem and finish with a small useful result |
 | Cohort | Maximum 20 founding learners per cohort initially; revisit after delivery experience |
@@ -47,7 +47,7 @@ Credit issuance/redemption, double-booking protection, preparation review, appoi
 
 ## Still needed before selling
 
-Price; clear access/hosting/refund/support terms; cohort calendar and appointment availability; complete rights-cleared lessons; live identity/database/payment/email tests; private storage and retention/deletion procedures; tested service-credit/capacity rules.
+Clear access/hosting/refund/support terms; cohort calendar and appointment availability; complete rights-cleared lessons; live identity/database/payment/email tests; private storage and retention/deletion procedures; tested service-credit/capacity rules.
 
 First content source inspected: uploaded The 10 Pillars of the Major AI Mindset.pdf, framework overview. This supports pillar themes, not completion of the paid curriculum. Draft lessons and historical Git content are public editorial sources, not protected paid delivery.
 
@@ -59,3 +59,14 @@ First content source inspected: uploaded The 10 Pillars of the Major AI Mindset.
 4. Confirm dates/availability and the remaining service policies when preparing the actual offer.
 
 No private client records or identifiable third-party interview details are added to this public repository.
+
+## Pricing and audience decision — 20 October 2026
+
+Owner approved US$249 once for existing practitioners and business owners. People working toward their first paid client should be directed to the ABC learning pathway; do not promise this journey acquires their first client.
+
+US$149 and US$399 are reserved alternate campaign prices, not public tiers or currently open offers. Interpret the owner's five-nines price reference as US$999.99; store it unpublished/inactive. No established former selling price or savings percentage has been verified. Use “Founding offer — US$249 once” until a regular-price proposition and its delivery scope are established. Do not advertise “was US$999.99” or a fictitious discount.
+
+Stripe test catalog is prepared; no live enrollment is open. The separately proposed US$450 advisory package is not an approved selling price. Vault terms remain 1/3/6/12 months with no automatic renewal and no approved amounts. Refunds, rescheduling, launch dates and complete service terms remain pending; discussion examples are not adopted policy.
+
+## Current schedule, service rules and replay decisions
+See [FOUNDING-COHORT-2026-10-21.md](FOUNDING-COHORT-2026-10-21.md), which supersedes earlier deferral of replay/archive design and pending founding booking/refund decisions above. Vault pricing is recorded in LIVE-CATALOG-RECEIPT-2026-10-20.md. Catalog prices do not establish delivery readiness.
