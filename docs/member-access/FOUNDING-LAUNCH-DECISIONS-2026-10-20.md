@@ -1,6 +1,6 @@
 # Founding launch decision sheet — 20 October 2026
 
-Status: operational proposals for owner review, not adopted customer terms. Enrollment closed. Source of approved inclusions: FOUNDING-OFFER.md.
+Status: historical proposal sheet. Owner answers and current direction are recorded in FOUNDING-COHORT-2026-10-21.md; that record supersedes pending questions below. Final customer legal wording remains subject to review. Enrollment closed. Source of approved inclusions: FOUNDING-OFFER.md.
 
 ## Approved baseline
 US$249 once; existing practitioners/business owners; 20 seats maximum; this journey and revisions; one 45-minute private session used within 90 days of enrollment; weekly implementation groups during the first 30 days; preparation reviewed before private booking. Advisory packages and Vault passes separate. Public Knowledge Sessions and live-build funnels remain deferred.
