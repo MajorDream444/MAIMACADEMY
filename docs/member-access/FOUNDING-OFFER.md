@@ -1,5 +1,5 @@
 # Founding journey — owner decisions
-Updated: 20 October 2026, Asia/Makassar. Source: founder interview in the Academy build conversation. Approved offer direction; not proof of operational delivery or enrollment.
+Updated: 21 October 2026, Asia/Makassar. Source: founder interview in the Academy build conversation. Approved offer direction; not proof of operational delivery or enrollment.
 
 ## Confirmed founding offer
 
@@ -67,3 +67,6 @@ Owner approved US$249 once for existing practitioners and business owners. Peopl
 US$149 and US$399 are reserved alternate campaign prices, not public tiers or currently open offers. Interpret the owner's five-nines price reference as US$999.99; store it unpublished/inactive. No established former selling price or savings percentage has been verified. Use “Founding offer — US$249 once” until a regular-price proposition and its delivery scope are established. Do not advertise “was US$999.99” or a fictitious discount.
 
 Stripe test catalog is prepared; no live enrollment is open. The separately proposed US$450 advisory package is not an approved selling price. Vault terms remain 1/3/6/12 months with no automatic renewal and no approved amounts. Refunds, rescheduling, launch dates and complete service terms remain pending; discussion examples are not adopted policy.
+
+## Current schedule, service rules and replay decisions
+See [FOUNDING-COHORT-2026-10-21.md](FOUNDING-COHORT-2026-10-21.md), which supersedes earlier deferral of replay/archive design and pending founding booking/refund decisions above. Vault pricing is recorded in LIVE-CATALOG-RECEIPT-2026-10-20.md. Catalog prices do not establish delivery readiness.
