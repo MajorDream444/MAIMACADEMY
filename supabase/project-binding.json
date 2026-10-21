@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "application": "academy",
+  "repository": "MajorDream444/MAIMACADEMY",
+  "canonical_project_ref": "njpdlomvyalxrkluaige",
+  "canonical_project_url": "https://njpdlomvyalxrkluaige.supabase.co",
+  "decision": "https://github.com/MajorDream444/Major-AI-OS/pull/44",
+  "runtime_status": "not_switched",
+  "schema_status": "requires_application_review",
+  "isolation": "Explicit product/client access scopes and restricted server credentials; no implicit cross-product access."
+}

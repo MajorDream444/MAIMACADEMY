@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-20",
+  "stripe_account": "acct_1TLgn2BaiziDnHMm",
+  "business": "MAIM",
+  "currency": "usd",
+  "sales_open": false,
+  "audience": "Existing practitioners and business owners; first-client beginners use the ABC pathway.",
+  "journey": {
+    "sku": "MAIM-ACADEMY-JOURNEY-001",
+    "title": "MAIM Academy | 30-Day Major Moves Journey",
+    "test_product_id": "prod_MAIM_ACADEMY_JOURNEY_V1",
+    "live_product_created": false,
+    "approved_founding_amount": 24900,
+    "cohort_limit": 20,
+    "private_session_minutes": 45,
+    "private_session_window_days": 90,
+    "group_access_days": 30,
+    "prices": [
+      {
+        "variant": "founding",
+        "amount": 24900,
+        "id": "price_1USU9RBaiziDnHMmGWG2BrTR",
+        "mode": "test"
+      },
+      {
+        "variant": "promotion_149",
+        "amount": 14900,
+        "id": "price_1USUA0BaiziDnHMmO14HXICC",
+        "mode": "test",
+        "active": true
+      },
+      {
+        "variant": "alternate_399",
+        "amount": 39900,
+        "id": "price_1USUA8BaiziDnHMmOOS1CCgS",
+        "mode": "test",
+        "active": true
+      },
+      {
+        "variant": "unpublished_standard_999_99",
+        "amount": 99999,
+        "id": "price_1USUAHBaiziDnHMmwtr0BqbL",
+        "mode": "test",
+        "active": false
+      }
+    ],
+    "test_payment_links": [
+      {
+        "id": "plink_1USUAcBaiziDnHMmWP9vVQeE",
+        "url": "https://buy.stripe.com/test_fZu5kC883gNne6sgkxafS01",
+        "price_id": "price_1USU9RBaiziDnHMmGWG2BrTR",
+        "amount": 24900,
+        "variant": "founding",
+        "active": false
+      },
+      {
+        "id": "plink_1USUAtBaiziDnHMmzvRlIwx9",
+        "url": "https://buy.stripe.com/test_9B6dR82NJ40B8M83xLafS02",
+        "price_id": "price_1USUA0BaiziDnHMmO14HXICC",
+        "amount": 14900,
+        "variant": "promotion_149",
+        "active": false
+      },
+      {
+        "id": "plink_1USUB9BaiziDnHMmkeNZNg0R",
+        "url": "https://buy.stripe.com/test_6oU5kCfAv1St9Qcb0dafS03",
+        "price_id": "price_1USUA8BaiziDnHMmOOS1CCgS",
+        "amount": 39900,
+        "variant": "alternate_399",
+        "active": false
+      }
+    ]
+  },
+  "drafts": [
+    {
+      "sku": "MAIM-ADVISORY-003",
+      "title": "MAIM | Three-Session Implementation Advisory",
+      "test_product_id": "prod_MAIM_ADVISORY_3_V1",
+      "active": false,
+      "price_approved": false,
+      "proposed_amount": 45000,
+      "currency": "usd",
+      "session_count": 3
+    },
+    {
+      "sku": "MAIM-VAULT-01M",
+      "title": "MAIM Knowledge Vault | 1-Month Access",
+      "test_product_id": "prod_MAIM_VAULT_PASSES_V1",
+      "term_months": 1,
+      "active": false,
+      "amount": null,
+      "automatic_renewal": false,
+      "assets_status": "not_finalized"
+    },
+    {
+      "sku": "MAIM-VAULT-03M",
+      "title": "MAIM Knowledge Vault | 3-Month Access",
+      "test_product_id": "prod_MAIM_VAULT_PASSES_V1",
+      "term_months": 3,
+      "active": false,
+      "amount": null,
+      "automatic_renewal": false,
+      "assets_status": "not_finalized"
+    },
+    {
+      "sku": "MAIM-VAULT-06M",
+      "title": "MAIM Knowledge Vault | 6-Month Access",
+      "test_product_id": "prod_MAIM_VAULT_PASSES_V1",
+      "term_months": 6,
+      "active": false,
+      "amount": null,
+      "automatic_renewal": false,
+      "assets_status": "not_finalized"
+    },
+    {
+      "sku": "MAIM-VAULT-12M",
+      "title": "MAIM Knowledge Vault | 12-Month Access",
+      "test_product_id": "prod_MAIM_VAULT_PASSES_V1",
+      "term_months": 12,
+      "active": false,
+      "amount": null,
+      "automatic_renewal": false,
+      "assets_status": "not_finalized"
+    }
+  ],
+  "live_write_status": "blocked_repeated_authentication_response_no_new_live_records_verified",
+  "live_link_activation": "not_requested_in_this_build",
+  "fulfillment_status": "unconfigured_no_paid_access_or_booking_from_links",
+  "marketing": {
+    "approved_copy": "Founding offer — US$249 once.",
+    "unpublished_reference_amount": 99999,
+    "former_price_verified": false
+  },
+  "wider_catalog": {
+    "estimated_links_from_owner": 60,
+    "confirmed_live_products_before_work": 11,
+    "confirmed_live_prices_before_work": 20,
+    "confirmed_live_links_before_work": 6,
+    "confirmed_test_links_before_work": 1,
+    "remaining_offer_list": "not_yet_enumerated",
+    "external_client_products": "excluded_from_public_register"
+  }
+}
