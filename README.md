@@ -17,3 +17,8 @@ Checkout returns unavailable; there is no payment or identity integration.
 No production release, live membership service or AI tutor is established here.
 Preview promotion, MAIM-site navigation integration and future learner data
 features require separate review. Existing MAIM website behavior is preserved.
+
+
+## Creative studio context — 21 October 2026
+
+Read [creative studio ownership, skill discovery and handoff context](docs/MAIM_CREATIVE_STUDIO_CONTEXT_2026-10-21.md) before related work. This is documentation connectivity; it does not activate generation, shared sign-in or publishing. Existing domain authority and release gates remain in force.
