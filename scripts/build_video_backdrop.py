@@ -212,8 +212,11 @@ def build(mirror_text: bool, guides: bool, episode=None) -> Image.Image:
     d.text((W - 72, H - 132), "Founder · AMA Solutions Corp", font=f_role,
            fill=SMOKE + (225,), anchor="ra")
 
-    # information panel, lower left — filled per episode by --episodes
-    if episode is None:
+    # information panel, lower left — filled per episode by --episodes;
+    # the reusable pieces (outro, cold open, b-roll) carry no panel at all
+    if episode == "none":
+        pass
+    elif episode is None:
         panel(d, (72, H - 300, 72 + 430, H - 128), "THIS EPISODE",
               ["Episode title goes here", "One line of context"], f_label, f_body)
     else:
@@ -282,6 +285,11 @@ def main() -> int:
                 name = f"maim-academy-backdrop-{slug}{suffix}-1920x1080.png"
                 build(mirror, False, ep).save(ep_out / name)
                 print(f"wrote {ep_out / name}")
+        # outro, cold open and b-roll tail every episode, so no episode panel
+        for suffix, mirror in (("", False), ("-mirrored", True)):
+            name = f"maim-academy-backdrop-reusables{suffix}-1920x1080.png"
+            build(mirror, False, "none").save(ep_out / name)
+            print(f"wrote {ep_out / name}")
     return 0
 
 
