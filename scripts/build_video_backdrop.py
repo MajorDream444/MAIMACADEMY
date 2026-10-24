@@ -14,6 +14,10 @@ flip does not break it. Text is the exception, so a pre-mirrored variant is
 built alongside: flip that one and the type reads correctly.
 
     python3.13 scripts/build_video_backdrop.py --out build/backdrop
+    python3.13 scripts/build_video_backdrop.py --episodes   # adds per-episode files
+
+Episode files are named by slug, never by number: shooting order and
+publishing order differ, so a number would mean two different videos.
 """
 
 from __future__ import annotations
@@ -48,6 +52,21 @@ EDGE_HALF = 470
 TAPER = 1.55
 N_LINES = 210
 SAMPLES = 64
+PANEL_TEXT_W = 394          # panel inner width; text wraps inside it
+
+# slug -> (title, one line of context). Titles from YOUTUBE_SEASON_ONE_PLAN.md.
+EPISODES = {
+    "bottleneck": ("The night I found out I was the bottleneck",
+                   "Busy is not load-bearing"),
+    "expertise": ("What lives in your head is not expertise",
+                  "Undocumented knowledge is risk"),
+    "ceiling": ("Your ceiling is a number, and you can calculate it",
+                "Do the arithmetic out loud"),
+    "boat": ("Every response correct, and the boat still sinks",
+             "Heroics are not a system"),
+    "triangle": ("Michael Jordan won. Also, the triangle offense.",
+                 "Your system is what saves you"),
+}
 
 
 def lerp(a, b, k):
@@ -107,18 +126,32 @@ def tracked(d, text, font, cx, y, track, fill, anchor="c"):
     return total
 
 
-def panel(d, box, label, lines, font_l, font_b):
+def wrap(d, text, font, width):
+    lines, cur = [], ""
+    for word in text.split():
+        trial = f"{cur} {word}".strip()
+        if cur and d.textlength(trial, font=font) > width:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = trial
+    return lines + [cur]
+
+
+def panel(d, box, label, lines, font_l, font_b, muted_last=False):
     x0, y0, x1, y1 = box
     d.rounded_rectangle(box, radius=10, fill=SURFACE + (190,), outline=BORDER + (255,), width=2)
     d.line([(x0 + 18, y0 + 46), (x0 + 58, y0 + 46)], fill=CROWN + (255,), width=3)
     d.text((x0 + 18, y0 + 16), label, font=font_l, fill=CROWN + (255,))
     y = y0 + 62
-    for ln in lines:
-        d.text((x0 + 18, y), ln, font=font_b, fill=CLARITY + (235,))
+    for i, ln in enumerate(lines):
+        last = muted_last and i == len(lines) - 1
+        d.text((x0 + 18, y), ln, font=font_b,
+               fill=(SMOKE + (225,)) if last else (CLARITY + (235,)))
         y += 34
 
 
-def build(mirror_text: bool, guides: bool) -> Image.Image:
+def build(mirror_text: bool, guides: bool, episode=None) -> Image.Image:
     base = Image.new("RGB", (W * SS, H * SS), MAIM_BLACK)
     layer = Image.new("RGBA", (W * SS, H * SS), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer, "RGBA")
@@ -179,9 +212,20 @@ def build(mirror_text: bool, guides: bool) -> Image.Image:
     d.text((W - 72, H - 132), "Founder · AMA Solutions Corp", font=f_role,
            fill=SMOKE + (225,), anchor="ra")
 
-    # information panel, lower left — fill or delete per episode
-    panel(d, (72, H - 300, 72 + 430, H - 128), "THIS EPISODE",
-          ["Episode title goes here", "One line of context"], f_label, f_body)
+    # information panel, lower left — filled per episode by --episodes;
+    # the reusable pieces (outro, cold open, b-roll) carry no panel at all
+    if episode == "none":
+        pass
+    elif episode is None:
+        panel(d, (72, H - 300, 72 + 430, H - 128), "THIS EPISODE",
+              ["Episode title goes here", "One line of context"], f_label, f_body)
+    else:
+        title, context = episode
+        lines = wrap(d, title, f_body, PANEL_TEXT_W) + [context]
+        if len(lines) > 3:
+            raise SystemExit(f"panel overflow, shorten: {title!r}")
+        panel(d, (72, H - 300, 72 + 430, H - 128), "THIS EPISODE",
+              lines, f_label, f_body, muted_last=True)
 
     # call to action, bottom rule
     d.line([(72, H - 96), (W - 72, H - 96)], fill=CROWN + (120,), width=2)
@@ -212,6 +256,8 @@ def build(mirror_text: bool, guides: bool) -> Image.Image:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="build/backdrop")
+    ap.add_argument("--episodes", action="store_true",
+                    help="also build one backdrop per season one episode")
     a = ap.parse_args()
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
 
@@ -231,6 +277,19 @@ def main() -> int:
         img = build(mirror, False).resize((3840, 2160), Image.LANCZOS)
         img.save(out / name)
         print(f"wrote {out / name}  ({(out / name).stat().st_size // 1024} KB)")
+
+    if a.episodes:
+        ep_out = out / "episodes"; ep_out.mkdir(exist_ok=True)
+        for slug, ep in EPISODES.items():
+            for suffix, mirror in (("", False), ("-mirrored", True)):
+                name = f"maim-academy-backdrop-{slug}{suffix}-1920x1080.png"
+                build(mirror, False, ep).save(ep_out / name)
+                print(f"wrote {ep_out / name}")
+        # outro, cold open and b-roll tail every episode, so no episode panel
+        for suffix, mirror in (("", False), ("-mirrored", True)):
+            name = f"maim-academy-backdrop-reusables{suffix}-1920x1080.png"
+            build(mirror, False, "none").save(ep_out / name)
+            print(f"wrote {ep_out / name}")
     return 0
 
 
