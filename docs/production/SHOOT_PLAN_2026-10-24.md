@@ -90,7 +90,10 @@ commerce is disabled. Every video ends on the free guide and the founding
 cohort **list**. Not a seat, not a price, not a date.
 
 **The episode panel on the backdrop is a placeholder** reading "Episode title
-goes here." Fill it per episode in Vids or cover it. Do not ship it as-is.
+goes here." Do not ship it as-is. Per-episode backdrops with the panel filled
+are in `build/backdrop/episodes/`, named by slug (`ceiling`, `bottleneck`,
+`expertise`, `boat`, `triangle`) — never by number, because shooting order and
+publishing order differ.
 
 **Upload unlisted, never private.** Private videos are not fetchable by vidIQ
 even with the link, which kills transcripts and clips.
