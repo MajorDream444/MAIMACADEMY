@@ -1,10 +1,10 @@
-# November 4 payment invitation — DRAFT / DO NOT SEND
+# November 11 payment invitation — DRAFT / DO NOT SEND
 
-Prepared 25 October 2026, Asia/Makassar. Target invitation date: **4 November 2026**, per latest owner instruction. Proposed cohort start: **11 November 2026**, 22:00 Asia/Makassar / 14:00 UTC. No broadcast, schedule, recipient export or send created.
+Revised 25 October 2026, Asia/Makassar. Payment opening: **11 November 2026**, subject to release approval. Official cohort start: **18 November 2026**, preserving the approved 22:00 Asia/Makassar / 14:00 UTC time. November 4 is removed. No broadcast, schedule, recipient export or send created.
 
 ## Release dependency
 
-The October 25 handover, public /reserve page and data/founding-cohort.json still say payment opens November 11. This conflicts with the new November 4 invitation target. Reconcile all customer copy and exact approved enrollment URL before sending. November 11 is a proposed cohort start, not an unconditional delivery promise. Do not send against an untested Stripe Payment Link: the current member engine expects an authenticated, app-created Checkout Session with user and agreement metadata.
+The founder's latest October 25 decision supersedes the former November 4 invitation, November 11 start and November 18 fallback. Reconcile all customer copy, countdowns, teasers and exact approved enrollment URL before sending. Finish early means more preparation, not early activation. Do not send against an untested Stripe Payment Link: the member engine expects an authenticated, app-created Checkout Session with user and agreement metadata.
 
 Audience: the existing Resend **MAIM · Founding Cohort Waitlist** segment, subject to confirmed explicit cohort consent, unsubscribed/bounce/complaint exclusions, deduplication and suppression of already-paid/refunded/ineligible contacts. No import from the assessment Follow-up Queue, unrelated contact lists or client systems. Verify recipient count privately; no addresses in Git. Sender/reply-to must be reviewed and monitored.
 
@@ -20,7 +20,7 @@ Bring one recurring business headache. Over 30 daily moves and four implementati
 
 The founding journey is US$249, paid once. It includes the four cohort sessions and their reviewed replays, continuing access to the purchased journey and its revisions, and one 45-minute private session to use within 90 days of enrollment. A separate Vault pass is not needed for cohort replays.
 
-The proposed live dates are November 11, 18, 25 and December 2, at 10 p.m. Bali time (14:00 UTC). Confirmed dates and full terms must appear on the enrollment page before you pay.
+The cohort starts November 18 at 10 p.m. Bali time (14:00 UTC). Weekly continuation targets are November 25, December 2 and December 9 at the same time, pending host confirmation. Confirmed full dates and terms must appear on the enrollment page before you pay.
 
 You may request a refund within seven days of purchase, subject to mandatory consumer rights and the final approved terms. Appointment preparation and rescheduling requirements are explained before booking.
 
@@ -39,8 +39,8 @@ All placeholders are unresolved draft fields, never runtime defaults. Final lega
 
 ## Manual execution checklist — no automatic schedule
 
-1. By Nov 2 target: hosted two-user auth/progress/booking isolation; app-created Stripe TEST purchase/replay/refund/outage; atomic seat-cap and oversell handling; correct legal/privacy and protected replay access reviewed.
-2. By Nov 3 target: exact landing dates/price/terms, monitored sender/support and suppression evidence; internal rendering/inbox review only to the two specifically authorized test accounts.
-3. Nov 4: human GO/HOLD decision and final send time (OPEN, Asia/Makassar). If any payment/identity/capacity/legal/delivery gate fails, HOLD the payment invitation. Do not silently substitute a waitlist or postpone a paid start without owner review.
+1. By Nov 9 target: hosted two-user auth/progress/booking isolation; app-created Stripe TEST purchase/replay/refund/outage; atomic seat-cap and oversell handling; correct legal/privacy and protected replay access reviewed.
+2. By Nov 10 target: exact landing dates/price/terms, monitored sender/support and suppression evidence; internal rendering/inbox review only to the two specifically authorized test accounts.
+3. Nov 11: human GO/HOLD decision and final send time (OPEN, Asia/Makassar). If any payment/identity/capacity/legal/delivery gate fails, HOLD the payment invitation. Do not launch early because implementation finished early.
 4. After a separately authorized send: record provider campaign ID, exact content/URL version, recipient count, suppressed count and delivery outcomes privately. Provider acceptance is not inbox delivery. Retries require per-recipient idempotency and paid-user suppression.
-5. Nov 11 proposed start: host/private appointment capacity, meeting access, recording consent/decline, reviewed lesson assets and replay access must pass. Payment invitation approval does not verify delivery readiness.
+5. Nov 18 official start: host/private appointment capacity, meeting access, recording consent/decline, reviewed lesson assets and replay access must pass. Payment invitation approval does not verify delivery readiness.

@@ -19,7 +19,7 @@ form.addEventListener('submit', async (event) => {
       return;
     }
     form.reset();
-    status.textContent = "You're on the founding cohort interest list. Payment invitations are planned for 4 November, subject to launch approval; the proposed cohort start is 11 November. Joining the list does not guarantee one of the 20 paid places.";
+    status.textContent = "You're on the founding cohort interest list. Payments open 11 November, subject to launch-readiness approval; the cohort begins 18 November. Joining the list does not guarantee one of the 20 paid places.";
   } catch (err) {
     status.textContent = `${err.message} You can also email contact@majoraimindset.com.`;
   } finally { button.disabled = false; }

@@ -18,7 +18,7 @@ test('guide-only and honeypot-shaped success never claim cohort enrollment',asyn
   }
 });
 test('confirmed interest-list entry states target invitation and distinguishes paid capacity',async()=>{
-  const result=await submit({ok:true,waitlisted:true});assert.match(result.message,/4 November/);assert.match(result.message,/proposed cohort start is 11 November/);assert.match(result.message,/does not guarantee/);assert.equal(result.resets,1);
+  const result=await submit({ok:true,waitlisted:true});assert.match(result.message,/Payments open 11 November/);assert.match(result.message,/cohort begins 18 November/);assert.doesNotMatch(result.message,/4 November/);assert.match(result.message,/does not guarantee/);assert.equal(result.resets,1);
 });
 test('provider and network failures preserve retry and do not claim successful signup',async()=>{
   for(const result of [await submit({error:'Signup unavailable'},{ok:false}),await submit({}, {rejects:true})]){assert.match(result.message,/contact@majoraimindset.com/);assert.equal(result.resets,0);assert.equal(result.disabled,false);}

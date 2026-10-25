@@ -2,6 +2,24 @@
 
 25 October 2026, Asia/Makassar. **HOLD: hosted member/payment readiness not established.** Complete coverage report includes blocked journeys; it is not a completed end-to-end purchase certification.
 
+**Latest decision supersedes the original report's schedule/account blockers:**
+Payments open November 11 after release approval; official cohort starts November 18.
+November 4 is removed. Two adult QA accounts are now explicitly authorized in private;
+their addresses are not published here. Identity/schema/runtime configuration remains
+blocked. See [launch revision](LAUNCH_SCHEDULE_DECISION_2026-10-25.md) and
+[revised unsent invitation](PAYMENT_INVITATION_2026-11-11_DRAFT.md).
+Earlier mocked screenshots/observations below preserve pre-revision evidence,
+not current schedule authority. Public copy/teaser changes are Claude Code's lane.
+
+After the owner supplied authorization, the private adult-QA allowlist and five
+deliberate **false** flags were configured on Preview branch
+`codex/academy-ops-readiness-2026-10-25` only: ENABLE_ACADEMY_MEMBERS,
+ENABLE_ACADEMY_AUTH_EMAIL, ENABLE_ACADEMY_TEST_CHECKOUT, ACADEMY_OFFER_APPROVED,
+ENABLE_ACADEMY_ADVISORY. No production scope or auth/database/Stripe secret was
+added, no email was sent, and no user enrolled. Runtime tests remain blocked by
+the scoped identity/schema/credential prerequisites. This scoped metadata setup
+supersedes the initial zero-env observation only for the new QA branch.
+
 ## Exact source/provider snapshot
 
 - Academy main/audited base: `69694d0219a65e2f9cb1162fac02d6b4bfede797`. Production `academy.majoraimindset.com` maps to READY deployment `dpl_8AMVFWGLMnvDNjaUsVRnZhT4qisg`, same SHA, maimacademy project. PR #7 is merged, not an open implementation branch.
@@ -90,7 +108,7 @@ Screenshots document UI behavior, not real payment/provider persistence. Full ra
 
 Main /terms is still Blueprint Service Terms, and /privacy still explicitly says approval candidate/PENDING APPROVAL. Earlier business-policy/branding approval does not prove an Academy-specific accepted agreement or final recording/privacy notice. Academy seven-day refund/cohort/session/replay terms are distinct from Blueprint preparation/refund terms. Verify exact Academy terms/version, current publishable controller/address/contact, organizer account, captured media, retention/access/deletion/training/reuse, participant consent/decline and mailing consent before recommending activation. No final claims were invented.
 
-November 4 draft invitation is prepared in [PAYMENT_INVITATION_2026-11-04_DRAFT.md](PAYMENT_INVITATION_2026-11-04_DRAFT.md), **not sent or scheduled**. Existing public text still promises invitations/payment November 11 and must be reconciled before release. Proposed start November 11 remains gated. Do not create an unbound Payment Link that bypasses identity/capacity/entitlement metadata.
+Invitation draft was revised to [November 11](PAYMENT_INVITATION_2026-11-11_DRAFT.md), **not sent or scheduled**. The official start is November 18. Public copy still presenting November 11 as the start requires review and deployment through the public-site owner. Do not create an unbound Payment Link that bypasses identity/capacity/entitlement metadata.
 
 ## 7. Exact environment names — values never included
 
