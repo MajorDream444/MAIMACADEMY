@@ -1,3 +1,25 @@
+# Bottleneck — owner-selected master
+
+**Superseded 25 Oct 2026 by Major's explicit choice: the 13-minute cut.**
+
+Selected YouTube URL: https://youtu.be/ckpcz9I70Zg
+Video ID: ckpcz9I70Zg
+Length 13:17. It's the post-production master: episode panel filled, eleven
+on-screen cards, the false start after the intro trimmed, audio at -14.7 LUFS
+and peaks under -1 dB.
+Source: Major's Vids export "Everything Came Back to Me. I Wasn't Just
+Busy—I Was the Bottleneck. (1).mp4" in the Hanzo Drive MAIM ACADEMY VIDEOS
+folder, 13:19 before the trim.
+Captions were reviewed from the export's embedded caption track, and the
+chapters were built from them: 0:00, 0:12, 1:21, 5:54, 7:46, 8:54, 10:05, 12:17.
+Thumbnail: build/thumbnails/maim_yt_bottleneck_1280x720_v3.png. Major uploads it.
+Visibility: unlisted until Major says otherwise.
+
+## Earlier record (replaced)
+
+The entry below named the ~15:08 cut (GR9V4E3rW2U). Major chose the
+13-minute cut instead. Kept for history; do not act on it.
+
 # Bottleneck — owner-selected edited master
 
 Owner selected the ~15:08 edited cut, with intro/outro and trimmed pauses. The 15:59 cut is rejected. Do not substitute or delete anything by duration alone.
