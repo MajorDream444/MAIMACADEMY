@@ -63,8 +63,23 @@ systemLime, pureWhite — unless Major says otherwise.
 |---|---|---|
 | Accent | rotates (orange → green → blue) | **jamaicanLegacyGreen, always** |
 | Motif | crown seal, ABC letters | **the problem made physical** — the ceiling beam, the line that hits a limit |
-| Mark | crown seal | MD mark + MAIM ACADEMY wordmark in the display face, **straight on the canvas** |
+| Mark | crown seal | **the Academy badge** (`assets/brand/MD-Academy-Badge-Transparent.png`), straight on the canvas. Small sizes can still use the MD mark + MAIM ACADEMY wordmark |
 | Frame | morning robe | desk, notebook, something built |
+
+## The Academy badge (Major, 25 Oct)
+
+Major chose this as the Academy's mark: the MD mark over the woven palm crown,
+an open book, ACADEMY. Supplied file `assets/brand/MD-Academy-Badge-supplied.webp`.
+Use `MD-Academy-Badge-Transparent.png` for placement, and
+`build/avatars/youtube-avatar-academy-800.png` for the channel avatar.
+
+- Use it as supplied. Never redraw, recolour, retouch or regenerate it. The crown
+  rule applies: no distortion, nothing gimmicky.
+- **Flagged:** its green ring samples near `#015D1B`, not jamaicanLegacyGreen
+  `#1F7A3A`. It stays as supplied; whether to re-export it on the token is
+  Major's call.
+- It is detailed. Below about 64 px it turns to mush; there, use the MD mark
+  with the wordmark.
 
 ## Craft rules (Major, 25 Oct)
 
