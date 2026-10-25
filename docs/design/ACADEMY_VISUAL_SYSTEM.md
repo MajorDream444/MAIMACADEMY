@@ -9,8 +9,8 @@ graphic.
 **No invented colours.** Every colour comes from
 `major-ai-os/data/design-tokens.json` v2.1, by name and exact hex. Academy uses
 a subset. No replacement shades, no "emerald", no glows or gradients that
-create in-between tones. If a value you need is not in the file, flag it —
-do not approximate.
+create in-between tones — except the approved thumbnail material finish
+below. If a value you need is not in the file, flag it — do not approximate.
 
 **The tri-bar is the one common thread.** Green → gold → blue
 (jamaicanLegacyGreen `#1F7A3A` → crownGold `#D8AF55` → championBlue
@@ -75,9 +75,32 @@ systemLime, pureWhite — unless Major says otherwise.
   From them: no lazy containers, no monospace as costume, depth from an offset
   soft shadow rather than a zero-offset coloured halo, cut-outs from a real
   alpha matte rather than geometric masks.
-- Shadows use maimBlack at partial opacity — the only opacity in use.
+- Shadows use maimBlack at partial opacity. Other opacity only inside the
+  approved thumbnail material finish.
 - Major's repositories number in the hundreds. Search them
   (`list_repos` with a query) before concluding a skill or asset does not exist.
+
+## Thumbnail material finish (locked, Major, 25 Oct)
+
+The first approved lighting treatment. Reference build:
+`scripts/build_thumbnail_ceiling.py` →
+`build/thumbnails/maim_yt_ceiling_1280x720_v10.png`. Light and gradients are
+allowed here, but every material starts from a token. No new base colours.
+
+| Element | Finish | Tokens |
+|---|---|---|
+| Gold beam | brushed grain, Clarity White top lip, specular band, darker bevel end, small glints on the lower edge, soft reflection below | crownGold, legacyGold, clarityWhite, maimBlack |
+| Headline (YOUR, CEILING) | shallow bevel lit from the top left, fine grain, gold rim, offset soft shadow; CEILING gets a short contact shadow under the beam | clarityWhite face, crownGold highlights, legacyGold shade |
+| Green panel | directional light from the top left, darker edges, thin reflective gold border | jamaicanLegacyGreen, crownGold, legacyGold, clarityWhite |
+| Rising line | stays jamaicanLegacyGreen, never neon. Bloom concentrated at the ceiling contact, with a Clarity White node | jamaicanLegacyGreen, clarityWhite |
+| Grid | faint, right half only, fades out | borderDark |
+| Portrait | **original pixels only.** Separation from a soft backlight, thin gold rim and offset shadow behind the cutout. Never regenerated, sharpened or smoothed | legacyGold backlight, crownGold rim |
+| MD mark | the original file, untouched | — |
+| Tri-bar | **flat and exact.** No finish | green → gold → blue |
+
+Checks before shipping: the portrait's pixels match the cutout (the build
+script prints this), the tri-bar samples at the exact hexes, and the line
+reads Jamaica Green at 320×180.
 
 ## Sources of truth
 
@@ -102,5 +125,6 @@ systemLime, pureWhite — unless Major says otherwise.
   `#009B4D`, `#2E6BE6`) and do not match tokens.json. Use tokens.json.
 - MAIM 04 renders also use `#3FA45C`, `#E0162B` (LIVE flag) and `#3a9be0`,
   which are not in tokens.json. Not used by the Academy.
-- Shadows and opacity: the tokens define none. A compression shadow would need
-  maimBlack at partial opacity — not used until approved.
+- ~~Shadows and opacity~~ **Approved 25 Oct** for thumbnails as part of the
+  material finish above. tokens.json still defines none; it should, when the
+  finish moves into major-ai-os.
