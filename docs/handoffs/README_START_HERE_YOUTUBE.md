@@ -41,6 +41,7 @@ thing that would undercut a channel whose pitch is being straight with people.
 | `docs/marketing/YOUTUBE_CHANNEL_COPY.md` | channel description, banner and avatar, with upload locations |
 | `docs/marketing/COHORT_PRELAUNCH_SEQUENCE.md` | six-email pre-launch sequence, drafted and unsent |
 | `docs/handoffs/CLAUDE_TO_CODEX_ACADEMY_BOUNDARY_2026-10-24.md` | why the Academy and the Mindset are separate brands |
+| `docs/design/ACADEMY_VISUAL_SYSTEM.md` | **read before drawing anything.** Token colours only, tri-bar kept, Academy differs by emphasis |
 
 ## Skills — load these, do not re-derive them
 
