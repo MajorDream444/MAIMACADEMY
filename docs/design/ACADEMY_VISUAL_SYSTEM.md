@@ -39,6 +39,7 @@ Major AI Mindset, the agripreneur work and whatever comes next.
 | Headline, key words, bubble fill | clarityWhite | `#F7F4EA` |
 | Authority: kicker, marks, edges | crownGold | `#D8AF55` |
 | Deeper gold edge | legacyGold | `#9F742C` |
+| Sovereign moments — ownership, the step up | sovereignGold | `#D4AF37` |
 | **Academy accent** — the one accent | jamaicanLegacyGreen | `#1F7A3A` |
 | Tri-bar third stripe only | championBlue | `#006BB6` |
 | Panels, patches | darkSurface | `#18181B` |
@@ -46,10 +47,15 @@ Major AI Mindset, the agripreneur work and whatever comes next.
 | Secondary text, guides | smokeGray | `#A8A8A8` |
 | Ink on light surfaces | textDark | `#111827` |
 
-**Gold stays central** — crownGold and legacyGold carry authority on every
-Academy piece. Not used: sovereignGold (the alternate gold, so two golds never
-compete), championOrange (Mindset's action/ABC energy), systemLime, pureWhite —
-unless Major says otherwise.
+**All three golds stay available** (Major, 25 Oct). crownGold is the default
+authority gold. legacyGold is the deeper edge. sovereignGold is kept on
+purpose: sovereignty — owning what you build — runs through the whole
+ecosystem, so its gold is not to be discarded. Use one gold as the lead on a
+piece and let the others support; which moments sovereignGold leads is
+Major's to name as they come up.
+
+Not used by default: championOrange (Mindset's action/ABC energy),
+systemLime, pureWhite — unless Major says otherwise.
 
 ## How the Academy reads differently from the Mindset
 
