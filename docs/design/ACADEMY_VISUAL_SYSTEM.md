@@ -122,17 +122,21 @@ reads Jamaica Green at 320×180.
 
 ## Thumbnails: shared brand, individual story (Major, 25 Oct)
 
-The badge, token colours, type and the material finish give the series its
-continuity. Each episode earns its own scene and visual idea. **Start with the
-story's defining moment, then build the image**, not the other way round.
-Ceiling's beam-and-line diagram belongs to Ceiling; Bottleneck is the dinner
-table ("18 GUESTS. NO WINE.", `scripts/build_thumbnail_bottleneck.py`).
+The badge, token colours and type give the series its continuity. Each
+episode earns its own scene and visual idea. **Start with the story's defining
+moment, then build the image**, not the other way round. Ceiling's
+beam-and-line diagram belongs to Ceiling. Bottleneck is the dinner table:
+"18 GUESTS. NO WINE.", Major's own finished design
+(`assets/thumbnails/bottleneck-thumbnail-supplied.webp`).
 
-- An illustrated setting is fine as a backdrop. Any generated figure in it is
-  cut out and filled from the scene, so no generated likeness ships.
-- Major is always his own video frame, composited with untouched pixels. The
-  badge is always the approved file.
-- The tri-bar stays flat and exact, even when the episode doesn't use the panel.
+- **Thumbnails are clean and crisp.** Use the best, sharpest photo of Major.
+  A soft video frame is not good enough for a thumbnail.
+- **A design Major supplies is used as he made it.** Its photo is Major
+  himself. Don't relabel it, re-cut it or rebuild it. Finishing is limited to
+  the exact badge file and the tri-bar.
+- No heavy black blocks behind the headline. Let the scene carry it.
+- The tri-bar stays flat and exact. When the design has no room for it under
+  the headline, it sits after the wordmark.
 
 ## Sources of truth
 
