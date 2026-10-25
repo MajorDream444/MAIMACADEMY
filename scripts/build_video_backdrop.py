@@ -185,8 +185,8 @@ def build(mirror_text: bool, guides: bool) -> Image.Image:
 
     # call to action, bottom rule
     d.line([(72, H - 96), (W - 72, H - 96)], fill=CROWN + (120,), width=2)
-    # Reserve, not buy. Reserving is free; the payment link goes out 11 Nov.
-    d.text((72, H - 76), "Reserve your spot  ·  20 spots  ·  11 November",
+    # Reserve, not buy. Reserving is free; payment links go out 11 Nov; the cohort starts 18 Nov.
+    d.text((72, H - 76), "Reserve your spot  ·  20 spots  ·  Starts 18 November",
            font=f_cta, fill=CLARITY + (240,))
     d.text((W - 72, H - 76), "academy.majoraimindset.com/reserve", font=f_cta,
            fill=CROWN + (255,), anchor="ra")

@@ -12,8 +12,8 @@ by chapter number.
 frame belongs to Major AI Mindset.
 
 **The CTA is live now — see `docs/production/CTA_FACTS_LIVE.md`.** Every video
-ends the same way: reserve your spot, free to reserve, 20 spots, opens
-11 November, at **academy.majoraimindset.com/reserve** (subdomain, no `www`).
+ends the same way: reserve your spot, free to reserve, 20 spots, payment
+opens 11 November, the cohort starts 18 November, at **academy.majoraimindset.com/reserve** (subdomain, no `www`).
 Nobody can pay yet; the payment link goes out on the 11th.
 
 ---

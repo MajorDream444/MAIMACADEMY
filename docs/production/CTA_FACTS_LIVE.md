@@ -17,18 +17,20 @@ Everything else is a path on the main site and takes `www` or not:
 `pillars.majoraimindset.com` is the one other subdomain.
 
 **Checked 25 Oct:** `academy.majoraimindset.com` and `/reserve` both return 200.
-`majoraimindset.com/academy` and `/reserve` **both 404** — the redirect was
-offered and has not been added yet. Until it is, **never say "slash academy"
-on camera.** Say the full subdomain.
+`majoraimindset.com/academy` and `/reserve` redirect to the Academy once the
+main-site redirect (added 25 Oct) is deployed. Still say the full subdomain on
+camera.
 
 ## You MAY say
 
 - Reserve your spot. **Reserving is free.**
 - **20 spots.** Founding cohort.
-- **Opens 11 November.** Everyone who reserved gets their payment link first.
+- **Payment opens 11 November.** Everyone who reserved gets their payment link first.
+- **The cohort starts 18 November.** (Founder decision, 25 Oct 2026. The
+  4 November payment date and the 11 November start are retired.)
 - **US$249, paid once.** Founding price.
-- The 30-Day Major Moves Journey — live sessions Wednesdays **11, 18, 25
-  November and 2 December 2026, 10 p.m. Bali time (14:00 UTC).**
+- The 30-Day Major Moves Journey — live sessions Wednesdays **18 and 25
+  November and 2 and 9 December 2026, 10 p.m. Bali time (14:00 UTC).**
 - If you change your mind, don't pay. Nothing is charged until you do.
 
 All of the above is on the reserve page in those words. Saying it on camera
@@ -61,7 +63,11 @@ transcribe by ear.
 The CTA bar is **rendered into every frame**, so it cannot be changed after the
 shoot:
 
-> Reserve your spot · 20 spots · 11 November      academy.majoraimindset.com/reserve
+> Reserve your spot · 20 spots · Starts 18 November      academy.majoraimindset.com/reserve
+
+Backdrops rendered before 25 Oct carry "· 11 November". That is still true as
+the payment date, but say "payment opens 11 November, we start 18 November" on
+camera so the two dates are never confused.
 
 If any of those facts change, edit `scripts/build_video_backdrop.py`, rerun it,
 and reshoot anything already recorded against the old bar.

@@ -1,0 +1,69 @@
+/* Shared site chrome (same standard as majoraimindset.com, Academy copy): header, mobile menu,
+   footer loop and the founding-cohort card. Token colours only. */
+:root{--mc-black:#050505;--mc-charcoal:#111111;--mc-surface:#18181B;--mc-border:#27272A;--mc-gold:#D8AF55;--mc-white:#F7F4EA;--mc-smoke:#A8A8A8;--mc-green:#1F7A3A}
+.mc-bar{position:sticky;top:0;z-index:1000;background:var(--mc-charcoal);border-bottom:1px solid var(--mc-border);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mc-inner{max-width:1200px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;gap:24px}
+.mc-brand{display:flex;align-items:center;gap:10px;color:var(--mc-white);text-decoration:none;font-weight:700;font-size:16px;letter-spacing:.04em;white-space:nowrap}
+.mc-brand img{width:36px;height:36px;border-radius:50%}
+.mc-links{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-top:0;margin-bottom:0}
+.mc-links a{display:block;padding:10px 12px;border-radius:8px;color:var(--mc-white);text-decoration:none;font-size:16px;font-weight:500;line-height:1.2}
+.mc-links a:hover,.mc-links a:focus-visible{background:var(--mc-surface);color:var(--mc-gold)}
+.mc-links a[aria-current="page"]{color:var(--mc-gold)}
+.mc-cta{display:inline-block;padding:11px 18px;border-radius:8px;background:var(--mc-gold);color:var(--mc-black);font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;transition:transform .15s ease-out}
+.mc-cta:hover{transform:translateY(-1px)}
+.mc-cta:focus-visible,.mc-links a:focus-visible,.mc-menu:focus-visible,.mc-brand:focus-visible{outline:3px solid var(--mc-gold);outline-offset:2px}
+.mc-menu{display:none;margin-left:auto;min-width:48px;min-height:48px;border:1px solid var(--mc-border);border-radius:8px;background:transparent;color:var(--mc-white);font-size:16px;font-weight:600;cursor:pointer}
+@media (max-width:1060px){
+ .mc-menu{display:block}
+ .mc-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--mc-charcoal);border-bottom:1px solid var(--mc-border);padding:8px 12px 16px}
+ .mc-links.mc-open{display:flex}
+ .mc-links a{padding:14px 12px;font-size:18px}
+ .mc-bar .mc-cta-desk{display:none}
+ .mc-links .mc-cta-mob{display:block;margin-top:8px;text-align:center}
+}
+@media (min-width:1061px){.mc-links .mc-cta-mob{display:none}}
+.mc-foot{background:var(--mc-black);border-top:1px solid var(--mc-border);font-family:Inter,system-ui,sans-serif;padding:32px 20px}
+.mc-foot .mc-foot-nav{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.mc-foot a{color:var(--mc-white);text-decoration:none;font-size:16px;padding:8px 0}
+.mc-foot a:hover{color:var(--mc-gold)}
+.mc-foot .mc-home{color:var(--mc-gold);font-weight:700}
+/* Founding-cohort card: slides up 2s after landing, never blocks the page */
+.mc-cohort{position:fixed;right:20px;bottom:20px;z-index:1001;width:min(380px,calc(100vw - 40px));background:var(--mc-charcoal);color:var(--mc-white);border:1px solid var(--mc-gold);border-radius:14px;padding:20px 20px 18px;box-shadow:0 18px 50px rgba(5,5,5,.55);font-family:Inter,system-ui,sans-serif;transform:translateY(140%);opacity:0;transition:transform .45s cubic-bezier(.2,.9,.25,1.15),opacity .3s ease-out}
+.mc-cohort.mc-in{transform:none;opacity:1}
+.mc-cohort .mc-kick{color:var(--mc-gold);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px}
+.mc-cohort h2{font-size:22px;line-height:1.25;margin:0 0 10px;color:var(--mc-white);font-family:inherit}
+.mc-cohort .mc-count{display:flex;gap:10px;margin:0 0 12px}
+.mc-cohort .mc-count div{background:var(--mc-surface);border:1px solid var(--mc-border);border-radius:8px;padding:6px 8px;text-align:center;min-width:56px}
+.mc-cohort .mc-count b{display:block;font-size:22px;color:var(--mc-gold);font-variant-numeric:tabular-nums}
+.mc-cohort .mc-count span{font-size:12px;color:var(--mc-smoke)}
+.mc-cohort p{font-size:15px;line-height:1.5;margin:0 0 14px;color:var(--mc-white)}
+.mc-cohort .mc-cta{display:block;text-align:center}
+.mc-cohort .mc-x{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:transparent;color:var(--mc-smoke);font-size:22px;cursor:pointer;border-radius:8px}
+.mc-cohort .mc-x:hover{color:var(--mc-white)}
+.mc-cohort .mc-bar-tri{display:flex;gap:6px;margin-top:12px}.mc-cohort .mc-bar-tri i{width:30px;height:4px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){.mc-cohort{transition:none}.mc-cta{transition:none}}
+/* Things that look clickable must be clickable: shared link style for added CTAs */
+.mc-more{display:inline-block;margin-top:12px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.mc-bar,.mc-bar *{box-sizing:border-box}.mc-bar ul{margin:0}.mc-bar li{list-style:none}.mc-bar a,.mc-foot a,.mc-cohort a{text-transform:none;letter-spacing:normal}
+.mc-links a.mc-cta{background:var(--mc-gold);color:var(--mc-black)}
+.mc-links a.mc-cta:hover{background:var(--mc-gold);color:var(--mc-black)}
+.mc-cohort .mc-kick{padding-right:36px}
+.mc-cohort h2{text-transform:none;letter-spacing:normal}
+@media (max-width:600px){.mc-cohort{left:12px;right:12px;bottom:12px;width:auto;padding:14px 14px 12px}.mc-cohort h2{font-size:18px;margin-bottom:8px}.mc-cohort .mc-count{margin-bottom:10px}.mc-cohort .mc-count b{font-size:18px}.mc-cohort p{display:none}.mc-cohort .mc-bar-tri{margin-top:8px}}
+@media (max-width:600px){.mc-cohort p.mc-kick{display:block;font-size:11px;margin-bottom:4px}}
+/* Cohort teaser in the home hero (Remotion, stage 2) */
+.mc-teaser{position:relative;display:block;max-width:560px;margin:0 0 48px;border-radius:14px;overflow:hidden;border:1px solid var(--mc-gold);box-shadow:0 18px 50px rgba(5,5,5,.35);text-decoration:none}
+.mc-teaser video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--mc-black)}
+.mc-teaser-cta{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;background:linear-gradient(transparent,rgba(5,5,5,.85));color:var(--mc-white);font:700 16px Inter,system-ui,sans-serif}
+.mc-teaser:focus-visible{outline:3px solid var(--mc-gold);outline-offset:3px}
+@media (min-width:1280px){.hero-inner{position:relative}.mc-teaser{position:absolute;right:-40px;top:400px;width:420px;margin:0}}
+.mc-tri-green{background:var(--mc-green)}.mc-tri-gold{background:var(--mc-gold)}.mc-tri-blue{background:#006BB6}
+.mc-academy-brand small{display:block;font-size:12px;letter-spacing:.14em;color:var(--mc-gold);font-weight:700}
+
+/* Touch targets: every header and footer link is at least 44px tall (QA 25 Oct). */
+.mc-links a{display:flex;align-items:center;min-height:44px}.mc-foot a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}.mc-brand{min-height:44px}
+.mc-foot-line{max-width:1200px;margin:16px auto 0;color:var(--mc-gray,#A8A8A8);font-size:16px}
+/* Academy home hero: copy and teaser side by side on wide screens, stacked on phones. */
+.home-hero{max-width:none;display:grid;gap:40px;align-items:center}
+.home-hero .mc-teaser{position:relative;right:auto;top:auto;width:100%;max-width:560px;margin:0}
+@media (min-width:1061px){.home-hero{grid-template-columns:minmax(0,1fr) minmax(360px,460px)}}

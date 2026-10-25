@@ -1,5 +1,10 @@
 # Founding cohort operating decisions — 21 October 2026
 
+**Schedule superseded 25 October:** see
+`../operations/LAUNCH_SCHEDULE_DECISION_2026-10-25.md`. Payments open November 11
+only after readiness approval; official cohort start November 18. Preserve the
+approved operating policies below. Former November 11 start is historical.
+
 Owner approved the proposed Wednesday schedule and operating direction in the Academy conversation. This supersedes unanswered interview questions in the 20 October decision sheet. Target dates remain contingent on pilot readiness; enrollment remains closed. This is an implementation record, not evidence of tested services or final legal terms.
 
 ## Schedule and offer

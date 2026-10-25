@@ -51,8 +51,9 @@ site does.
 
 As of 25 October the reserve page is live and public. Takes, titles,
 descriptions, end screens and on-screen graphics **may** state: reserving is
-free, 20 spots, opens 11 November, US$249 paid once, payment link first to
-anyone who reserved, sessions Wednesdays 11/18/25 Nov and 2 Dec at 10 p.m. Bali.
+free, 20 spots, payment opens 11 November, the cohort starts 18 November,
+US$249 paid once, payment link first to anyone who reserved, sessions
+Wednesdays 18/25 Nov and 2/9 Dec at 10 p.m. Bali (founder decision, 25 Oct).
 They **may not** say anyone can pay today, quote any other price or date, or
 claim a spot is held or guaranteed beyond being in line.
 

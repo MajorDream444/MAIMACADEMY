@@ -88,7 +88,7 @@ would undercut a channel whose entire pitch is being straight with people.
 **The CTA facts are live and specific — read `CTA_FACTS_LIVE.md` before the
 outro.** As of 25 Oct the reserve page is up and states the terms publicly, so
 the old "no price, no date" rule no longer applies. You **may** say: reserving
-is free, 20 spots, opens 11 November, US$249 paid once, payment link first to
+is free, 20 spots, payment opens 11 November, the cohort starts 18 November, US$249 paid once, payment link first to
 anyone who reserved. You **may not** say anyone can pay today, or quote a
 different price or date.
 
