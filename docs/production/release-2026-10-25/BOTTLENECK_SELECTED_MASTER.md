@@ -15,25 +15,21 @@ chapters were built from them: 0:00, 0:12, 1:21, 5:54, 7:46, 8:54, 10:05, 12:17.
 Thumbnail: build/thumbnails/maim_yt_bottleneck_1280x720_v3.png. Major uploads it.
 Visibility: unlisted until Major says otherwise.
 
-## Earlier record (replaced)
+## Live verification — 25 October 2026
 
-The entry below named the ~15:08 cut (GR9V4E3rW2U). Major chose the
-13-minute cut instead. Kept for history; do not act on it.
+Direct TubeAlfred video lookup verified ckpcz9I70Zg on MAIM ACADEMY
+(@MAIM_ACADEMY), channel UCAxy4YB0VlQgrmQiKowu04g, duration 797 seconds
+(13:17), title “Everything Came Back to Me. I Wasn’t Just Busy—I Was the Bottleneck.”
+Description, chapters and keywords are populated. The recent public channel
+listing returned Ceiling only; this does not invalidate the directly accessible
+Bottleneck upload or establish a change from its documented unlisted visibility.
+No YouTube settings were changed during this verification.
 
-# Bottleneck — owner-selected edited master
+## Retired versions — never use for current production
 
-Owner selected the ~15:08 edited cut, with intro/outro and trimmed pauses. The 15:59 cut is rejected. Do not substitute or delete anything by duration alone.
-
-Selected YouTube URL: https://youtu.be/GR9V4E3rW2U
-Video ID: GR9V4E3rW2U
-Read-only metadata verifies MAIM ACADEMY, @MAIM_ACADEMY, channel UCAxy4YB0VlQgrmQiKowu04g. Provider duration is 907 seconds (15:07); owner reports Studio 15:08. This near-one-second display difference does not override explicit owner selection.
-
-Observed title: “Everything came back to me  I wasn’t just busy—I was the bottleneck ”
-Proposed punctuation-cleaned title: Everything Came Back to Me. I Wasn’t Just Busy—I Was the Bottleneck.
-Description empty; keywords empty in retrieved metadata. No visibility assertion made from public-access metadata alone.
-
-Transcript lookup returned no_captions, no tracks. No content, sound quality, framing, intro/outro completeness, assignment accuracy, chapters or clip timings have been reviewed for this selected upload. Do not represent the manuscript draft package as analysis of the recorded video.
-
-Hanzo Drive root MP4: 1_DeV4RokLgnVVT2fgeMpMnM4usap1XFh, 284128779 bytes. Editable Google Vids source: 1jHa42Dcedx8o_aF9n1l2wowNOeQG2Oa8S8r26bSjRK0. File duration/version not verified: do not assume the Drive MP4 is this selected cut until checked. Raw fetch rejected at the connection's 268435456-byte limit. The Academy subfolder listing does not contain this file; root listing does.
-
-Next: retrieve captions when available, or use the selected edit's caption export / a review-size MP4 or audio export, then produce actual timed captions, chapters, content review and clip points. No polling automation created. No YouTube writes or deletion performed. The rejected upload ID remains unknown.
+GR9V4E3rW2U (~15:08) is superseded. Direct lookup on 25 October returned
+YOUTUBE_VIDEO_NOT_FOUND (404), “Video not found or unavailable.” Major reports
+removing it. Do not describe it as currently on the channel, ask Major to choose
+again, or use its captions/timings/assets for the current master.
+The earlier 15:59 cut is also rejected. The 13:19 source export and 13:17
+post-production YouTube upload are distinct stages of the selected shorter cut.
