@@ -62,3 +62,21 @@ The real footage is `the mindset of major pt1.mp4` and
 Production commerce stays disabled. Founding cohort enrollment stays closed. No
 asset, post or video may imply a seat can be bought. Private sources stay outside
 public Git.
+
+## The ladder — Major, 25 October 2026
+
+The brand is an ecosystem, and it forks on purpose:
+
+| | Is | Carries |
+|---|---|---|
+| **Major AI Mindset** | the philosophy | the ABCs, how to think about AI |
+| **MAIM Academy** | the engineering | the builds, the books, the curriculum |
+| **AMA Solutions** | the agents | where Academy graduates can step up to |
+| **Art Mob** | consulting | solutions for people who want their systems built |
+
+Learn to think, then learn to build, then build alongside the agents. The
+Academy channel, the `@maim_academy` Instagram and the cohort all serve the
+Academy rung. They used to point at the agency; they now point here.
+
+Delivery partnerships behind the consulting side are Major's business, not
+recorded in this public repository.
