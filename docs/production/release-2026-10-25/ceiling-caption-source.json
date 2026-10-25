@@ -1,0 +1,929 @@
+{
+  "segments": [
+    {
+      "text": "I'm Major Dream Williams. This is Maim",
+      "start_ms": "960",
+      "end_ms": "6960",
+      "start_time_text": "0:00"
+    },
+    {
+      "text": "Academy. We build things that run",
+      "start_ms": "4160",
+      "end_ms": "9599",
+      "start_time_text": "0:04"
+    },
+    {
+      "text": "without you.",
+      "start_ms": "6960",
+      "end_ms": "12879.999999999998",
+      "start_time_text": "0:06"
+    },
+    {
+      "text": "You have a ceiling.",
+      "start_ms": "9599",
+      "end_ms": "15040",
+      "start_time_text": "0:09"
+    },
+    {
+      "text": "I don't know if you know this or not,",
+      "start_ms": "12880",
+      "end_ms": "18960",
+      "start_time_text": "0:12"
+    },
+    {
+      "text": "but you yourself, you're not scalable.",
+      "start_ms": "15040",
+      "end_ms": "22799.999999999996",
+      "start_time_text": "0:15"
+    },
+    {
+      "text": "There's not two or three of you.",
+      "start_ms": "18960",
+      "end_ms": "27039",
+      "start_time_text": "0:18"
+    },
+    {
+      "text": "Look, any income built on your hours has",
+      "start_ms": "22800",
+      "end_ms": "28720",
+      "start_time_text": "0:22"
+    },
+    {
+      "text": "a ceiling.",
+      "start_ms": "27039",
+      "end_ms": "31199",
+      "start_time_text": "0:27"
+    },
+    {
+      "text": "You can calculate it. Most people never",
+      "start_ms": "28720",
+      "end_ms": "34000",
+      "start_time_text": "0:28"
+    },
+    {
+      "text": "do because the number is unpleasant. You",
+      "start_ms": "31199",
+      "end_ms": "38960",
+      "start_time_text": "0:31"
+    },
+    {
+      "text": "never want to figure like, okay, I'm",
+      "start_ms": "34000",
+      "end_ms": "43120",
+      "start_time_text": "0:34"
+    },
+    {
+      "text": "laboring and I just can't get past that.",
+      "start_ms": "38960",
+      "end_ms": "46879",
+      "start_time_text": "0:38"
+    },
+    {
+      "text": "You know that feeling that you get when",
+      "start_ms": "43120",
+      "end_ms": "50078.99999999999",
+      "start_time_text": "0:43"
+    },
+    {
+      "text": "the bills increase but your paycheck",
+      "start_ms": "46879",
+      "end_ms": "56399",
+      "start_time_text": "0:46"
+    },
+    {
+      "text": "never does? This is what the ceiling is.",
+      "start_ms": "50079",
+      "end_ms": "59840",
+      "start_time_text": "0:50"
+    },
+    {
+      "text": "And yeah, most people, and this is why",
+      "start_ms": "56399",
+      "end_ms": "62640",
+      "start_time_text": "0:56"
+    },
+    {
+      "text": "people get upset and you know, they ride",
+      "start_ms": "59840",
+      "end_ms": "64479",
+      "start_time_text": "0:59"
+    },
+    {
+      "text": "home on the train and everybody's just",
+      "start_ms": "62640",
+      "end_ms": "68400",
+      "start_time_text": "1:02"
+    },
+    {
+      "text": "looking all grim because deep inside",
+      "start_ms": "64479",
+      "end_ms": "71200",
+      "start_time_text": "1:04"
+    },
+    {
+      "text": "they know that",
+      "start_ms": "68400",
+      "end_ms": "73840",
+      "start_time_text": "1:08"
+    },
+    {
+      "text": "they're capped.",
+      "start_ms": "71200",
+      "end_ms": "76560",
+      "start_time_text": "1:11"
+    },
+    {
+      "text": "Their head is bumping against the wall.",
+      "start_ms": "73840",
+      "end_ms": "80240.00000000001",
+      "start_time_text": "1:13"
+    },
+    {
+      "text": "Not because they're not good enough, but",
+      "start_ms": "76560",
+      "end_ms": "82320.00000000001",
+      "start_time_text": "1:16"
+    },
+    {
+      "text": "because of the the decision that they",
+      "start_ms": "80240",
+      "end_ms": "85919.99999999999",
+      "start_time_text": "1:20"
+    },
+    {
+      "text": "made involved a calculation that most",
+      "start_ms": "82320",
+      "end_ms": "89199.99999999999",
+      "start_time_text": "1:22"
+    },
+    {
+      "text": "people never try to figure out. You",
+      "start_ms": "85920",
+      "end_ms": "91200",
+      "start_time_text": "1:25"
+    },
+    {
+      "text": "never try to figure out what your number",
+      "start_ms": "89200",
+      "end_ms": "92880.00000000001",
+      "start_time_text": "1:29"
+    },
+    {
+      "text": "is",
+      "start_ms": "91200",
+      "end_ms": "94720",
+      "start_time_text": "1:31"
+    },
+    {
+      "text": "because when you do, you realize it's",
+      "start_ms": "92880",
+      "end_ms": "99920",
+      "start_time_text": "1:32"
+    },
+    {
+      "text": "just unpleasant. Okay, the calculation.",
+      "start_ms": "94720",
+      "end_ms": "103600",
+      "start_time_text": "1:34"
+    },
+    {
+      "text": "Real hours, the hours of high value work",
+      "start_ms": "99920",
+      "end_ms": "107040",
+      "start_time_text": "1:39"
+    },
+    {
+      "text": "only you can do. That's three to five",
+      "start_ms": "103600",
+      "end_ms": "110798.99999999999",
+      "start_time_text": "1:43"
+    },
+    {
+      "text": "hours a day, not eight. The real weeks,",
+      "start_ms": "107040",
+      "end_ms": "115439",
+      "start_time_text": "1:47"
+    },
+    {
+      "text": "44 to 46 a year, not 52, you know, you",
+      "start_ms": "110799",
+      "end_ms": "118079.00000000001",
+      "start_time_text": "1:50"
+    },
+    {
+      "text": "get those vacations and then weekends,",
+      "start_ms": "115439",
+      "end_ms": "121798.99999999999",
+      "start_time_text": "1:55"
+    },
+    {
+      "text": "you know, type stuff.",
+      "start_ms": "118079",
+      "end_ms": "121798.99999999999",
+      "start_time_text": "1:58"
+    },
+    {
+      "text": "Then your rate,",
+      "start_ms": "121920",
+      "end_ms": "127360",
+      "start_time_text": "2:01"
+    },
+    {
+      "text": "what someone actually pays for your",
+      "start_ms": "124560",
+      "end_ms": "130319.00000000001",
+      "start_time_text": "2:04"
+    },
+    {
+      "text": "hour, for an hour of your work, what are",
+      "start_ms": "127360",
+      "end_ms": "134400",
+      "start_time_text": "2:07"
+    },
+    {
+      "text": "they willing to pay? That's how you",
+      "start_ms": "130318.99999999999",
+      "end_ms": "136879",
+      "start_time_text": "2:10"
+    },
+    {
+      "text": "calculate it. So you take your hours a",
+      "start_ms": "134400",
+      "end_ms": "140800",
+      "start_time_text": "2:14"
+    },
+    {
+      "text": "day times your days a week times your",
+      "start_ms": "136879",
+      "end_ms": "144959",
+      "start_time_text": "2:16"
+    },
+    {
+      "text": "weeks a year times your rate and that",
+      "start_ms": "140800",
+      "end_ms": "147920.00000000003",
+      "start_time_text": "2:20"
+    },
+    {
+      "text": "equals your ceiling.",
+      "start_ms": "144959",
+      "end_ms": "151120",
+      "start_time_text": "2:24"
+    },
+    {
+      "text": "It's the most you can earn while",
+      "start_ms": "147920",
+      "end_ms": "154000",
+      "start_time_text": "2:27"
+    },
+    {
+      "text": "somebody chooses to hire you. Do you get",
+      "start_ms": "151120",
+      "end_ms": "158080",
+      "start_time_text": "2:31"
+    },
+    {
+      "text": "that? It's the most you can earn if",
+      "start_ms": "154000",
+      "end_ms": "161200",
+      "start_time_text": "2:34"
+    },
+    {
+      "text": "somebody else chooses to hire you for",
+      "start_ms": "158080",
+      "end_ms": "166239",
+      "start_time_text": "2:38"
+    },
+    {
+      "text": "what you can do in their business.",
+      "start_ms": "161200",
+      "end_ms": "166238.99999999997",
+      "start_time_text": "2:41"
+    },
+    {
+      "text": "Have you ever calculated that before?",
+      "start_ms": "166720",
+      "end_ms": "174400",
+      "start_time_text": "2:46"
+    },
+    {
+      "text": "Or do you just accept your salary and",
+      "start_ms": "170720",
+      "end_ms": "177680",
+      "start_time_text": "2:50"
+    },
+    {
+      "text": "look at that paycheck?",
+      "start_ms": "174400",
+      "end_ms": "181560",
+      "start_time_text": "2:54"
+    },
+    {
+      "text": "How does that make you feel?",
+      "start_ms": "177680",
+      "end_ms": "181560",
+      "start_time_text": "2:57"
+    },
+    {
+      "text": "Now, if your goal is above that line,",
+      "start_ms": "182800",
+      "end_ms": "189280",
+      "start_time_text": "3:02"
+    },
+    {
+      "text": "you have an arithmetic problem, not an",
+      "start_ms": "186879",
+      "end_ms": "192239",
+      "start_time_text": "3:06"
+    },
+    {
+      "text": "effort problem. Waking up early doesn't",
+      "start_ms": "189280",
+      "end_ms": "194319",
+      "start_time_text": "3:09"
+    },
+    {
+      "text": "fix the arithmetic.",
+      "start_ms": "192239",
+      "end_ms": "198319.00000000003",
+      "start_time_text": "3:12"
+    },
+    {
+      "text": "Three ways could raise the rate. It",
+      "start_ms": "194319",
+      "end_ms": "200079.99999999997",
+      "start_time_text": "3:14"
+    },
+    {
+      "text": "works until nobody wants to give you",
+      "start_ms": "198319",
+      "end_ms": "203839.99999999997",
+      "start_time_text": "3:18"
+    },
+    {
+      "text": "anymore. You can add more people",
+      "start_ms": "200080",
+      "end_ms": "206480.00000000003",
+      "start_time_text": "3:20"
+    },
+    {
+      "text": "if it works until you become the",
+      "start_ms": "203840",
+      "end_ms": "209360",
+      "start_time_text": "3:23"
+    },
+    {
+      "text": "bottleneck for all those people. Or you",
+      "start_ms": "206480",
+      "end_ms": "212480",
+      "start_time_text": "3:26"
+    },
+    {
+      "text": "could stop selling your hours, build a",
+      "start_ms": "209360",
+      "end_ms": "215519",
+      "start_time_text": "3:29"
+    },
+    {
+      "text": "system, a product,",
+      "start_ms": "212480",
+      "end_ms": "219238.99999999997",
+      "start_time_text": "3:32"
+    },
+    {
+      "text": "or an AI agent.",
+      "start_ms": "215519",
+      "end_ms": "219239",
+      "start_time_text": "3:35"
+    },
+    {
+      "text": "You knew that was coming. Yeah. I mean,",
+      "start_ms": "219760",
+      "end_ms": "224239",
+      "start_time_text": "3:39"
+    },
+    {
+      "text": "at the end of the day, there's there's a",
+      "start_ms": "222400",
+      "end_ms": "226480.00000000003",
+      "start_time_text": "3:42"
+    },
+    {
+      "text": "few ways you can you can get it. So, you",
+      "start_ms": "224239",
+      "end_ms": "229440",
+      "start_time_text": "3:44"
+    },
+    {
+      "text": "have three ways to solve this ceiling,",
+      "start_ms": "226480",
+      "end_ms": "232798.99999999997",
+      "start_time_text": "3:46"
+    },
+    {
+      "text": "right? You can negotiate for more money,",
+      "start_ms": "229440",
+      "end_ms": "235920",
+      "start_time_text": "3:49"
+    },
+    {
+      "text": "which a lot of you feel that this is",
+      "start_ms": "232799",
+      "end_ms": "238239",
+      "start_time_text": "3:52"
+    },
+    {
+      "text": "what you want to do because we've seen",
+      "start_ms": "235920",
+      "end_ms": "241839.99999999997",
+      "start_time_text": "3:55"
+    },
+    {
+      "text": "it on TV. I need more. You go and",
+      "start_ms": "238239",
+      "end_ms": "245599.00000000003",
+      "start_time_text": "3:58"
+    },
+    {
+      "text": "negotiate. But say your boss doesn't",
+      "start_ms": "241840",
+      "end_ms": "248159",
+      "start_time_text": "4:01"
+    },
+    {
+      "text": "think you're valuable enough. You've",
+      "start_ms": "245599",
+      "end_ms": "250879",
+      "start_time_text": "4:05"
+    },
+    {
+      "text": "played your hand. You've gotten shut",
+      "start_ms": "248159",
+      "end_ms": "252480",
+      "start_time_text": "4:08"
+    },
+    {
+      "text": "down.",
+      "start_ms": "250879",
+      "end_ms": "254720",
+      "start_time_text": "4:10"
+    },
+    {
+      "text": "And then",
+      "start_ms": "252480",
+      "end_ms": "257039.99999999997",
+      "start_time_text": "4:12"
+    },
+    {
+      "text": "you're right back to where you start",
+      "start_ms": "254720",
+      "end_ms": "259918.99999999997",
+      "start_time_text": "4:14"
+    },
+    {
+      "text": "having to make tough decisions.",
+      "start_ms": "257040.00000000003",
+      "end_ms": "263280.00000000006",
+      "start_time_text": "4:17"
+    },
+    {
+      "text": "Or let's say this, you want to hire more",
+      "start_ms": "259918.99999999997",
+      "end_ms": "264799.99999999994",
+      "start_time_text": "4:19"
+    },
+    {
+      "text": "people.",
+      "start_ms": "263280",
+      "end_ms": "267840",
+      "start_time_text": "4:23"
+    },
+    {
+      "text": "So you get more people to do your work",
+      "start_ms": "264800",
+      "end_ms": "269759",
+      "start_time_text": "4:24"
+    },
+    {
+      "text": "because",
+      "start_ms": "267840",
+      "end_ms": "271599.99999999994",
+      "start_time_text": "4:27"
+    },
+    {
+      "text": "being a business owner sometimes means",
+      "start_ms": "269759",
+      "end_ms": "274000",
+      "start_time_text": "4:29"
+    },
+    {
+      "text": "that you're an employee of the business.",
+      "start_ms": "271600",
+      "end_ms": "276639",
+      "start_time_text": "4:31"
+    },
+    {
+      "text": "So you hire more people. That's a higher",
+      "start_ms": "274000",
+      "end_ms": "280080",
+      "start_time_text": "4:34"
+    },
+    {
+      "text": "payroll. You may get more contracts, but",
+      "start_ms": "276639",
+      "end_ms": "282960.00000000006",
+      "start_time_text": "4:36"
+    },
+    {
+      "text": "at the end of the day, you may still",
+      "start_ms": "280080",
+      "end_ms": "286599.99999999994",
+      "start_time_text": "4:40"
+    },
+    {
+      "text": "become the bottleneck.",
+      "start_ms": "282960",
+      "end_ms": "286599.99999999994",
+      "start_time_text": "4:42"
+    },
+    {
+      "text": "That's kind of what happens with a lot",
+      "start_ms": "286639",
+      "end_ms": "291440",
+      "start_time_text": "4:46"
+    },
+    {
+      "text": "of when you hire subordinates,",
+      "start_ms": "288880",
+      "end_ms": "296159.99999999994",
+      "start_time_text": "4:48"
+    },
+    {
+      "text": "employees, versus hiring people to help",
+      "start_ms": "291440",
+      "end_ms": "300080",
+      "start_time_text": "4:51"
+    },
+    {
+      "text": "you expand the business in a way that",
+      "start_ms": "296160",
+      "end_ms": "302320.00000000006",
+      "start_time_text": "4:56"
+    },
+    {
+      "text": "doesn't put you at the center of the",
+      "start_ms": "300080",
+      "end_ms": "306080",
+      "start_time_text": "5:00"
+    },
+    {
+      "text": "business. or",
+      "start_ms": "302320",
+      "end_ms": "309120",
+      "start_time_text": "5:02"
+    },
+    {
+      "text": "forget all that hours stuff. Forget all",
+      "start_ms": "306080",
+      "end_ms": "313440",
+      "start_time_text": "5:06"
+    },
+    {
+      "text": "that hours. Think smarter, not harder.",
+      "start_ms": "309120",
+      "end_ms": "317039",
+      "start_time_text": "5:09"
+    },
+    {
+      "text": "Right? Build a system. The system is",
+      "start_ms": "313440",
+      "end_ms": "320639",
+      "start_time_text": "5:13"
+    },
+    {
+      "text": "scalable. The system lives without you.",
+      "start_ms": "317039",
+      "end_ms": "323120",
+      "start_time_text": "5:17"
+    },
+    {
+      "text": "The system works",
+      "start_ms": "320639",
+      "end_ms": "325440",
+      "start_time_text": "5:20"
+    },
+    {
+      "text": "when you're not around.",
+      "start_ms": "323120",
+      "end_ms": "327759",
+      "start_time_text": "5:23"
+    },
+    {
+      "text": "You could build a product. How many",
+      "start_ms": "325440",
+      "end_ms": "329919",
+      "start_time_text": "5:25"
+    },
+    {
+      "text": "people have become billionaires because",
+      "start_ms": "327759",
+      "end_ms": "333039",
+      "start_time_text": "5:27"
+    },
+    {
+      "text": "they built something? I had a cousin",
+      "start_ms": "329919",
+      "end_ms": "335919",
+      "start_time_text": "5:29"
+    },
+    {
+      "text": "that built a double dutch machine.",
+      "start_ms": "333039",
+      "end_ms": "337759",
+      "start_time_text": "5:33"
+    },
+    {
+      "text": "Growing up watching girls play double",
+      "start_ms": "335919",
+      "end_ms": "340960",
+      "start_time_text": "5:35"
+    },
+    {
+      "text": "dutch, you know,",
+      "start_ms": "337759",
+      "end_ms": "343600",
+      "start_time_text": "5:37"
+    },
+    {
+      "text": "versus just skipping rope or one hand",
+      "start_ms": "340960",
+      "end_ms": "346560",
+      "start_time_text": "5:40"
+    },
+    {
+      "text": "rope. Double Dutch is a crossover,",
+      "start_ms": "343600",
+      "end_ms": "348160",
+      "start_time_text": "5:43"
+    },
+    {
+      "text": "right? So, this is what we play in the",
+      "start_ms": "346560",
+      "end_ms": "350160",
+      "start_time_text": "5:46"
+    },
+    {
+      "text": "hood.",
+      "start_ms": "348160",
+      "end_ms": "352639",
+      "start_time_text": "5:48"
+    },
+    {
+      "text": "And one of my cousins built a double",
+      "start_ms": "350160",
+      "end_ms": "355840.00000000006",
+      "start_time_text": "5:50"
+    },
+    {
+      "text": "Dutch machine that can do that for you.",
+      "start_ms": "352639",
+      "end_ms": "357919",
+      "start_time_text": "5:52"
+    },
+    {
+      "text": "She made millions of dollars, millions",
+      "start_ms": "355840",
+      "end_ms": "361198.99999999994",
+      "start_time_text": "5:55"
+    },
+    {
+      "text": "of dollars, super young, super early. So",
+      "start_ms": "357919",
+      "end_ms": "363840",
+      "start_time_text": "5:57"
+    },
+    {
+      "text": "that's something that you can also do.",
+      "start_ms": "361199",
+      "end_ms": "367360",
+      "start_time_text": "6:01"
+    },
+    {
+      "text": "Build a product, build a system, build a",
+      "start_ms": "363840",
+      "end_ms": "370719.99999999994",
+      "start_time_text": "6:03"
+    },
+    {
+      "text": "product, or you can gain the right",
+      "start_ms": "367360",
+      "end_ms": "373919.00000000006",
+      "start_time_text": "6:07"
+    },
+    {
+      "text": "mindset and build yourself an AI agent.",
+      "start_ms": "370720",
+      "end_ms": "378479.00000000006",
+      "start_time_text": "6:10"
+    },
+    {
+      "text": "Build yourself digital workers that do",
+      "start_ms": "373919",
+      "end_ms": "382318.99999999994",
+      "start_time_text": "6:13"
+    },
+    {
+      "text": "all of the things that you need to do in",
+      "start_ms": "378479",
+      "end_ms": "384719.99999999994",
+      "start_time_text": "6:18"
+    },
+    {
+      "text": "your corporation. We live in the world",
+      "start_ms": "382319",
+      "end_ms": "388160",
+      "start_time_text": "6:22"
+    },
+    {
+      "text": "of the billiondoll single person",
+      "start_ms": "384720",
+      "end_ms": "392160",
+      "start_time_text": "6:24"
+    },
+    {
+      "text": "company. Now will everybody do that? No.",
+      "start_ms": "388160",
+      "end_ms": "395120",
+      "start_time_text": "6:28"
+    },
+    {
+      "text": "However, you can have a billion dollar",
+      "start_ms": "392160",
+      "end_ms": "398479.00000000006",
+      "start_time_text": "6:32"
+    },
+    {
+      "text": "100 person company, billiondoll 14",
+      "start_ms": "395120",
+      "end_ms": "401600",
+      "start_time_text": "6:35"
+    },
+    {
+      "text": "person company.",
+      "start_ms": "398479",
+      "end_ms": "403360",
+      "start_time_text": "6:38"
+    },
+    {
+      "text": "It doesn't matter. But the point I'm",
+      "start_ms": "401600",
+      "end_ms": "406160",
+      "start_time_text": "6:41"
+    },
+    {
+      "text": "trying to get at is once you get to",
+      "start_ms": "403360",
+      "end_ms": "409360",
+      "start_time_text": "6:43"
+    },
+    {
+      "text": "understand the the arithmetic, there is",
+      "start_ms": "406160",
+      "end_ms": "413120",
+      "start_time_text": "6:46"
+    },
+    {
+      "text": "no working harder that is going to break",
+      "start_ms": "409360",
+      "end_ms": "415360",
+      "start_time_text": "6:49"
+    },
+    {
+      "text": "that system for you. That's going to",
+      "start_ms": "413120",
+      "end_ms": "417759",
+      "start_time_text": "6:53"
+    },
+    {
+      "text": "break you through that ceiling. That's",
+      "start_ms": "415360",
+      "end_ms": "422840.00000000006",
+      "start_time_text": "6:55"
+    },
+    {
+      "text": "the way the game has been designed.",
+      "start_ms": "417759",
+      "end_ms": "422840.00000000006",
+      "start_time_text": "6:57"
+    },
+    {
+      "text": "You hear everyone complaining.",
+      "start_ms": "423199",
+      "end_ms": "431560",
+      "start_time_text": "7:03"
+    },
+    {
+      "text": "However, they choose to play the game.",
+      "start_ms": "425759",
+      "end_ms": "431560",
+      "start_time_text": "7:05"
+    },
+    {
+      "text": "So, out of those three, only the third",
+      "start_ms": "433120",
+      "end_ms": "438880",
+      "start_time_text": "7:13"
+    },
+    {
+      "text": "changes the ceiling shape. The other two",
+      "start_ms": "435520",
+      "end_ms": "441440",
+      "start_time_text": "7:15"
+    },
+    {
+      "text": "just raise the ceiling. So, your",
+      "start_ms": "438880",
+      "end_ms": "444319",
+      "start_time_text": "7:18"
+    },
+    {
+      "text": "assignment, work out your number, write",
+      "start_ms": "441440",
+      "end_ms": "447360",
+      "start_time_text": "7:21"
+    },
+    {
+      "text": "your goal under it, and name the route",
+      "start_ms": "444319",
+      "end_ms": "450639",
+      "start_time_text": "7:24"
+    },
+    {
+      "text": "that you're actually on. Most people",
+      "start_ms": "447360",
+      "end_ms": "455039",
+      "start_time_text": "7:27"
+    },
+    {
+      "text": "assume route one, believe like route",
+      "start_ms": "450639",
+      "end_ms": "458240",
+      "start_time_text": "7:30"
+    },
+    {
+      "text": "two, and hope",
+      "start_ms": "455039",
+      "end_ms": "461440",
+      "start_time_text": "7:35"
+    },
+    {
+      "text": "for route three.",
+      "start_ms": "458240",
+      "end_ms": "465080",
+      "start_time_text": "7:38"
+    },
+    {
+      "text": "What are you going to do?",
+      "start_ms": "461440",
+      "end_ms": "465080",
+      "start_time_text": "7:41"
+    },
+    {
+      "text": "If this helped, the free guide is at",
+      "start_ms": "468000",
+      "end_ms": "473039",
+      "start_time_text": "7:48"
+    },
+    {
+      "text": "majoraimindset.com.",
+      "start_ms": "470240",
+      "end_ms": "475199",
+      "start_time_text": "7:50"
+    },
+    {
+      "text": "You can also join the founding cohort",
+      "start_ms": "473039",
+      "end_ms": "478479",
+      "start_time_text": "7:53"
+    },
+    {
+      "text": "list there, and you'll hear first when",
+      "start_ms": "475199",
+      "end_ms": "482639",
+      "start_time_text": "7:55"
+    },
+    {
+      "text": "it opens, fix the system, fix the",
+      "start_ms": "478479",
+      "end_ms": "485639",
+      "start_time_text": "7:58"
+    },
+    {
+      "text": "income.",
+      "start_ms": "482639",
+      "end_ms": "485639",
+      "start_time_text": "8:02"
+    }
+  ],
+  "source": "https://www.youtube.com/watch?v=Wn-reteAMek"
+}

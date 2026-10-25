@@ -1,0 +1,11 @@
+1
+00:00:00,192 --> 00:00:01,872
+I'm Major Dream Williams.
+
+2
+00:00:02,152 --> 00:00:03,832
+This is MAIM Academy.
+
+3
+00:00:04,552 --> 00:00:06,272
+We build things that run without you.
