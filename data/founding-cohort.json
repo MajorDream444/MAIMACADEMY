@@ -1,6 +1,6 @@
 {
   "version": "2026-10-21",
-  "status": "approved_target_pending_readiness",
+  "status": "reservations_open",
   "enrollment_open": false,
   "timezone": "Asia/Makassar",
   "price_usd": 249,
@@ -19,5 +19,7 @@
   "private_session_minutes": 45,
   "private_session_window_days": 90,
   "replay_publication_target_hours": 48,
-  "cohort_replays_require_vault_pass": false
+  "cohort_replays_require_vault_pass": false,
+  "reservations_open": true,
+  "payment_opens": "2026-11-11"
 }
