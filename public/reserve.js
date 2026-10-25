@@ -14,8 +14,12 @@ form.addEventListener('submit', async (event) => {
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+    if (data.waitlisted !== true) {
+      status.textContent = 'Your guide signup was received, but your cohort interest-list reservation was not confirmed. Please try again or contact contact@majoraimindset.com.';
+      return;
+    }
     form.reset();
-    status.textContent = "You're on the list. On 11 November you'll get your payment link first. Check your inbox for the free guide.";
+    status.textContent = "You're on the founding cohort interest list. Payment invitations are planned for 4 November, subject to launch approval; the proposed cohort start is 11 November. Joining the list does not guarantee one of the 20 paid places.";
   } catch (err) {
     status.textContent = `${err.message} You can also email contact@majoraimindset.com.`;
   } finally { button.disabled = false; }
