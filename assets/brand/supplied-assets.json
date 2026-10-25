@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-23",
+  "updated": "2026-10-25",
   "verified_originals": {
     "note": "Byte-identical to the v0.4 approved-assets.json hashes. Restored from P1-Approved-Assets-and-Builder.zip on 23 Oct 2026 and checked with the publishing skill's own manifest. These supersede the re-exports for all use.",
     "files": [
@@ -51,5 +51,15 @@
     "Never redraw, trace, reinterpret or regenerate the mark.",
     "Never synthesize a replacement author likeness.",
     "Scale proportionately only."
-  ]
+  ],
+  "academy_badge": {
+    "note": "Supplied by Major on 25 Oct 2026: \"lets use this for the academy\". The MAIM Academy badge (MD mark, woven palm crown, open book, ACADEMY). Use as supplied; never redraw. Its green ring samples near #015D1B, which is not a token (jamaicanLegacyGreen is #1F7A3A); flagged, not altered.",
+    "files": [
+      {
+        "path": "assets/brand/MD-Academy-Badge-supplied.webp",
+        "sha256": "b8863fab40dfbc5ec9b34f225d75de21a048a218f1b8f5f9487afced4a2eb43f",
+        "bytes": 291430
+      }
+    ]
+  }
 }

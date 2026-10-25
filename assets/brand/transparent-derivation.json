@@ -3,7 +3,8 @@
   "why": "Flat backgrounds prevented the marks being placed on anything but black.",
   "method": {
     "MD-Circle-Transparent.png": "Circular alpha mask on the seal's own outer ring, supersampled 4x. Only pixels OUTSIDE the ring become transparent; the seal's black interior field is preserved, so the mark itself is unaltered.",
-    "MD-Hat-Transparent.png": "Luminance key of the flat ground with a soft ramp, then un-premultiplied: partially transparent edge pixels have their colour restored to the mark's own gold, so no dark halo survives on light grounds."
+    "MD-Hat-Transparent.png": "Luminance key of the flat ground with a soft ramp, then un-premultiplied: partially transparent edge pixels have their colour restored to the mark's own gold, so no dark halo survives on light grounds.",
+    "MD-Academy-Badge-Transparent.png": "25 Oct 2026. Circular alpha mask on the badge's own outer gold ring, supersampled 4x, then cropped to the ring. Only pixels outside the ring become transparent; the badge is unaltered."
   },
   "guarantee": "No pixel of either mark was redrawn, traced, reinterpreted or regenerated. The originals are unmodified and remain the approved assets; these are derivations for placement on non-black grounds.",
   "files": [
@@ -26,6 +27,11 @@
       "file": "MD-Hat-Transparent.png",
       "sha256": "0a5f9467578ebbd57c9afe9d2827dce866af8eb1d9dbd47196229684dca96327",
       "bytes": 121467
+    },
+    {
+      "file": "MD-Academy-Badge-Transparent.png",
+      "sha256": "f380b4ddfe2eca22fc6b11404817adc19d47290a06324376eb152c8bc038dc3e",
+      "bytes": 1875219
     }
   ]
 }

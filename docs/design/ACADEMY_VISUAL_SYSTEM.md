@@ -63,8 +63,26 @@ systemLime, pureWhite — unless Major says otherwise.
 |---|---|---|
 | Accent | rotates (orange → green → blue) | **jamaicanLegacyGreen, always** |
 | Motif | crown seal, ABC letters | **the problem made physical** — the ceiling beam, the line that hits a limit |
-| Mark | crown seal | MD mark + MAIM ACADEMY wordmark in the display face, **straight on the canvas** |
+| Mark | crown seal | **the Academy badge** (`assets/brand/MD-Academy-Badge-Transparent.png`), straight on the canvas. Small sizes can still use the MD mark + MAIM ACADEMY wordmark |
 | Frame | morning robe | desk, notebook, something built |
+
+## The Academy badge (Major, 25 Oct)
+
+Major chose this as the Academy's mark: the MD mark over the woven palm crown,
+an open book, ACADEMY. Supplied file `assets/brand/MD-Academy-Badge-supplied.webp`.
+Use `MD-Academy-Badge-Transparent.png` for placement, and
+`build/avatars/youtube-avatar-academy-800.png` for the channel avatar.
+
+- Use it as supplied. Never redraw, recolour, retouch or regenerate it. The crown
+  rule applies: no distortion, nothing gimmicky.
+- Its green ring (about `#015D1B`) is an artwork treatment, approved as is.
+  **`#1F7A3A` stays the canonical Jamaica Green** for every new design element
+  (Major, 25 Oct).
+- **Where it is used:** the Academy backdrops (name lockup, 104 px) and the
+  episode thumbnails (top left, beside the MAIM ACADEMY wordmark). Major AI
+  Mindset keeps its own emblem.
+- It is detailed. Below about 64 px it turns to mush; there, use the MD mark
+  with the wordmark.
 
 ## Craft rules (Major, 25 Oct)
 
@@ -101,6 +119,24 @@ allowed here, but every material starts from a token. No new base colours.
 Checks before shipping: the portrait's pixels match the cutout (the build
 script prints this), the tri-bar samples at the exact hexes, and the line
 reads Jamaica Green at 320×180.
+
+## Thumbnails: shared brand, individual story (Major, 25 Oct)
+
+The badge, token colours and type give the series its continuity. Each
+episode earns its own scene and visual idea. **Start with the story's defining
+moment, then build the image**, not the other way round. Ceiling's
+beam-and-line diagram belongs to Ceiling. Bottleneck is the dinner table:
+"18 GUESTS. NO WINE.", Major's own finished design
+(`assets/thumbnails/bottleneck-thumbnail-supplied.webp`).
+
+- **Thumbnails are clean and crisp.** Use the best, sharpest photo of Major.
+  A soft video frame is not good enough for a thumbnail.
+- **A design Major supplies is used as he made it.** Its photo is Major
+  himself. Don't relabel it, re-cut it or rebuild it. Finishing is limited to
+  the exact badge file and the tri-bar.
+- No heavy black blocks behind the headline. Let the scene carry it.
+- The tri-bar stays flat and exact. When the design has no room for it under
+  the headline, it sits after the wordmark.
 
 ## Sources of truth
 
