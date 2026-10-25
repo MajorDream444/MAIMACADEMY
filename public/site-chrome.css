@@ -70,6 +70,22 @@
 /* Supplied Academy crest, unchanged; finite animation is progressively enhanced. */
 .home-hero .academy-motion{border:0;border-radius:0;box-shadow:none;overflow:visible;text-align:center}
 .academy-crest{display:block;width:100%;max-width:400px;height:auto;margin:0 auto}
+.crest-space{width:100%;max-width:400px;margin:0 auto;padding:12px 0;overflow:hidden;perspective:900px}
+.crest-tilt{transition:transform .18s ease-out;transform-style:preserve-3d}
+.crest-medallion{position:relative;transform-style:preserve-3d}
+.crest-piece{position:absolute;inset:0;background:url('/assets/academy-learning-crest.png') center/100% 100% no-repeat;opacity:0;pointer-events:none;backface-visibility:hidden}
+.crest-piece-0{clip-path:polygon(50% 50%,0 0,50% 0)}
+.crest-piece-1{clip-path:polygon(50% 50%,50% 0,100% 0)}
+.crest-piece-2{clip-path:polygon(50% 50%,100% 0,100% 50%)}
+.crest-piece-3{clip-path:polygon(50% 50%,100% 50%,100% 100%)}
+.crest-piece-4{clip-path:polygon(50% 50%,100% 100%,50% 100%)}
+.crest-piece-5{clip-path:polygon(50% 50%,50% 100%,0 100%)}
+.crest-piece-6{clip-path:polygon(50% 50%,0 100%,0 50%)}
+.crest-piece-7{clip-path:polygon(50% 50%,0 50%,0 0)}
+/* Light treatment explicitly requested by Major; source pixels remain intact. */
+.crest-sheen{position:absolute;inset:4%;border-radius:50%;overflow:hidden;pointer-events:none;mix-blend-mode:screen}
+.crest-light{position:absolute;inset:0;opacity:0;background:linear-gradient(110deg,transparent 30%,#D8AF55 46%,#F7F4EA 50%,#D8AF55 54%,transparent 70%)}
+@media(prefers-reduced-motion:reduce){.crest-tilt{transition:none}.crest-piece,.crest-sheen{display:none}}
 .academy-motion figcaption{padding-top:20px}
 .academy-triad{display:flex;width:96px;height:4px;margin:0 auto 20px}
 .academy-triad i{flex:1;background:#1F7A3A;transform-origin:left}
