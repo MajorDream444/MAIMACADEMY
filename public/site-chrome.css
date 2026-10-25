@@ -2,9 +2,9 @@
    footer loop and the founding-cohort card. Token colours only. */
 :root{--mc-black:#050505;--mc-charcoal:#111111;--mc-surface:#18181B;--mc-border:#27272A;--mc-gold:#D8AF55;--mc-white:#F7F4EA;--mc-smoke:#A8A8A8;--mc-green:#1F7A3A}
 .mc-bar{position:sticky;top:0;z-index:1000;background:var(--mc-charcoal);border-bottom:1px solid var(--mc-border);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
-.mc-inner{max-width:1200px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;gap:24px}
+.mc-inner{max-width:1200px;margin:0 auto;padding:0 20px;height:80px;display:flex;align-items:center;gap:24px}
 .mc-brand{display:flex;align-items:center;gap:10px;color:var(--mc-white);text-decoration:none;font-weight:700;font-size:16px;letter-spacing:.04em;white-space:nowrap}
-.mc-brand img{width:36px;height:36px;border-radius:50%}
+.mc-brand img{width:64px;height:64px;object-fit:contain}
 .mc-links{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-top:0;margin-bottom:0}
 .mc-links a{display:block;padding:10px 12px;border-radius:8px;color:var(--mc-white);text-decoration:none;font-size:16px;font-weight:500;line-height:1.2}
 .mc-links a:hover,.mc-links a:focus-visible{background:var(--mc-surface);color:var(--mc-gold)}
@@ -15,7 +15,7 @@
 .mc-menu{display:none;margin-left:auto;min-width:48px;min-height:48px;border:1px solid var(--mc-border);border-radius:8px;background:transparent;color:var(--mc-white);font-size:16px;font-weight:600;cursor:pointer}
 @media (max-width:1060px){
  .mc-menu{display:block}
- .mc-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--mc-charcoal);border-bottom:1px solid var(--mc-border);padding:8px 12px 16px}
+ .mc-links{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;gap:0;background:var(--mc-charcoal);border-bottom:1px solid var(--mc-border);padding:8px 12px 16px}
  .mc-links.mc-open{display:flex}
  .mc-links a{padding:14px 12px;font-size:18px}
  .mc-bar .mc-cta-desk{display:none}
@@ -67,3 +67,19 @@
 .home-hero{max-width:none;display:grid;gap:40px;align-items:center}
 .home-hero .mc-teaser{position:relative;right:auto;top:auto;width:100%;max-width:560px;margin:0}
 @media (min-width:1061px){.home-hero{grid-template-columns:minmax(0,1fr) minmax(360px,460px)}}
+/* Supplied Academy crest, unchanged; finite animation is progressively enhanced. */
+.home-hero .academy-motion{border:0;border-radius:0;box-shadow:none;overflow:visible;text-align:center}
+.academy-crest{display:block;width:100%;max-width:400px;height:auto;margin:0 auto}
+.academy-motion figcaption{padding-top:20px}
+.academy-triad{display:flex;width:96px;height:4px;margin:0 auto 20px}
+.academy-triad i{flex:1;background:#1F7A3A;transform-origin:left}
+.academy-triad i:nth-child(2){background:#D8AF55}
+.academy-triad i:nth-child(3){background:#006BB6}
+.academy-motion-date{font-size:22px;font-weight:700;color:var(--mc-white);margin:12px 0}
+.academy-motion-controls{display:flex;justify-content:center;gap:12px;margin-top:20px}
+.academy-motion-controls[hidden]{display:none}
+.academy-motion-controls button{font:inherit;font-size:14px;min-height:44px;padding:8px 12px;color:var(--mc-white);background:transparent;border:1px solid var(--mc-border);border-radius:6px;cursor:pointer}
+.academy-motion-controls button:focus-visible{outline:3px solid var(--mc-gold);outline-offset:3px}
+.academy-motion-controls button:disabled{color:var(--mc-smoke);cursor:default}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:380px){.mc-inner{padding:0 12px;gap:8px}.mc-brand{font-size:14px;gap:6px}.mc-academy-brand small{font-size:10px}}

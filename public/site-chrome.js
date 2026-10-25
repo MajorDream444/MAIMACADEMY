@@ -15,6 +15,49 @@
   } else if (teaser) {
     var go = teaser.play && teaser.play(); if (go && go.catch) go.catch(function () {});
   }
+  // Finite, optional crest reveal. Default HTML remains fully visible without JS.
+  var stage = document.querySelector('[data-academy-motion]');
+  if (stage && stage.animate) {
+    var preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var controls = stage.querySelector('.academy-motion-controls');
+    var pause = stage.querySelector('[data-motion-pause]');
+    var replay = stage.querySelector('[data-motion-replay]');
+    var status = stage.querySelector('[data-motion-status]');
+    var animations = [], userPaused = false, visible = true;
+    function sync() {
+      animations.forEach(function (a) {
+        if (a.playState !== 'finished') {
+          if (userPaused || !visible || document.hidden) a.pause(); else a.play();
+        }
+      });
+      pause.textContent = userPaused ? 'Resume graphic' : 'Pause graphic';
+    }
+    function start() {
+      animations.forEach(function (a) { a.cancel(); });
+      animations = []; userPaused = false;
+      controls.hidden = preference.matches;
+      if (preference.matches) return;
+      pause.disabled = false; status.textContent = '';
+      animations.push(stage.querySelector('.academy-crest').animate([
+        { opacity: 0, transform: 'scale(.94)' },
+        { opacity: 1, transform: 'scale(1)' }
+      ], { duration: 1800, easing: 'cubic-bezier(.2,.7,.2,1)' }));
+      stage.querySelectorAll('.academy-triad i').forEach(function (bar, index) {
+        animations.push(bar.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+          { duration: 700, delay: 600 + index * 220, fill: 'backwards', easing: 'ease-out' }));
+      });
+      animations[0].onfinish = function () { pause.disabled = true; status.textContent = 'Graphic complete.'; };
+      sync();
+    }
+    pause.addEventListener('click', function () { userPaused = !userPaused; sync(); });
+    replay.addEventListener('click', start);
+    preference.addEventListener('change', start);
+    document.addEventListener('visibilitychange', sync);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (entries) {
+      visible = entries[0].isIntersecting; sync();
+    }).observe(stage);
+    start();
+  }
   var card = document.getElementById('mc-cohort');
   if (!card) return;
   var KEY = 'maim-cohort-dismissed';
