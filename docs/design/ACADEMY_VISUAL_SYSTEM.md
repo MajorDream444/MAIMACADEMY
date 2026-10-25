@@ -95,8 +95,8 @@ systemLime, pureWhite — unless Major says otherwise.
 
 ## Open conflicts — flagged, not resolved
 
-- MAIM Black: DESIGN.md says `#030304`; tokens.json, Remotion and MAIM 04 use
-  `#050505`. Academy uses `#050505` until Major decides.
+- ~~MAIM Black conflict~~ **Settled 25 Oct: `#050505`.** `#030304` came in with
+  the Google AI Studio landing-page experiment (5 Jul) and is retired.
 - DESIGN.md-only values: Deep Obsidian `#0A0A0A`, Muted Text `#B8B8B8`.
 - Volume I's tokens are marked PROVISIONAL (`#0A0A0B`, `#F4EDE1`, `#C9A227`,
   `#009B4D`, `#2E6BE6`) and do not match tokens.json. Use tokens.json.
