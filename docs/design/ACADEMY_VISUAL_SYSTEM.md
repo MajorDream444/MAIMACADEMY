@@ -12,9 +12,22 @@ a subset. No replacement shades, no "emerald", no glows or gradients that
 create in-between tones. If a value you need is not in the file, flag it —
 do not approximate.
 
-**The tri-bar stays.** Green → gold → blue under the headline. It is the
-subtle thread that tells a viewer the Academy and the Mindset are one
-ecosystem.
+**The tri-bar is the one common thread.** Green → gold → blue
+(jamaicanLegacyGreen `#1F7A3A` → crownGold `#D8AF55` → championBlue
+`#006BB6`). Major, 25 Oct: it connects *everything* he builds — MAIM Academy,
+Major AI Mindset, the agripreneur work and whatever comes next.
+
+- **Loud vs quiet.** The crown, the hat and the MD mark are in-your-face.
+  The tri-bar is the subtle one: a viewer who connects the dots recognises
+  where the piece belongs. Never make it the hero; never leave it out.
+- **The order and the three hues never change.** The rendering can: flat,
+  metallic, retro, anime, whatever the piece's style is. It always reads
+  as these three tokens in this order.
+- **Open:** a metallic or retro treatment means sheen, grain or gradient on
+  the token hues. That is a treatment rule the tokens don't define yet —
+  flag it and get Major's approval per treatment before shipping one.
+- This is an ecosystem rule, not an Academy one. It belongs in
+  `major-ai-os/DESIGN.md`; recorded here until it lands there.
 
 **Academy differs by emphasis, not by new colours.**
 
