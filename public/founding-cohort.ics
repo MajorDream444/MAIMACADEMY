@@ -5,38 +5,42 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:maim-founding-2026-session-1@majoraimindset.com
-DTSTAMP:20261021T000000Z
-DTSTART:20261111T140000Z
-DTEND:20261111T150000Z
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261118T140000Z
+DTEND:20261118T150000Z
 SUMMARY:MAIM Founding Journey - Session 1
 STATUS:TENTATIVE
-DESCRIPTION:Target schedule pending readiness. Meeting link supplied privately.
+DESCRIPTION:Founding cohort starts 18 November 2026. Meeting link supplied privately to enrolled learners.
 END:VEVENT
 BEGIN:VEVENT
 UID:maim-founding-2026-session-2@majoraimindset.com
-DTSTAMP:20261021T000000Z
-DTSTART:20261118T140000Z
-DTEND:20261118T150000Z
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261125T140000Z
+DTEND:20261125T150000Z
 SUMMARY:MAIM Founding Journey - Session 2
 STATUS:TENTATIVE
-DESCRIPTION:Target schedule pending readiness. Meeting link supplied privately.
+DESCRIPTION:Founding cohort starts 18 November 2026. Meeting link supplied privately to enrolled learners.
 END:VEVENT
 BEGIN:VEVENT
 UID:maim-founding-2026-session-3@majoraimindset.com
-DTSTAMP:20261021T000000Z
-DTSTART:20261125T140000Z
-DTEND:20261125T150000Z
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261202T140000Z
+DTEND:20261202T150000Z
 SUMMARY:MAIM Founding Journey - Session 3
 STATUS:TENTATIVE
-DESCRIPTION:Target schedule pending readiness. Meeting link supplied privately.
+DESCRIPTION:Founding cohort starts 18 November 2026. Meeting link supplied privately to enrolled learners.
 END:VEVENT
 BEGIN:VEVENT
 UID:maim-founding-2026-session-4@majoraimindset.com
-DTSTAMP:20261021T000000Z
-DTSTART:20261202T140000Z
-DTEND:20261202T150000Z
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261209T140000Z
+DTEND:20261209T150000Z
 SUMMARY:MAIM Founding Journey - Session 4
 STATUS:TENTATIVE
-DESCRIPTION:Target schedule pending readiness. Meeting link supplied privately.
+DESCRIPTION:Founding cohort starts 18 November 2026. Meeting link supplied privately to enrolled learners.
 END:VEVENT
 END:VCALENDAR

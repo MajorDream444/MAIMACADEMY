@@ -15,7 +15,7 @@ form.addEventListener('submit', async (event) => {
     const data = await res.json().catch(() => ({}));
     if (!res.ok) throw new Error(data.error || 'Something went wrong.');
     form.reset();
-    status.textContent = "You're on the list. On 11 November you'll get your payment link first. Check your inbox for the free guide.";
+    status.textContent = "You're on the list. On 11 November you'll get your payment link first; the cohort starts 18 November. Check your inbox for the free guide.";
   } catch (err) {
     status.textContent = `${err.message} You can also email contact@majoraimindset.com.`;
   } finally { button.disabled = false; }
