@@ -64,8 +64,9 @@ unless Major says otherwise.
 
 - `major-ai-os/data/design-tokens.json` v2.1 — the colours
 - `major-ai-os/docs/maim-04-youtube-thumbnail-system.md` — thumbnail rules
-  (2-second test, ≤5 headline words, tri-bar, mark on a solid patch, one accent,
-  naming `maim_yt_[topic]_1280x720_v#`)
+  (2-second test, ≤5 headline words, tri-bar, one accent, naming
+  `maim_yt_[topic]_1280x720_v#`). Its "mark on a solid patch" rule is
+  overridden for the Academy: marks sit on a clear background.
 - *Volume I · Media Design System* (Claude Design) — the eight video components
   (Hero Title, Lower Third, ABC Progression, Quote Card, Knowledge Diagram,
   Network Viz, Closing Signature, CTA Card). On-screen graphics are built from
