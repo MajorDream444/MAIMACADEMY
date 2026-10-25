@@ -31,7 +31,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "assets" / "fonts"
-MARK = ROOT / "assets" / "brand" / "MD-Circle-Transparent.png"
+# the approved Academy badge (Major, 25 Oct); 104 px is well above its small-size floor
+MARK = ROOT / "assets" / "brand" / "MD-Academy-Badge-Transparent.png"
 
 # Canonical MAIM design tokens v2.1
 MAIM_BLACK = (5, 5, 5)

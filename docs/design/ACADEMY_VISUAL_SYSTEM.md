@@ -75,9 +75,12 @@ Use `MD-Academy-Badge-Transparent.png` for placement, and
 
 - Use it as supplied. Never redraw, recolour, retouch or regenerate it. The crown
   rule applies: no distortion, nothing gimmicky.
-- **Flagged:** its green ring samples near `#015D1B`, not jamaicanLegacyGreen
-  `#1F7A3A`. It stays as supplied; whether to re-export it on the token is
-  Major's call.
+- Its green ring (about `#015D1B`) is an artwork treatment, approved as is.
+  **`#1F7A3A` stays the canonical Jamaica Green** for every new design element
+  (Major, 25 Oct).
+- **Where it is used:** the Academy backdrops (name lockup, 104 px) and the
+  episode thumbnails (top left, beside the MAIM ACADEMY wordmark). Major AI
+  Mindset keeps its own emblem.
 - It is detailed. Below about 64 px it turns to mush; there, use the MD mark
   with the wordmark.
 
