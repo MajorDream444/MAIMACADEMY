@@ -120,6 +120,20 @@ Checks before shipping: the portrait's pixels match the cutout (the build
 script prints this), the tri-bar samples at the exact hexes, and the line
 reads Jamaica Green at 320×180.
 
+## Thumbnails: shared brand, individual story (Major, 25 Oct)
+
+The badge, token colours, type and the material finish give the series its
+continuity. Each episode earns its own scene and visual idea. **Start with the
+story's defining moment, then build the image**, not the other way round.
+Ceiling's beam-and-line diagram belongs to Ceiling; Bottleneck is the dinner
+table ("18 GUESTS. NO WINE.", `scripts/build_thumbnail_bottleneck.py`).
+
+- An illustrated setting is fine as a backdrop. Any generated figure in it is
+  cut out and filled from the scene, so no generated likeness ships.
+- Major is always his own video frame, composited with untouched pixels. The
+  badge is always the approved file.
+- The tri-bar stays flat and exact, even when the episode doesn't use the panel.
+
 ## Sources of truth
 
 - `major-ai-os/data/design-tokens.json` v2.1 — the colours
