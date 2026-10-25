@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25",
+  "version": "2026-10-25-launch-revision",
   "status": "reservations_open",
   "enrollment_open": false,
   "timezone": "Asia/Makassar",
@@ -22,6 +22,8 @@
   "cohort_replays_require_vault_pass": false,
   "reservations_open": true,
   "payment_opens": "2026-11-11",
+  "payment_invitations_require_release_approval": true,
   "cohort_starts": "2026-11-18",
-  "schedule_decision": "Founder decision 25 Oct 2026: payment opens 11 Nov (subject to release approval); cohort starts 18 Nov. Supersedes the 4 Nov payment / 11 Nov start plan."
+  "followup_session_dates_status": "weekly continuation targets pending host review",
+  "finish_early_policy": "Use time for marketing and QA; do not activate early."
 }

@@ -18,7 +18,7 @@ earlier plan of a 4 November payment date, an 11 November cohort start and an
 The four live Wednesdays move with the start date, at the same time:
 **18 and 25 November, 2 and 9 December 2026, 22:00 Bali / 14:00 UTC**
 (New York and Jamaica 09:00, Puerto Rico 10:00, Los Angeles 06:00, Senegal
-14:00, South Africa 16:00). Machine-readable: `MAIMACADEMY/data/founding-cohort.json`.
+14:00, South Africa 16:00). Machine-readable: `MAIMACADEMY/data/founding-cohort.json`. Codex records the later three as "weekly continuation targets pending host review"; see also `MAIMACADEMY/docs/operations/LAUNCH_SCHEDULE_DECISION_2026-10-25.md`.
 
 The founder message set the start date and the payment date. It did not list
 the later three sessions. The calendar above keeps the original weekly rhythm,

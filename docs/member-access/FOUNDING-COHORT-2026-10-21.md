@@ -1,9 +1,14 @@
 # Founding cohort operating decisions — 21 October 2026
 
+**Schedule superseded 25 October:** see
+`../operations/LAUNCH_SCHEDULE_DECISION_2026-10-25.md`. Payments open November 11
+only after readiness approval; official cohort start November 18. Preserve the
+approved operating policies below. Former November 11 start is historical.
+
 Owner approved the proposed Wednesday schedule and operating direction in the Academy conversation. This supersedes unanswered interview questions in the 20 October decision sheet. Target dates remain contingent on pilot readiness; enrollment remains closed. This is an implementation record, not evidence of tested services or final legal terms.
 
 ## Schedule and offer
-US$249 once, existing practitioners/business owners, maximum 20 learners. Four 60-minute implementation sessions: 18 and 25 November and 2 and 9 December 2026 (founder decision 25 Oct 2026: payment opens 11 November, cohort starts 18 November), Wednesdays at 22:00 Asia/Makassar (14:00 UTC). All four dates: Puerto Rico 10:00; New York and Jamaica 09:00; Los Angeles 06:00; Senegal 14:00; South Africa 16:00.
+US$249 once, existing practitioners/business owners, maximum 20 learners. Four 60-minute implementation sessions: 11, 18, 25 November and 2 December 2026, Wednesdays at 22:00 Asia/Makassar (14:00 UTC). All four dates: Puerto Rico 10:00; New York and Jamaica 09:00; Los Angeles 06:00; Senegal 14:00; South Africa 16:00.
 
 Calendar: /founding-cohort.ics. Tentative events contain no private meeting links and send no invitations. Publish confirmed dates before purchase. Reserve private-session capacity for all 20 learners. Do not allow early enrollment to make any scheduled cohort session fall outside a learner's support entitlement: implement fixed-cohort group eligibility rather than blindly expiring it 30 days after an early purchase. The private-session window remains 90 days from enrollment.
 
