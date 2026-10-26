@@ -1,0 +1,21 @@
+{
+  "files": [
+    "maim-academy-master-NORMAL-3840x2160.png",
+    "maim-academy-master-MIRRORED-3840x2160.png",
+    "maim-academy-master-NORMAL-1920x1080.png",
+    "maim-academy-master-MIRRORED-1920x1080.png"
+  ],
+  "native_size": [
+    3840,
+    2160
+  ],
+  "empty_title_panel": true,
+  "mirror_roundtrip": "PASS",
+  "tri_bar_tokens": "PASS",
+  "panel_1080": {
+    "left": 90,
+    "top": 838,
+    "width": 394,
+    "height": 104
+  }
+}
