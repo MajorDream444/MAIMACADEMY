@@ -1,3 +1,9 @@
+> 27 October reconciliation: this broader/historical packet is **not** the
+> BPT-save/reservation-provenance run. Use the narrowed packet in Major-AI-OS
+> `docs/qa/MAIM_FUNNEL_TEST_PACKET_2026-10-27.md` and its immutable code pins.
+> No external run is approved. Simulation is not human-inbox receipt.
+> Academy sign-in/concurrency/Stripe/refund/revocation remain a separate run.
+
 # Academy external QA test packet — approval required
 
 Status: **prepared, not executed**. Local tests passing is not permission to run
