@@ -52,8 +52,8 @@ Only explicit, reviewed QA UUID registrations belong in `academy_testers`.
    callback `/api/academy-auth/callback`, and that its current sender can deliver
    to the two QA addresses. Do not modify shared/global Auth settings. If it does
    not support this callback/sender, return for a separately reviewed solution.
-4. Supply a strong branch auth secret and publishable (not service-role) Auth key.
-   Set exact Preview origin from the actual branch alias. Enable member/email
+4. The strong branch auth secret, existing modern publishable Auth key and exact
+   verified branch origin are now configured securely. Enable member/email
    switches only for the controlled QA window after those checks.
 5. Separately approve exact Academy purchase terms/privacy version and test
    consent notice; configure a restricted TEST key, the $249 TEST price and an

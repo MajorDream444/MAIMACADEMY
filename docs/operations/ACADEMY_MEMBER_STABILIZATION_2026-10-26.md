@@ -19,9 +19,9 @@
   signed event processing, refund/dispute holds/revocation, receipt outbox and
   booking eligibility implemented behind disabled controls.
 - Independent review: migration PASS for additive application; final bounded code
-  review found no P0/P1. P2 worker-pool availability finding fixed by releasing
+  review and final recovery-gate follow-up found no P0/P1. P2 worker-pool availability finding fixed by releasing
   webhook connection before receipt delivery.
-- Local build, HTML lint, JavaScript syntax and 44 tests pass. Embedded PostgreSQL
+- Local build, HTML lint, JavaScript syntax and 45 tests pass. Embedded PostgreSQL
   exercises the actual migration/roles/RLS, two synthetic UUID owners, denied
   cross-user writes, lesson access, hash-session revoke, consent, seat21 rejection,
   payment replay/refund, private booking and double-consumption rejection.
@@ -59,8 +59,8 @@
    login password was provisioned through logged SQL. Never use a shared admin
    connection to bypass this step.
 2. Privately reviewed existing confirmed Auth UUIDs for the two authorized adults,
-   explicit registration in academy_testers, the strong `ACADEMY_AUTH_SECRET`,
-   `ACADEMY_SUPABASE_PUBLISHABLE_KEY` and exact actual `ACADEMY_ORIGIN`.
+   explicit registration in academy_testers, the existing Auth callback/sender compatibility. The branch auth secret, publishable
+   key and exact actual Preview origin have now been configured securely.
 3. Verify the current Auth callback allowlist/sender already supports this Preview
    without changing global settings; if not, a separate reviewed solution is
    needed. Do not silently switch SMTP, templates, redirects or auto-signup.
@@ -83,3 +83,19 @@ Rollback starts by keeping all Preview controls disabled, withdrawing the candid
 and revoking dedicated TEST login access. Preserve audit/consent/payment evidence;
 schema drop/data deletion requires explicit reviewed cleanup. No broad email-based
 user deletion, shared-project reset or automatic destructive rollback.
+
+## Protected Preview configuration receipt
+
+The branch has the private two-adult allowlist, six disabled controls, UUID/schema
+binding, existing modern publishable key, newly generated sensitive auth secret
+and verified branch origin. No DB login, Stripe or mail-sending credential has
+been supplied. Branch configuration is not runtime account-access proof.
+
+Closing new checkout does not disable signed-event/refund or receipt recovery
+configuration; those require their own valid TEST credentials and member runtime.
+No payment-safety control is inferred from an approval or UI state alone.
+
+Founder reports removal of the Vercel marketplace attachment. Fresh main-site
+environment metadata still lists Supabase/Postgres variable names; their presence
+does not prove an attachment or working connection. No inherited values were
+read, copied or removed. This candidate uses explicit TEST configuration only.
