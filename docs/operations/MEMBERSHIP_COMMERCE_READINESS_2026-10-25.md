@@ -44,6 +44,13 @@ Direct account inspection: Resend has Founding Cohort Waitlist and Start Here (5
 
 **MAIM Follow-up Queue:** 11 fields. Enrollment ID primary; Email (email), Name, Consent At, Source, Stage (number), Next Send At, Status, Last Sent At, Unsubscribe Token, Last Error. Other fields are singleLineText. Description limits it to explicitly opted-in assessment follow-up and Blueprint-purchase suppression. An Enrollment ID/token field does not implement cohort enrollment or unsubscribe handling. Do not repurpose its customer/offer semantics or trigger unrelated campaigns.
 
+Correction recorded 27 October 2026: Airtable table
+`tbl1pPhCa6bx3ST3E` is **MAIM Follow-up Queue**, not Contacts. A bounded search
+found no Academy configuration containing that ID. Generic environment names
+such as `AIRTABLE_CONTACTS_TABLE_ID` do not override the authoritative mapping
+and must never be assigned this table ID. The machine-readable, credential-free
+record is `data/integration-authority.json`; Academy runtime access remains off.
+
 Integration proposal (not applied): choose a cohort-scoped durable reservation/consent ledger in canonical MAIM storage; record unique reservation event, source, consent/version/time, provider membership outcome and retry/error state. Design the intentional Airtable projection and idempotency without mixing Blueprint orders or assessment follow-ups. Never export subscriber PII to public Git.
 
 ## 3. Supabase member engine and permissions

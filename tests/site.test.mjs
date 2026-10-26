@@ -24,3 +24,29 @@ test('public copy keeps payment, enrollment and replay delivery conditional on r
   assert.match(await readFile('dist/reserve.html','utf8'),/does not guarantee a paid place[\s\S]*require release approval/);
   assert.match(await readFile('dist/sign-in.html','utf8'),/not yet an operational member service/);
 });
+
+test('authoritative Airtable mapping cannot be mistaken for Academy Contacts',async()=>{
+  const authority=JSON.parse(await readFile('data/integration-authority.json','utf8'));
+  const table=authority.airtable.tables.find(item=>item.id==='tbl1pPhCa6bx3ST3E');
+  assert.equal(table.canonical_name,'MAIM Follow-up Queue');
+  assert.equal(table.academy_runtime_enabled,false);
+  assert.ok(table.not_names.includes('Contacts'));
+  assert.match(table.purpose,/Existing assessment follow-up queue/);
+  assert.match(table.purpose,/not Academy contacts, reservations, enrolments or paid orders/);
+});
+
+test('external QA packet has one bounded two-session plan and keeps capacity fixtures local',async()=>{
+  const packet=await readFile('docs/operations/EXTERNAL-QA-TEST-PACKET-2026-10-27.md','utf8');
+  assert.match(packet,/Exactly \*\*two\*\* Stripe TEST Checkout Sessions/);
+  assert.match(packet,/`SESSION-PAID` for QA-A and `SESSION-EXPIRES` for QA-B/);
+  assert.match(packet,/Exactly five unique Stripe TEST webhook events/);
+  assert.match(packet,/20\/21 boundary runs \*\*locally only\*\*/);
+  assert.match(packet,/Expected removable capacity-fixture count in shared Preview: \*\*zero\*\*/);
+  assert.match(packet,/Resend provider acceptance means only/);
+  assert.match(packet,/Actual delivery requires a separate timestamped observation/);
+  assert.match(packet,/`RESEND_SEGMENT_ID`, `RESEND_COHORT_SEGMENT_ID`/);
+  assert.match(packet,/BPT run count was zero/);
+  assert.match(packet,/Stop immediately/);
+  assert.doesNotMatch(packet,/Only QA-A may proceed to one Stripe TEST Checkout Session/);
+  assert.doesNotMatch(packet,/Twenty synthetic TEST seat claims total/);
+});

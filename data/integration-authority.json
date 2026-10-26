@@ -1,0 +1,14 @@
+{
+  "version": "2026-10-27",
+  "airtable": {
+    "tables": [
+      {
+        "id": "tbl1pPhCa6bx3ST3E",
+        "canonical_name": "MAIM Follow-up Queue",
+        "not_names": ["Contacts"],
+        "academy_runtime_enabled": false,
+        "purpose": "Existing assessment follow-up queue; not Academy contacts, reservations, enrolments or paid orders."
+      }
+    ]
+  }
+}
