@@ -5,7 +5,10 @@
   "canonical_project_ref": "njpdlomvyalxrkluaige",
   "canonical_project_url": "https://njpdlomvyalxrkluaige.supabase.co",
   "decision": "https://github.com/MajorDream444/Major-AI-OS/pull/44",
-  "runtime_status": "not_switched",
-  "schema_status": "requires_application_review",
-  "isolation": "Explicit product/client access scopes and restricted server credentials; no implicit cross-product access."
+  "runtime_status": "test_runtime_credentials_pending",
+  "schema_status": "academy_test_migration_applied_after_independent_review",
+  "isolation": "Explicit product/client access scopes and restricted server credentials; no implicit cross-product access.",
+  "test_schema": "academy_test",
+  "test_migration": "20261026024608_academy_uuid_preview",
+  "identity_model": "supabase-auth-uuid"
 }

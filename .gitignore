@@ -4,4 +4,4 @@ dist/
 .playwright-cli/
 output/
 .env*
-__pycache__/
+supabase/.temp/

@@ -1,13 +1,15 @@
-import {configured,database,sessionFor,secure,sameOrigin,bodyFor} from '../lib/member-runtime.js';
+import {configured,withMemberResponse,sessionFor,secure,sameOrigin,bodyFor} from '../lib/member-runtime.js';
+import {readFile} from 'node:fs/promises';
 import {supportWindows} from '../lib/advisory-policy.js';
 import {canAccess,validateProgress} from '../lib/access-policy.js';
 export default async function handler(req,res){secure(res);if(!configured())return res.status(503).json({error:'The member room is being prepared.'});try{
-const session=await sessionFor(req);if(!session)return res.status(401).json({error:'Please sign in.'});const uid=session.user.id;const db=database();const {rows:grants}=await db.query('select user_id,resource,status,starts_at,expires_at from academy_grants where user_id=$1',[uid]);const allowed=canAccess(grants,uid,'journey');
+const session=await sessionFor(req);if(!session)return res.status(401).json({error:'Please sign in.'});const uid=session.user.id;return await withMemberResponse(uid,res,async (db,res)=>{const {rows:grants}=await db.query('select user_id,resource,status,starts_at,expires_at from academy_grants where user_id=$1',[uid]);const allowed=canAccess(grants,uid,'journey');
 if(req.method==='GET'){
 const action=req.query?.action||'dashboard';if(action==='dashboard'){const progress=allowed?(await db.query('select day,status,reflection,updated_at from academy_progress where user_id=$1 order by day',[uid])).rows:[];return res.status(200).json({journey:allowed,vault:canAccess(grants,uid,'vault'),grants,progress,support:grants.filter(g=>g.resource==='journey'&&g.status==='active').map(g=>supportWindows(g.starts_at))});}
+if(action==='calendar'){if(!allowed)return res.status(403).json({error:'Journey access required.'});const cohort=JSON.parse(await readFile(new URL('../data/founding-cohort.json',import.meta.url),'utf8'));return res.status(200).json({sessions:cohort.sessions,timezone:cohort.timezone,privateMeetingLinksConfigured:false});}
 if(action==='export'){const {rows}=await db.query('select day,status,reflection,updated_at from academy_progress where user_id=$1 order by day',[uid]);res.setHeader('Content-Disposition','attachment; filename="my-major-moves.json"');return res.status(200).json({progress:rows});}
 if(action==='lesson'){if(!allowed)return res.status(403).json({error:'Journey access required.'});const day=Number(req.query.day);if(!Number.isInteger(day)||day<1||day>30)return res.status(400).json({error:'Invalid lesson.'});const {rows}=await db.query('select day,title,body,version from academy_lessons where day=$1 and published=true',[day]);return rows[0]?res.status(200).json(rows[0]):res.status(404).json({error:'This lesson is still being prepared.'});}
 return res.status(404).json({error:'Not found.'});}
 if(req.method!=='POST'){res.setHeader('Allow','GET, POST');return res.status(405).end();}if(!sameOrigin(req))return res.status(403).json({error:'Origin rejected.'});if(!allowed)return res.status(403).json({error:'Journey access required.'});let progress;try{progress=validateProgress(await bodyFor(req));}catch{return res.status(400).json({error:'Invalid progress. Reflections must be at most 4000 characters.'});}
 await db.query('insert into academy_progress(user_id,day,status,reflection) values($1,$2,$3,$4) on conflict(user_id,day) do update set status=excluded.status,reflection=excluded.reflection,updated_at=now()',[uid,progress.day,progress.status,progress.reflection]);return res.status(200).json({saved:true});
-}catch{return res.status(503).json({error:'Your learning room is temporarily unavailable.'});}}
+});}catch{return res.status(503).json({error:'Your learning room is temporarily unavailable.'});}}
