@@ -42,10 +42,9 @@ def enhanced_field(d, side, cy):
                 d.line([pts[j],pts[j+1]],fill=col+(round(alpha*55),),width=width+5)
             d.line([pts[j],pts[j+1]],fill=col+(min(210,round(alpha*255)),),width=width)
 
-def main():
-    OUT.mkdir(parents=True,exist_ok=True)
+def render(episode=('','')):
     original.draw_field = enhanced_field
-    img = original.build(False,False,('','')).convert('RGB')
+    img = original.build(False,False,episode).convert('RGB')
     # Protect original identity/type pixel regions. Never use generated marks.
     source = Image.open(ROOT/'build/backdrop/maim-academy-backdrop-1920x1080.png').convert('RGB')
     protected = [(0,0,1920,90),(1430,790,1880,976),(0,980,1920,1080)]
@@ -64,18 +63,34 @@ def main():
     ImageDraw.Draw(mask).rectangle((570,96,1349,769),fill=255)
     bloom.putalpha(ImageChops.multiply(bloom.getchannel('A'),mask))
     img = Image.alpha_composite(img.convert('RGBA'),bloom).convert('RGB')
-    normal = OUT/'maim-academy-backdrop-enhanced-NORMAL-1920x1080.png'
-    mirror = OUT/'maim-academy-backdrop-enhanced-MIRRORED-1920x1080.png'
-    img.save(normal)
-    flipped = img.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
-    flipped.save(mirror)
+    verify(img, source)
+    return img
+
+def verify(img, source):
+    protected = [(0,0,1920,90),(1430,790,1880,976),(0,980,1920,1080)]
     # Verification of the locked mark, headings, name/role and footer.
     for box in protected:
         assert ImageChops.difference(source.crop(box),img.crop(box)).getbbox() is None,box
-    assert ImageChops.difference(img,flipped.transpose(Image.Transpose.FLIP_LEFT_RIGHT)).getbbox() is None
     for x,col in [(80,GREEN),(128,original.CROWN),(176,BLUE)]:
         assert img.getpixel((x,110)) == col
-    print(json.dumps({'files':[str(normal),str(mirror)],'protected_pixels':'PASS','mirror_roundtrip':'PASS','tri_bar_tokens':'PASS'}))
+
+def save_pair(img, normal, mirror):
+    img.save(normal)
+    flipped = img.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+    flipped.save(mirror)
+    assert ImageChops.difference(img,flipped.transpose(Image.Transpose.FLIP_LEFT_RIGHT)).getbbox() is None
+    return [str(normal),str(mirror)]
+
+def main():
+    # Base backdrop must be current: protected regions (mark, name, CTA) come from it.
+    OUT.mkdir(parents=True,exist_ok=True)
+    files = save_pair(render(), OUT/'maim-academy-backdrop-enhanced-NORMAL-1920x1080.png',
+                      OUT/'maim-academy-backdrop-enhanced-MIRRORED-1920x1080.png')
+    # One enhanced backdrop per season one video, panel filled; named by slug.
+    for slug, ep in original.EPISODES.items():
+        files += save_pair(render(ep), OUT/f'maim-academy-backdrop-enhanced-{slug}-NORMAL-1920x1080.png',
+                           OUT/f'maim-academy-backdrop-enhanced-{slug}-MIRRORED-1920x1080.png')
+    print(json.dumps({'files':files,'protected_pixels':'PASS','mirror_roundtrip':'PASS','tri_bar_tokens':'PASS'}))
 
 if __name__ == '__main__':
     main()

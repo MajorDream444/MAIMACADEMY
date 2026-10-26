@@ -7,10 +7,13 @@ Target ~10 min. **Not a script**: chunks, your words, wherever the thought goes.
 
 ## Before you roll
 
-- **Backdrop:** `build/backdrop/episodes/maim-academy-backdrop-expertise-1920x1080.png`
-  (use `-mirrored-` if the camera flips). Rebuilt 26 Oct with the Academy badge and the
-  live CTA: *Reserve your spot · 20 spots · Starts 18 November*,
-  `academy.majoraimindset.com/reserve`.
+- **Backdrop (enhanced, the approved look):**
+  `build/backdrop/enhanced/maim-academy-backdrop-enhanced-expertise-NORMAL-1920x1080.png`
+  (`-MIRRORED-` if the saved footage is flipped). Tri-bar, green-to-gold filaments and
+  charcoal depth, with the episode panel filled, the Academy badge and the live CTA:
+  *Reserve your spot · 20 spots · Starts 18 November*, `academy.majoraimindset.com/reserve`.
+  Rebuild with `python3 scripts/build_video_backdrop.py && python3 scripts/build_backdrop_enhanced.py`
+  (the enhanced pass copies the mark, name and CTA from the base, so build the base first).
 - **Set:** desk, notebook, something built on screen. Not the robe.
 - **Ten-second test:** record, play back, check audio and that on-screen text reads
   the right way round.
