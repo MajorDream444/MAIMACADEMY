@@ -1,5 +1,5 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';
-import {canAccess,addCalendarMonths,paidJourney,validateProgress,checkoutConfigured,paymentSyncConfigured,JOURNEY} from '../lib/access-policy.js';
+import {canAccess,addCalendarMonths,paidJourney,validateProgress,checkoutConfigured,paymentSyncConfigured,capacityReached,JOURNEY} from '../lib/access-policy.js';
 const grant={user_id:'alice',resource:'journey',status:'active',starts_at:'2026-01-01T00:00:00Z',expires_at:null};
 test('permanent founding journey does not grant vault or other users access',()=>{assert.ok(canAccess([grant],'alice','journey'));assert.ok(!canAccess([grant],'bob','journey'));assert.ok(!canAccess([grant],'alice','vault'));assert.ok(!canAccess([grant],null,'journey'));});
 test('revoked, held, future and exact-expiry access denied',()=>{for(const change of [{status:'revoked'},{status:'held'},{starts_at:'2099-01-01Z'},{expires_at:'2026-10-19T00:00:00Z'}])assert.ok(!canAccess([{...grant,...change}],'alice','journey','2026-10-19T00:00:00Z'));});
@@ -9,3 +9,4 @@ test('progress owner cannot be supplied by caller and validation rejects invalid
 test('checkout remains unavailable without approved price or with live key',()=>{assert.ok(!checkoutConfigured({}));const e={ENABLE_ACADEMY_TEST_CHECKOUT:'true',ACADEMY_OFFER_APPROVED:'true',ACADEMY_STRIPE_KEY:'sk_live_example'};assert.ok(!checkoutConfigured(e));});
 
 test('closing new checkout does not disable signed payment recovery configuration',()=>{const env={ENABLE_ACADEMY_TEST_CHECKOUT:'false',ACADEMY_OFFER_APPROVED:'false',ACADEMY_STRIPE_KEY:'rk_test_fixture',ACADEMY_STRIPE_WEBHOOK_SECRET:'fixture',ACADEMY_JOURNEY_PRICE_ID:'price_fixture',ACADEMY_PRICE_CENTS:'24900',ACADEMY_AGREEMENT_VERSION:'qa-v1',ACADEMY_TERMS_URL:'https://example.invalid/terms/qa-v1'};assert.equal(checkoutConfigured(env),false);assert.equal(paymentSyncConfigured(env),true);assert.equal(paymentSyncConfigured({...env,ACADEMY_STRIPE_KEY:'rk_live_fixture'}),false);});
+test('only the atomic cohort-capacity exception is presented as full',()=>{assert.equal(capacityReached({code:'P0001',message:'Cohort capacity reached'}),true);for(const error of [{code:'P0001',message:'other'},{code:'23505',message:'Cohort capacity reached'},new Error('Cohort capacity reached'),null])assert.equal(capacityReached(error),false);});

@@ -39,10 +39,17 @@ test('reviewed UUID TEST migration: actual PostgreSQL roles, RLS, sessions, capa
   const booking=await asMember(A,()=>db.query('select reserve_booking($1,$2,$3) as id',[credit,brief,slot]));assert.ok(booking.rows[0].id);
   await assert.rejects(asMember(A,()=>db.query('select reserve_booking($1,$2,$3)',[credit,brief,slot])),/Ineligible/);
  });
- await t.test('seat claim is retry-stable and cannot create seat 21',async()=>{
-  await db.exec('set role academy_test_worker');seat=(await db.query('select * from claim_seat($1,$2)',[A,A])).rows[0];assert.equal((await db.query('select * from claim_seat($1,$2)',[A,B])).rows[0].id,seat.id);await db.exec('reset role');
-  for(let i=2;i<=21;i++){const uid='00000000-0000-4000-8000-'+String(i).padStart(12,'0');await db.query("insert into auth.users values($1,'fixture@example.invalid',now(),null) on conflict do nothing",[uid]);await db.query('insert into academy_testers values($1) on conflict do nothing',[uid]);await db.exec('set role academy_test_worker');if(i<=20)await db.query('select * from claim_seat($1,$2)',[uid,uid]);else await assert.rejects(db.query('select * from claim_seat($1,$2)',[uid,uid]),/capacity/);await db.exec('reset role');}
-  assert.equal((await db.query('select count(*)::int as n from academy_seats')).rows[0].n,20);
+ await t.test('interest reservations are uncapped; checkout holds atomically protect 20 paid places',async()=>{
+  const ids=[];for(let i=2;i<=21;i++){const uid='00000000-0000-4000-8000-'+String(i).padStart(12,'0');ids.push(uid);await db.query("insert into auth.users values($1,'fixture@example.invalid',now(),null) on conflict do nothing",[uid]);await db.query('insert into academy_testers values($1) on conflict do nothing',[uid]);await db.query("insert into academy_reservations(user_id,notice_version,source) values($1,'qa-notice-v1','academy-protected-test') on conflict do nothing",[uid]);}
+  assert.equal((await db.query('select count(*)::int as n from academy_reservations')).rows[0].n,21);assert.equal((await db.query('select count(*)::int as n from academy_seats')).rows[0].n,0);
+  await db.exec('set role academy_test_worker');seat=(await db.query('select * from claim_seat($1,$2)',[A,A])).rows[0];assert.equal((await db.query('select * from claim_seat($1,$2)',[A,B])).rows[0].id,seat.id);
+  for(const uid of ids.slice(0,19))await db.query('select * from claim_seat($1,$2)',[uid,uid]);
+  await assert.rejects(db.query('select * from claim_seat($1,$2)',[ids[19],ids[19]]),/capacity/);
+  assert.equal((await db.query("select count(*)::int as n from academy_seats where status in ('pending','checkout','paid','held')")).rows[0].n,20);
+  const expiring=ids[0];await db.query("update academy_seats set status='checkout',session_id='cs_test_expiring' where user_id=$1",[expiring]);await db.exec('begin');await applyTestPayment(db,{id:'evt_expired_qa',type:'checkout.session.expired',livemode:false,data:{object:{id:'cs_test_expiring'}}});await db.exec('commit');
+  await db.query('select * from claim_seat($1,$2)',[ids[19],ids[19]]);await db.exec('reset role');
+  assert.equal((await db.query("select count(*)::int as n from academy_seats where status in ('pending','checkout','paid','held')")).rows[0].n,20);
+  assert.equal((await db.query("select status from academy_seats where user_id=$1",[expiring])).rows[0].status,'expired');
  });
  await t.test('signed-event core deduplicates fulfillment and cannot restore access after refund',async()=>{
   await db.query("update academy_seats set agreement_version='qa-v1',terms_url='https://example.invalid/terms/qa-v1',price_id='price_qa' where id=$1",[seat.id]);

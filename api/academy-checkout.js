@@ -1,7 +1,7 @@
 import Stripe from 'stripe';
 import {randomUUID,randomBytes} from 'node:crypto';
 import {configured,sessionFor,secure,sameOrigin,database,withMember,hash} from '../lib/member-runtime.js';
-import {JOURNEY,checkoutConfigured} from '../lib/access-policy.js';
+import {JOURNEY,capacityReached,checkoutConfigured} from '../lib/access-policy.js';
 export default async function handler(req,res){
  secure(res);if(req.method!=='POST'){res.setHeader('Allow','POST');return res.status(405).json({available:false});}
  if(!configured()||!checkoutConfigured(process.env))return res.status(503).json({available:false,reason:'TEST checkout is not approved/configured.'});
@@ -23,5 +23,8 @@ export default async function handler(req,res){
   if(result.livemode||!result.url?.startsWith('https://checkout.stripe.com/'))throw new Error('Invalid checkout');
   await db.query("update academy_seats set session_id=$2,status='checkout' where id=$1 and status in ('pending','checkout')",[seat.id,result.id]);
   return res.status(200).json({url:result.url});
- }catch{return res.status(503).json({available:false,reason:'Test checkout unavailable. A pending seat is retained for safe recovery.'});}
+ }catch(error){
+  if(capacityReached(error))return res.status(409).json({available:false,reason:'The 20 paid places are currently allocated or held in checkout.'});
+  return res.status(503).json({available:false,reason:'Test checkout unavailable. A pending seat is retained for safe recovery.'});
+ }
 }

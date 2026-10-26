@@ -24,3 +24,13 @@ test('public copy keeps payment, enrollment and replay delivery conditional on r
   assert.match(await readFile('dist/reserve.html','utf8'),/does not guarantee a paid place[\s\S]*require release approval/);
   assert.match(await readFile('dist/sign-in.html','utf8'),/not yet an operational member service/);
 });
+
+test('authoritative Airtable mapping cannot be mistaken for Academy Contacts',async()=>{
+  const authority=JSON.parse(await readFile('data/integration-authority.json','utf8'));
+  const table=authority.airtable.tables.find(item=>item.id==='tbl1pPhCa6bx3ST3E');
+  assert.equal(table.canonical_name,'MAIM Follow-up Queue');
+  assert.equal(table.academy_runtime_enabled,false);
+  assert.ok(table.not_names.includes('Contacts'));
+  assert.match(table.purpose,/Existing assessment follow-up queue/);
+  assert.match(table.purpose,/not Academy contacts, reservations, enrolments or paid orders/);
+});
