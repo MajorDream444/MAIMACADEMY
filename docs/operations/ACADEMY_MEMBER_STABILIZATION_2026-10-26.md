@@ -21,7 +21,7 @@
 - Independent review: migration PASS for additive application; final bounded code
   review and final recovery-gate follow-up found no P0/P1. P2 worker-pool availability finding fixed by releasing
   webhook connection before receipt delivery.
-- Local build, HTML lint, JavaScript syntax and 45 tests pass. Embedded PostgreSQL
+- Local build, HTML lint, JavaScript syntax and 46 tests pass. Embedded PostgreSQL
   exercises the actual migration/roles/RLS, two synthetic UUID owners, denied
   cross-user writes, lesson access, hash-session revoke, consent, seat21 rejection,
   payment replay/refund, private booking and double-consumption rejection.
@@ -99,3 +99,5 @@ Founder reports removal of the Vercel marketplace attachment. Fresh main-site
 environment metadata still lists Supabase/Postgres variable names; their presence
 does not prove an attachment or working connection. No inherited values were
 read, copied or removed. This candidate uses explicit TEST configuration only.
+
+Member/booking responses are staged until the transaction commits; a tested commit failure never acknowledges a saved reflection or reservation. Independent follow-up review PASS.

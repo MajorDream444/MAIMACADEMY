@@ -1,5 +1,5 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';
-import {authRequest} from '../lib/supabase-auth.js';import {configured,hash,COOKIE} from '../lib/member-runtime.js';
+import {authRequest} from '../lib/supabase-auth.js';import {configured,hash,COOKIE,withMemberResponse} from '../lib/member-runtime.js';
 const uid='00000000-0000-4000-8000-000000000001';
 const env={VERCEL_ENV:'preview',ACADEMY_IDENTITY_MODEL:'supabase-uuid-test-v1',ACADEMY_DATABASE_SCHEMA:'academy_test',ENABLE_ACADEMY_MEMBERS:'true',ENABLE_ACADEMY_AUTH_EMAIL:'true',ACADEMY_DATABASE_URL:'postgres://member',ACADEMY_AUTH_DATABASE_URL:'postgres://auth',ACADEMY_WORKER_DATABASE_URL:'postgres://worker',ACADEMY_AUTH_SECRET:'x'.repeat(32),ACADEMY_ORIGIN:'https://academy.example.invalid',ACADEMY_SUPABASE_URL:'https://qa.supabase.co',ACADEMY_SUPABASE_PUBLISHABLE_KEY:'sb_publishable_fixture',ACADEMY_PILOT_EMAILS:'qa@example.invalid'};
 function response(){return{headers:{},code:200,setHeader(k,v){this.headers[k]=v;},status(s){this.code=s;return this;},json(d){this.data=d;return this;},end(){return this;}};}
@@ -13,3 +13,5 @@ test('PKCE sign-in stays allowlisted, never creates users; callback mints hash-o
  const out=response();await authRequest({url:'/api/academy-auth/sign-out',method:'POST',headers:{origin:env.ACADEMY_ORIGIN,cookie:`${COOKIE}=${token}`}},out,{env,fetcher,db});assert.equal(out.data.signedOut,true);assert.match(out.headers['Set-Cookie'],/Max-Age=0/);
  const forged=response();await assert.rejects(authRequest({url:'/api/academy-auth/callback?code=forged',method:'GET',headers:{cookie:'__Host-maim_academy_pkce=forged'}},forged,{env,fetcher,db}));
 });
+
+test('member save/booking response is withheld until transaction commit succeeds',async()=>{const r=response();let committed=false;await withMemberResponse(uid,r,async(db,out)=>out.status(200).json({saved:true}),async(id,work)=>{assert.equal(id,uid);await work({});assert.equal(r.data,undefined);committed=true;});assert.equal(committed,true);assert.equal(r.data.saved,true);const failed=response();await assert.rejects(withMemberResponse(uid,failed,async(db,out)=>out.status(200).json({reserved:true}),async(id,work)=>{await work({});throw Error('commit failed');}),/commit failed/);assert.equal(failed.data,undefined);});
