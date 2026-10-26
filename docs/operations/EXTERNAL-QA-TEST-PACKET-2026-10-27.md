@@ -4,9 +4,45 @@ Status: **prepared, not executed**. Local tests passing is not permission to run
 this packet. External QA requires Major's separate GO after the exact immutable
 PR head, protected Preview and restricted credentials are reviewed.
 
-**Git pin:** PR #28 at the exact final head SHA recorded in the redacted PR body
-and approval receipt. Any later head change invalidates approval and requires a
-new local test result and packet review. A branch name alone is not a pin.
+**Git pin:** the single immutable acceptance SHA is recorded in the redacted PR
+#28 body under `Acceptance candidate` after this packet is committed. Before any
+run, compare that 40-character value with `git rev-parse HEAD`; they must match.
+Any later head change invalidates approval and requires a new local test result,
+packet review and pin. A branch name or Preview URL alone is not a pin. Git
+commits cannot contain their own hash, so the PR receipt is the external pin for
+the packet committed inside that exact SHA.
+
+## Origins and separation
+
+| Surface | Origin contract | Allowed use |
+|---|---|---|
+| Local | `http://127.0.0.1:4173` from `npm run dev` | Static/local checks only; API responses remain stubs and are not acceptance evidence. |
+| Academy Preview | Exact HTTPS origin supplied privately through `ACADEMY_ORIGIN`; `VERCEL_ENV` must be Preview | The separately approved Academy acceptance run only. |
+| Production | No origin is permitted by the runtime guard | No Academy acceptance action, credential, payment, message or data write. |
+| BPT | Separate application, credentials, tables, segments, offer and acceptance evidence | Explicitly out of scope; never combine with this Academy run. |
+
+The Academy run covers sign-in, paid-seat concurrency rules, two Stripe TEST
+Checkout Sessions, signed expiry/refund/revocation and one transactional receipt.
+It does not exercise BPT assessment, Blueprint checkout, BPT contacts, BPT
+follow-up, production reservations or marketing sends.
+
+## Resource mapping — names only
+
+No value belongs in Git, chat or the evidence packet.
+
+| Resource | Configuration names | Exact boundary |
+|---|---|---|
+| Restricted PostgreSQL roles | `ACADEMY_DATABASE_URL`, `ACADEMY_AUTH_DATABASE_URL`, `ACADEMY_WORKER_DATABASE_URL`, `ACADEMY_DATABASE_SCHEMA`, `ACADEMY_IDENTITY_MODEL` | Three different Preview-only credentials; private Academy TEST schema; no admin/service role or BPT database credential. |
+| Auth and aliases | `ACADEMY_SUPABASE_URL`, `ACADEMY_SUPABASE_PUBLISHABLE_KEY`, `ACADEMY_AUTH_SECRET`, `ACADEMY_PILOT_EMAILS`, `ENABLE_ACADEMY_MEMBERS`, `ENABLE_ACADEMY_AUTH_EMAIL` | Existing privately approved QA-A/QA-B only; no address printed and no user auto-creation. |
+| Reservation consent | `ACADEMY_RESERVATION_NOTICE_VERSION` | Exact approved notice; missing/false consent or mismatched version is rejected. |
+| Stripe TEST | `ENABLE_ACADEMY_TEST_CHECKOUT`, `ACADEMY_OFFER_APPROVED`, `ACADEMY_STRIPE_KEY`, `ACADEMY_STRIPE_WEBHOOK_SECRET`, `ACADEMY_JOURNEY_PRICE_ID`, `ACADEMY_PRICE_CENTS`, `ACADEMY_TERMS_URL`, `ACADEMY_AGREEMENT_VERSION` | Academy TEST objects only; no live key, Payment Link, Blueprint price or production endpoint. |
+| Transactional receipt | `ENABLE_ACADEMY_RECEIPT_EMAIL`, `ACADEMY_RESEND_KEY`, `ACADEMY_EMAIL_FROM`, `ACADEMY_SUPPORT_EMAIL` | One allowlisted QA-A receipt maximum; no campaign/segment send. |
+| Public Resend segments | `RESEND_SEGMENT_ID`, `RESEND_COHORT_SEGMENT_ID` | Not read or changed by this protected Academy run. |
+| Airtable tables | `AIRTABLE_CONTACTS_TABLE_ID`, `AIRTABLE_FOLLOWUP_TABLE_ID`, `AIRTABLE_ORDERS_TABLE_ID`, `AIRTABLE_BASE_ID`, `AIRTABLE_PAT` | No Airtable call. Follow-up Queue is not Contacts; no Academy reservation/order projection. |
+
+No disposable external table or segment is created. Disposable records exist
+only inside the already-isolated Academy TEST schema and are identified by the
+private run ID recorded before execution.
 
 ## Fixed test scope
 
@@ -40,6 +76,23 @@ new local test result and packet review. A branch name alone is not a pin.
    Do not use a dispute event in this run.
 6. One Academy receipt outbox row and at most one provider-accepted TEST receipt
    to QA-A. A timeout/uncertain result must not be blindly resent.
+
+## Step limits, consent and suppression
+
+| Step | Maximum new external/runtime effects | Required negative/suppression case |
+|---|---|---|
+| Sign-in QA-A then QA-B | Two Auth emails, two app sessions | Non-allowlisted alias, forged/replayed/expired callback and wrong origin create no session. Stop before email if sender/callback is not already compatible. |
+| Consent | Two consent rows total | `consent` missing/false and wrong notice version return rejection; retry creates no duplicate and no seat. |
+| Checkout | Two TEST Sessions total, one per alias; one PaymentIntent total | Wrong price/product, live mode, missing consent, wrong origin and third Session request stop/reject. Same-alias retry reuses its seat/session. |
+| Capacity | Zero shared capacity fixtures | The 20/21 proof runs in-memory only. Never create 19 shared Auth users/testers/seats. |
+| Webhook recovery | Five unique event rows plus one identical replay | Invalid signature/live event rejected; duplicate event creates no new grant, credit, receipt or event row. |
+| Receipt | One provider request/message to QA-A; zero to QA-B | Non-allowlisted recipient, email-hash mismatch, disabled switch, accepted state and uncertain state suppress sending/re-sending. |
+| Public reservation/segments | Zero contacts, memberships, emails or segment mutations | Do not call the public subscribe flow or import Follow-up Queue/Contacts. Paid/refunded/ineligible suppression remains campaign QA, not this run. |
+
+Resend provider acceptance means only that Resend returned an accepted message
+identifier. Actual delivery requires a separate timestamped observation in the
+privately approved adult QA-A inbox. A Resend test address, simulated transport,
+mock response or provider acceptance must never be reported as inbox delivery.
 
 ## Expected results
 
@@ -111,6 +164,33 @@ TEST Session/PaymentIntent/Event IDs, receipt provider ID and QA-A inbox timesta
 Never include cookies, connection strings, API keys, full emails or message body
 containing personal data in Git.
 
+Also record, without values: the configuration names reviewed, confirmation that
+the three database URLs are distinct/restricted, all Academy feature switches
+were Preview-scoped, production switches/configuration were unchanged, public
+segment and Airtable call counts were zero, and the BPT run count was zero.
+
+## Stop conditions
+
+Stop immediately, disable the relevant Academy switch and preserve evidence if:
+
+- `HEAD` differs from the PR body's immutable acceptance SHA;
+- origin is not the exact `ACADEMY_ORIGIN` or `VERCEL_ENV` is not Preview;
+- any database login is elevated, shared across roles, or reaches outside the
+  private Academy TEST schema;
+- either alias is absent from the private allowlist, a third recipient/Session is
+  requested, or a real address would appear in Git/log output;
+- price is not the configured one-time USD 249.00 Academy TEST price, a live
+  Stripe object/key appears, or terms/notice versions differ;
+- callback/sender compatibility would require changing shared Auth/global email
+  configuration;
+- capacity claim 21 succeeds before a verified release, idempotent retry creates
+  a new seat/Session, or any state count differs from this packet;
+- signature verification, replay protection, RLS isolation, refund revocation or
+  receipt suppression fails;
+- Airtable, public Resend segments, BPT resources or Production show any write;
+- Resend acceptance lacks a provider ID, or actual inbox delivery cannot be
+  distinguished from acceptance/simulation.
+
 ## Cleanup and rollback
 
 1. Disable all Academy Preview switches first; stop new sign-in, checkout,
@@ -121,7 +201,8 @@ containing personal data in Git.
    QA-A/QA-B from `academy_testers` only if this run added those mappings and the
    owner approves; otherwise leave the pre-existing reviewed mappings untouched.
 4. Delete exactly one synthetic progress row, one synthetic lesson, one brief,
-   one booking and one slot, in dependency-safe order, using recorded run IDs.
+   one booking and one slot, in dependency-safe order, using the recorded private
+   run/fixture IDs. Confirm each ID was created by this run before deletion.
    Do not delete by email.
 5. Retain exactly two consent rows, two terminal seat rows, five payment-event
    rows, one full-refund hold, one revoked grant/credit and one accepted receipt
@@ -137,3 +218,19 @@ External QA remains blocked until the restricted database logins, exact private
 QA-A/QA-B mappings, Auth callback/sender compatibility, Academy terms/notice,
 Stripe TEST configuration, protected content and monitored sender are confirmed.
 
+## Local suite receipts and count reconciliation
+
+Run from the immutable candidate checkout:
+
+- Full gate: `npm run check`
+- Focused packet/capacity gate:
+  `node --test tests/database/uuid-preview.test.mjs tests/site.test.mjs`
+- Whitespace gate: `git diff --check origin/main...HEAD`
+
+The reported totals are not competing claims. At commit `33f1f6b`, the full
+suite had 49 tests. Commit `01ced0f` added one packet-contract regression, making
+the full suite 50. “Focused 20/20” is the subset from the database-capacity and
+site/packet files only at `01ced0f`; those same 20 tests are included inside the
+50-test full run. Documentation tightening after that commit adds assertions to
+the existing packet test rather than another test case, so the expected totals
+remain focused 20 and full 50.

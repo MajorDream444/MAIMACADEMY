@@ -42,6 +42,11 @@ test('external QA packet has one bounded two-session plan and keeps capacity fix
   assert.match(packet,/Exactly five unique Stripe TEST webhook events/);
   assert.match(packet,/20\/21 boundary runs \*\*locally only\*\*/);
   assert.match(packet,/Expected removable capacity-fixture count in shared Preview: \*\*zero\*\*/);
+  assert.match(packet,/Resend provider acceptance means only/);
+  assert.match(packet,/Actual delivery requires a separate timestamped observation/);
+  assert.match(packet,/`RESEND_SEGMENT_ID`, `RESEND_COHORT_SEGMENT_ID`/);
+  assert.match(packet,/BPT run count was zero/);
+  assert.match(packet,/Stop immediately/);
   assert.doesNotMatch(packet,/Only QA-A may proceed to one Stripe TEST Checkout Session/);
   assert.doesNotMatch(packet,/Twenty synthetic TEST seat claims total/);
 });

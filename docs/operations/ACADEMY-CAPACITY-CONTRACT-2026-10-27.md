@@ -34,4 +34,3 @@ Local PostgreSQL coverage now verifies that 21 interest reservations create no
 seats, claims 1–20 succeed, claim 21 fails, a signed expiration releases exactly
 one place, and the next claimant can take that place. Hosted concurrent-provider
 behavior remains external QA, not a local acceptance claim.
-
