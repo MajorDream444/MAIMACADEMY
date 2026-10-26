@@ -14,6 +14,8 @@ form.addEventListener('submit', async (event) => {
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+    const guide=document.getElementById('reserve-guide');
+    if(guide && data.guide==='/assets/MAIM_Free_Guide_5_AI_Moves.pdf')guide.hidden=false;
     if (data.waitlisted !== true) {
       status.textContent = 'Your guide signup was received, but your cohort interest-list reservation was not confirmed. Please try again or contact contact@majoraimindset.com.';
       return;
