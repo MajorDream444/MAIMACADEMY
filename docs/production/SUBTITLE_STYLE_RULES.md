@@ -6,8 +6,8 @@ Approved by Major Dream Williams on 26 October 2026. Applies to all production a
 
 | Brand/channel | Base subtitle | Active-word/phrase highlight |
 | --- | --- | --- |
-| MAIM Academy | White text, black outline | Gold |
-| Major AI Mindset | White text, black outline | Blue or orange |
+| MAIM Academy | White text, thin black outline | Gold |
+| Major AI Mindset | White text, thin black outline | Blue or orange |
 
 Use canonical brand color tokens from the production design system. Keep white as the dominant caption color. Choose blue or orange deliberately for Major AI Mindset and maintain consistency within the asset.
 
@@ -16,3 +16,5 @@ Burn stylized subtitles into the post-production video and also supply a correct
 Correct MAIM, MAIM Academy, Major AI Mindset, YAWDS/YARDIE, and URLs in captions. Preserve the speaker's meaning; factual corrections must not silently rewrite what was spoken.
 
 These are standing production rules, not a claim that existing videos have been rendered or updated.
+
+Approved proof refinement, 27 October 2026: thin black outline, restrained active-word highlighting. Initial 1080p stroke target 1–2 px, scaled with resolution and checked on real footage. Operational contract: https://github.com/MajorDream444/MAIM-PRODUCTION-OS/blob/main/docs/RECORDING_TO_REVIEW_OPERATING_CONTRACT.md
