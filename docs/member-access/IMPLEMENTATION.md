@@ -14,6 +14,11 @@ Routes:
 - /api/academy-auth/*: Better Auth adapter with hashed, five-minute magic links and database-backed rate limits.
 - /api/member: verified session, server-derived user ID, journey access check, published lesson fetch, private progress save and export. JSON/plain-text lesson rendering prevents HTML injection. Export remains available to a signed-in user even without an active grant.
 - /api/academy-checkout: TEST ONLY, one-time Checkout Session, server-selected price, verified account, matching approved amount and terms version. No browser-provided SKU/amount/identity accepted. Price remains unset.
+- /member-room now reveals the protected consent and TEST-checkout controls only
+  when the server confirms the Preview-only checkout gate is fully configured.
+  The browser cannot select price, product, identity, notice version or live
+  mode. Production and unapproved previews continue to expose no checkout
+  control and the APIs remain fail-closed.
 - /api/academy-webhook: raw-body signature verification, paid test event validation, transaction and payment-scoped advisory lock, unique processed-event IDs and unique source-payment grants. Refunds/disputes place payment holds even if received before fulfillment; a later paid event cannot silently reactivate them. Partial refunds conservatively hold access pending manual review; policy needs owner review. Live events/keys not supported by this build.
 
 Journey grants do not expire routinely and cover the journey's evolving lesson versions. Vault grants require a finite expiry; the policy checks expiry on each access decision. Calendar-month date helper clamps month ends. Selling/issuing vault passes and private vault content delivery are not implemented yet.
