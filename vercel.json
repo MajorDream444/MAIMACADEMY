@@ -32,5 +32,11 @@
         }
       ]
     }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "codex/academy-capacity-test-packet-2026-10-27": false,
+      "codex/academy-qa-followup-2026-10-27": false
+    }
+  }
 }

@@ -1,3 +1,16 @@
+> 27 October reconciliation: this broader/historical packet is **not** the
+> BPT-save/reservation-provenance run. Use the narrowed packet in Major-AI-OS
+> `docs/qa/MAIM_FUNNEL_TEST_PACKET_2026-10-27.md` and its immutable code pins.
+> No external run is approved. Simulation is not human-inbox receipt.
+> Academy sign-in/concurrency/Stripe/refund/revocation remain a separate run.
+>
+> PR #28 is merged as `d7f6a0f496097d936fdd0294e78116079c47283c`.
+> Its former candidate references are retained below as historical test
+> receipts, not as permission or a current acceptance pin. PR #29 is the only
+> current Academy follow-up. The PR #29 body must name its exact 40-character
+> head after this packet commit. External QA remains blocked unless Vercel has
+> a READY, access-protected Preview whose Git metadata matches that exact head.
+
 # Academy external QA test packet — approval required
 
 Status: **prepared, not executed**. Local tests passing is not permission to run
@@ -5,12 +18,46 @@ this packet. External QA requires Major's separate GO after the exact immutable
 PR head, protected Preview and restricted credentials are reviewed.
 
 **Git pin:** the single immutable acceptance SHA is recorded in the redacted PR
-#28 body under `Acceptance candidate` after this packet is committed. Before any
+#29 body under `Acceptance candidate` after this packet is committed. Before any
 run, compare that 40-character value with `git rev-parse HEAD`; they must match.
 Any later head change invalidates approval and requires a new local test result,
 packet review and pin. A branch name or Preview URL alone is not a pin. Git
 commits cannot contain their own hash, so the PR receipt is the external pin for
 the packet committed inside that exact SHA.
+
+**Deployment pin:** there is currently no acceptance deployment for the exact
+PR #29 head. Vercel directly reports protected Preview deployment
+`dpl_GzagiUJ3Wm7mJkFxqgno92nEFw85` at
+`https://maimacademy-q0mgfh1zw-hamal-agi.vercel.app`, but its Git metadata is
+the earlier parent `2e5b778799694a3f7aa6526604254d0e72041223`. An unauthenticated
+GET redirects to Vercel SSO, confirming access protection but not code parity.
+It must not be used for acceptance of a later PR #29 head. A separately
+authorized deployment of the exact candidate is required before any external
+QA; recording this blocker does not authorize that deployment.
+
+## Read-only deployed-gate snapshot
+
+Observed 27 October 2026 without form submission, authentication, session
+creation or provider writes:
+
+- the public reservation page and form are exposed and explicitly say the
+  reservation is free, does not guarantee a paid place, and that payment may
+  open no earlier than 11 November after release approval;
+- the public checkout descriptor returns `available: false`; the checkout API
+  rejects GET, while auth/session, member and receipt APIs fail closed as
+  unavailable;
+- the sign-in page is public but labels member sign-in as planned and not yet
+  operational; the member-room shell is public while its content starts hidden
+  and the member API is unavailable;
+- the cohort start is 18 November, the price is US$249 paid once and the public
+  capacity claim is 20 spots; replay access is described only as planned after
+  recording and review.
+
+This is an exposure/configuration snapshot, not provider acceptance, successful
+sign-in, reservation persistence, payment readiness, private-content delivery,
+customer readiness or hosted end-to-end evidence. The public reservation form
+is the only intentionally actionable public capture surface observed; it was
+not submitted during this review.
 
 ## Origins and separation
 
