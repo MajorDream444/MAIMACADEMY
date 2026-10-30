@@ -35,3 +35,12 @@ These routes are NOT publicly available merely because this branch exists. They 
 
 ## No alteration by this branch
 No Stripe account settings, links, prices, live payments, production release, runtime environment, identity, or customer records are modified by this PR.
+
+## Resend verification receipt — 30 October 2026
+Read-only check through connected Resend:
+- `majoraimindset.com`: VERIFIED for **sending**, receiving **disabled**. Approved domain for MAIM/Academy sender identities, provided the specific from-address is configured appropriately.
+- `amasolagi.com`: VERIFIED for **sending**, receiving **disabled**. AMA Solutions, not Academy.
+- `srishaktishala.com`: VERIFIED for **sending**, receiving **disabled**. Separate client domain.
+- Resend domain verification DOES NOT mean `contact@majoraimindset.com` can receive mail; inbound delivery or forwarding must be tested separately using the actual mailbox host.
+- The repo already uses `contact@majoraimindset.com` as the established Academy support contact. Keep it as **provisional** until an actual inbound mailbox/forwarder and human monitoring are confirmed. Do not invent `support@` or `hello@` inboxes based solely on verified sending-domain status.
+- No email sent or domain settings modified as part of this verification.
