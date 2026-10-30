@@ -1,0 +1,1402 @@
+1
+00:00:00,000 --> 00:00:04,210
+I'm Major Dream Williams
+and this is MAIM Academy.
+
+2
+00:00:04,480 --> 00:00:06,960
+We build things that
+run without you.
+
+3
+00:00:06,960 --> 00:00:08,430
+When you automate something,
+
+4
+00:00:08,680 --> 00:00:12,310
+you have to itemize
+everything that you do.
+
+5
+00:00:12,440 --> 00:00:16,590
+What do people leave out when
+they explain how they work?
+
+6
+00:00:16,760 --> 00:00:24,400
+So daily I write a Substack article
+and I populate it with mostly my
+
+7
+00:00:24,400 --> 00:00:30,710
+train of thought. Sometimes I call
+it morning musings with Major.
+
+8
+00:00:31,000 --> 00:00:38,410
+I sit with my coffee or hot
+chocolate and I talk about an idea,
+
+9
+00:00:38,880 --> 00:00:40,670
+something that a dream,
+
+10
+00:00:41,100 --> 00:00:46,500
+something that really kind of gets
+me going or something that I just
+
+11
+00:00:46,500 --> 00:00:47,790
+need to get out.
+
+12
+00:00:48,100 --> 00:00:53,380
+Now most people would just talk from
+a stream of consciousness and most
+
+13
+00:00:53,380 --> 00:00:55,480
+of the time I do as well.
+
+14
+00:00:55,480 --> 00:00:58,810
+But if you really want to be good,
+
+15
+00:00:59,200 --> 00:01:01,570
+there is a process.
+
+16
+00:01:02,020 --> 00:01:06,280
+Choose one task that you did this
+week and what you will do again next
+
+17
+00:01:06,280 --> 00:01:08,090
+week. What is it?
+
+18
+00:01:08,540 --> 00:01:12,790
+Who depends on it? Why does
+it keep coming back to you?
+
+19
+00:01:12,800 --> 00:01:17,760
+So most of the time in the morning
+what you get up with is something
+
+20
+00:01:17,760 --> 00:01:27,440
+that is really passionate or it
+really has a lot of vibrancy too and
+
+21
+00:01:27,440 --> 00:01:29,450
+I capture that.
+
+22
+00:01:29,560 --> 00:01:33,570
+Me and my homegirl Amanda used to
+call it the morning cup of truth.
+
+23
+00:01:33,920 --> 00:01:39,950
+So I did my little version of it
+and it is mornings with Major.
+
+24
+00:01:40,620 --> 00:01:45,260
+Where I get to sit in my robe
+and I sip my hot chocolate.
+
+25
+00:01:45,260 --> 00:01:50,920
+But after I am done and most of the
+time the stream of consciousness is
+
+26
+00:01:50,920 --> 00:01:52,350
+spot on.
+
+27
+00:01:52,940 --> 00:01:56,750
+But I realize that if I took it,
+
+28
+00:01:56,940 --> 00:02:02,030
+I download the transcript and
+then I put it into NotebookLM.
+
+29
+00:02:02,240 --> 00:02:09,540
+I use it from there to generate a
+podcast where two posts go back and
+
+30
+00:02:09,540 --> 00:02:12,890
+forth. Sometimes I may critique it.
+
+31
+00:02:13,580 --> 00:02:20,120
+Sometimes I may debate it or
+sometimes I may just go for a quick
+
+32
+00:02:20,120 --> 00:02:25,880
+deep dive. Then I download the
+podcast and then I take it back over
+
+33
+00:02:25,880 --> 00:02:32,430
+to my Substack and I
+extract the transcript.
+
+34
+00:02:32,660 --> 00:02:37,320
+Then I take that transcript
+and put it up to my agents.
+
+35
+00:02:37,320 --> 00:02:40,240
+And my agents, they know me already.
+
+36
+00:02:40,240 --> 00:02:44,740
+So they know what I first spoke
+about and then I come back with the
+
+37
+00:02:44,740 --> 00:02:45,610
+transcript
+
+38
+00:02:46,200 --> 00:02:51,230
+and we use that to
+possibly catch holes,
+
+39
+00:02:51,840 --> 00:02:52,730
+blind spots,
+
+40
+00:02:53,460 --> 00:02:59,830
+things like that. And then I
+do it again for my Substack.
+
+41
+00:03:00,240 --> 00:03:05,640
+So my morning musings are a bit
+different than what I actually write
+
+42
+00:03:05,640 --> 00:03:09,170
+for the Substack because
+I pressure proof it.
+
+43
+00:03:09,560 --> 00:03:11,250
+Now at the end of the day,
+
+44
+00:03:11,280 --> 00:03:15,700
+my morning talks are just for
+me and those who I vibe with.
+
+45
+00:03:15,700 --> 00:03:19,030
+So my voice can always be out there.
+
+46
+00:03:19,140 --> 00:03:22,750
+But at the end of the day, if I'm
+really trying to help someone,
+
+47
+00:03:22,860 --> 00:03:26,120
+I need to run it
+through that system.
+
+48
+00:03:26,120 --> 00:03:33,080
+So that way the final outcome is
+something that really has some meat
+
+49
+00:03:33,080 --> 00:03:37,530
+to it. Things that
+people can really enjoy.
+
+50
+00:03:38,260 --> 00:03:42,070
+Now, my raw chat is just as good,
+
+51
+00:03:42,560 --> 00:03:45,640
+but I like doing the other.
+
+52
+00:03:45,640 --> 00:03:48,080
+It's great. It makes you feel like
+you have a team that you're working
+
+53
+00:03:48,080 --> 00:03:51,990
+with. Imagine someone taking
+over that task tomorrow.
+
+54
+00:03:52,760 --> 00:03:56,920
+What would you explain and what
+would you assume that they already
+
+55
+00:03:56,920 --> 00:04:02,630
+knew? If I had someone that
+wanted to take over this for me,
+
+56
+00:04:03,060 --> 00:04:04,210
+my assistant,
+
+57
+00:04:04,640 --> 00:04:08,350
+and this is what I have
+to do with my assistants.
+
+58
+00:04:08,620 --> 00:04:12,210
+I have to sit down,
+scheduled in the morning,
+
+59
+00:04:12,660 --> 00:04:14,930
+do my hour of conversation,
+
+60
+00:04:15,720 --> 00:04:18,830
+or just my hour oratory.
+
+61
+00:04:18,880 --> 00:04:21,770
+I tell them to use it,
+
+62
+00:04:22,140 --> 00:04:29,370
+turn that into a transcript or an
+MP4, put it into the NotebookLM.
+
+63
+00:04:29,720 --> 00:04:34,990
+Now, your notebook is someplace
+where you can put information,
+
+64
+00:04:35,540 --> 00:04:36,070
+text,
+
+65
+00:04:37,260 --> 00:04:37,530
+video,
+
+66
+00:04:38,640 --> 00:04:43,470
+YouTube links. But the beauty
+about it is that it doesn't drift.
+
+67
+00:04:43,760 --> 00:04:45,450
+It doesn't hallucinate.
+
+68
+00:04:45,580 --> 00:04:49,460
+It only gives you
+back what you give it.
+
+69
+00:04:49,460 --> 00:04:54,310
+And it cites it. So that way you're
+not getting any outside influence.
+
+70
+00:04:54,870 --> 00:04:58,210
+Then from that, you
+have to create a prompt.
+
+71
+00:04:58,420 --> 00:05:01,910
+That way you can prompt
+the podcast hosts.
+
+72
+00:05:02,520 --> 00:05:05,310
+So they can look at it
+from different angles.
+
+73
+00:05:05,540 --> 00:05:07,450
+They take on different personas.
+
+74
+00:05:07,460 --> 00:05:12,540
+So that way when they're debating or
+critiquing or just doing their deep
+
+75
+00:05:12,540 --> 00:05:13,190
+dive,
+
+76
+00:05:13,580 --> 00:05:18,190
+they're coming at it from
+a point that makes sense.
+
+77
+00:05:18,840 --> 00:05:21,280
+Then after that, because
+you have to listen to it,
+
+78
+00:05:21,280 --> 00:05:24,490
+and then you transcribe that,
+
+79
+00:05:24,680 --> 00:05:28,850
+and then you bring it back over
+to the original chat and thought,
+
+80
+00:05:29,080 --> 00:05:34,180
+and then use that to make
+an actual crafted article.
+
+81
+00:05:34,180 --> 00:05:38,070
+And don't forget, you also
+have to get images, right?
+
+82
+00:05:38,160 --> 00:05:43,230
+You got to get images that you
+can use in the article as well.
+
+83
+00:05:43,340 --> 00:05:47,070
+So there's quite a
+few steps in this.
+
+84
+00:05:47,240 --> 00:05:50,180
+Where do your written steps stop
+and your instincts take over?
+
+85
+00:05:50,180 --> 00:05:55,180
+Give one real example of what you
+may notice when a beginner might
+
+86
+00:05:55,180 --> 00:05:55,830
+miss.
+
+87
+00:05:56,360 --> 00:05:59,910
+Sometimes, okay, so I
+wrote all of that down.
+
+88
+00:06:00,020 --> 00:06:02,260
+I tell them what to do.
+
+89
+00:06:02,260 --> 00:06:07,380
+But sometimes your instincts kick
+in because sometimes you need five
+
+90
+00:06:07,380 --> 00:06:08,170
+images.
+
+91
+00:06:08,820 --> 00:06:13,710
+Sometimes you'd rather give a video.
+
+92
+00:06:14,480 --> 00:06:17,360
+Sometimes you'd rather
+create a motion graphic.
+
+93
+00:06:17,360 --> 00:06:20,270
+So it depends,
+
+94
+00:06:20,860 --> 00:06:24,950
+yeah, it comes off based
+off of how you feel,
+
+95
+00:06:25,120 --> 00:06:28,510
+how current is the topic
+that we're talking about.
+
+96
+00:06:28,600 --> 00:06:30,140
+Remember, in the morning,
+
+97
+00:06:30,140 --> 00:06:33,830
+I get up and it just whatever
+comes off the top of my head.
+
+98
+00:06:33,840 --> 00:06:37,800
+It may be something
+that they don't know.
+
+99
+00:06:37,800 --> 00:06:38,980
+They don't understand.
+
+100
+00:06:38,980 --> 00:06:43,040
+I may be talking about Big
+Daddy Kane in the 1980s,
+
+101
+00:06:43,040 --> 00:06:47,610
+why he was so dope with the
+three cuts in your eyebrow mint.
+
+102
+00:06:47,620 --> 00:06:50,830
+And they may be like, well,
+what are you talking about?
+
+103
+00:06:51,200 --> 00:06:53,330
+So most of the time,
+
+104
+00:06:53,680 --> 00:06:57,310
+especially when it comes from
+something that's your passion,
+
+105
+00:06:57,320 --> 00:07:03,460
+you end up moving in a way that you
+don't even realize that you need to
+
+106
+00:07:03,460 --> 00:07:04,670
+document it.
+
+107
+00:07:05,100 --> 00:07:09,810
+You don't even realize that you can
+document it because it's so innate.
+
+108
+00:07:10,100 --> 00:07:12,390
+It's so much more of your instinct.
+
+109
+00:07:13,040 --> 00:07:16,110
+I mean, this is the same
+reason why Michael Jordan,
+
+110
+00:07:16,440 --> 00:07:22,010
+the great basketball player that
+he is, isn't really a great coach,
+
+111
+00:07:22,960 --> 00:07:24,860
+at least a coach for basketball,
+
+112
+00:07:24,860 --> 00:07:28,130
+because the things that
+you do instinctively,
+
+113
+00:07:28,820 --> 00:07:32,630
+sometimes you just can't
+instruct other people to do it.
+
+114
+00:07:32,660 --> 00:07:35,250
+And that just comes
+over time, repetition,
+
+115
+00:07:35,740 --> 00:07:38,750
+and somebody actually observing you.
+
+116
+00:07:39,250 --> 00:07:43,890
+So you have to be meticulous
+with just observing yourself.
+
+117
+00:07:44,100 --> 00:07:45,800
+This is where the
+awareness comes in.
+
+118
+00:07:45,800 --> 00:07:48,520
+This is where self
+-awareness comes in.
+
+119
+00:07:48,520 --> 00:07:50,990
+Why haven't you written
+those details down?
+
+120
+00:07:51,760 --> 00:07:52,870
+Does it feel obvious?
+
+121
+00:07:53,460 --> 00:07:54,670
+Take too much time?
+
+122
+00:07:55,320 --> 00:07:59,550
+Or does being needed feel
+like part of your value?
+
+123
+00:07:59,620 --> 00:08:03,510
+Why don't we always
+document what we do?
+
+124
+00:08:03,540 --> 00:08:07,220
+A lot of times, it's because
+it's your special sauce.
+
+125
+00:08:07,220 --> 00:08:09,950
+It's your special seasoning.
+
+126
+00:08:10,200 --> 00:08:12,210
+This is what makes you special.
+
+127
+00:08:12,400 --> 00:08:17,320
+And this is why most
+entrepreneurs don't have a system.
+
+128
+00:08:17,320 --> 00:08:20,280
+That's why most coaches
+don't have a system,
+
+129
+00:08:20,280 --> 00:08:26,750
+because it makes them feel like
+they're not being in the moment.
+
+130
+00:08:27,000 --> 00:08:31,150
+If I write things down,
+somebody may take it from me.
+
+131
+00:08:31,410 --> 00:08:37,730
+If I write things down, somebody
+may misinterpret what I wrote down.
+
+132
+00:08:37,820 --> 00:08:41,910
+Sometimes the written word
+isn't necessarily what you do.
+
+133
+00:08:42,520 --> 00:08:47,300
+Sometimes it's very hard to
+see yourself from the outside,
+
+134
+00:08:47,300 --> 00:08:49,240
+so you can write down.
+
+135
+00:08:49,240 --> 00:08:54,150
+You know, it's like that old recipe
+that your grandmother used to have.
+
+136
+00:08:54,300 --> 00:08:56,670
+She knows how to do it by feeling.
+
+137
+00:08:56,860 --> 00:08:58,580
+It's not really off the recipe.
+
+138
+00:08:58,580 --> 00:09:02,890
+Plus, a lot of times, it makes
+you feel like you're a genius.
+
+139
+00:09:03,740 --> 00:09:05,610
+It's a pat on the back.
+
+140
+00:09:05,640 --> 00:09:07,410
+Oh, this is just my genius.
+
+141
+00:09:08,060 --> 00:09:09,630
+I can't do it again.
+
+142
+00:09:09,780 --> 00:09:13,260
+Or I have to be in the
+right mood to do it.
+
+143
+00:09:13,260 --> 00:09:15,690
+Or you can't do it without me.
+
+144
+00:09:16,200 --> 00:09:19,930
+All of those bits
+and pieces are valid.
+
+145
+00:09:19,940 --> 00:09:21,370
+But the question is,
+
+146
+00:09:21,920 --> 00:09:24,630
+does it move you forward?
+
+147
+00:09:25,020 --> 00:09:26,550
+It doesn't move the system forward.
+
+148
+00:09:26,860 --> 00:09:28,310
+That's really what it is.
+
+149
+00:09:28,580 --> 00:09:32,810
+What could somebody else
+handle with clear instruction?
+
+150
+00:09:33,000 --> 00:09:34,750
+What still needs your experience,
+
+151
+00:09:35,340 --> 00:09:36,890
+relationships, or judgment?
+
+152
+00:09:37,620 --> 00:09:38,660
+And why? Now,
+
+153
+00:09:38,660 --> 00:09:45,550
+when it comes to writing my
+experiences or how I see the world,
+
+154
+00:09:45,720 --> 00:09:46,370
+yes,
+
+155
+00:09:46,720 --> 00:09:50,450
+I could give certain
+parts of it to someone.
+
+156
+00:09:50,800 --> 00:09:54,250
+I could, but that
+morning has to be me.
+
+157
+00:09:54,420 --> 00:09:56,540
+Because it has to
+come from somewhere.
+
+158
+00:09:56,540 --> 00:09:58,690
+It's the entrepreneur.
+
+159
+00:09:59,380 --> 00:10:05,350
+You are extracting your world
+vision the way you see the world.
+
+160
+00:10:05,880 --> 00:10:07,950
+This is called MAIM Academy,
+
+161
+00:10:08,540 --> 00:10:10,670
+Major AI Mindset.
+
+162
+00:10:11,060 --> 00:10:17,670
+This is about how I see the
+world based off of my travels,
+
+163
+00:10:18,080 --> 00:10:19,130
+my experiences,
+
+164
+00:10:19,540 --> 00:10:20,710
+my successes,
+
+165
+00:10:21,360 --> 00:10:23,260
+and a lot of my learning.
+
+166
+00:10:23,260 --> 00:10:31,150
+So it's important that at least the
+chunk that I hand off to someone
+
+167
+00:10:31,800 --> 00:10:34,600
+has something to work with.
+
+168
+00:10:34,600 --> 00:10:39,830
+Because they can definitely
+take it to NotebookLM.
+
+169
+00:10:40,260 --> 00:10:45,340
+They can definitely do a little
+Google research and increase the
+
+170
+00:10:45,340 --> 00:10:50,440
+intelligence of the notebook
+and be able to create a podcast.
+
+171
+00:10:50,440 --> 00:10:52,890
+But when you think about it,
+
+172
+00:10:53,060 --> 00:10:57,110
+and this is kind of where
+my judgment comes in.
+
+173
+00:10:57,200 --> 00:10:59,150
+Who are you talking to?
+
+174
+00:10:59,200 --> 00:11:01,130
+Who is your audience?
+
+175
+00:11:01,460 --> 00:11:06,680
+You can't necessarily just give
+someone else your audience that you
+
+176
+00:11:06,680 --> 00:11:11,050
+may have built trust with.
+
+177
+00:11:11,300 --> 00:11:15,390
+Especially if you don't know if
+they care about your audience.
+
+178
+00:11:15,520 --> 00:11:19,840
+And that's the thing why
+entrepreneurs do things for the
+
+179
+00:11:19,840 --> 00:11:21,860
+love. I do things for the love.
+
+180
+00:11:21,860 --> 00:11:29,670
+You can't pay me to just do things
+that I don't feel is really me.
+
+181
+00:11:29,760 --> 00:11:36,050
+This is why it's also hard
+to write and instruct people.
+
+182
+00:11:36,080 --> 00:11:38,820
+Because no one will ever
+do it the way you do.
+
+183
+00:11:38,820 --> 00:11:44,210
+But you want to give people an
+opportunity to try and try enough.
+
+184
+00:11:44,240 --> 00:11:45,390
+So that way,
+
+185
+00:11:45,640 --> 00:11:50,220
+you probably figure out and find out
+they don't really need much of my
+
+186
+00:11:50,220 --> 00:11:51,540
+judgment. They get it.
+
+187
+00:11:51,540 --> 00:11:54,120
+They understand. This is the
+importance of writing things down
+
+188
+00:11:54,120 --> 00:11:58,550
+and giving people enough
+leeway because you never know.
+
+189
+00:11:58,680 --> 00:12:00,830
+You may find another way.
+
+190
+00:12:01,000 --> 00:12:05,110
+Take your chosen task and
+write the steps down on paper.
+
+191
+00:12:05,680 --> 00:12:06,990
+Talk through it.
+
+192
+00:12:07,660 --> 00:12:10,610
+Circle every place you improvise.
+
+193
+00:12:10,860 --> 00:12:12,790
+Make a decision or say,
+
+194
+00:12:13,360 --> 00:12:18,850
+it depends. So yeah, go back
+to your bottleneck task.
+
+195
+00:12:19,040 --> 00:12:22,830
+Find something that you do
+last week and this week.
+
+196
+00:12:22,940 --> 00:12:26,970
+And figure out why you do it.
+
+197
+00:12:27,520 --> 00:12:32,370
+And how you do it. What
+actually can be automated?
+
+198
+00:12:32,580 --> 00:12:37,670
+What actually can be systematized?
+
+199
+00:12:37,880 --> 00:12:43,810
+I know for me, one of the things
+that I always come back to
+
+200
+00:12:44,220 --> 00:12:47,550
+is my download folder.
+
+201
+00:12:48,140 --> 00:12:52,190
+All of those podcasts that I
+tell you that I do in NotebookLM,
+
+202
+00:12:52,420 --> 00:12:54,410
+they're all sitting
+in my download folder.
+
+203
+00:12:54,520 --> 00:12:57,770
+Not necessarily because they're
+just there taking space,
+
+204
+00:12:57,780 --> 00:13:03,530
+but it gives me something that
+I can always come back to.
+
+205
+00:13:03,680 --> 00:13:09,200
+I feel that once I've generated it,
+these are still pieces of my voice.
+
+206
+00:13:09,200 --> 00:13:15,770
+That I recognize that I was the
+seed that started that conversation
+
+207
+00:13:16,260 --> 00:13:22,480
+and they more or less have touched
+things that I feel I can take on
+
+208
+00:13:22,480 --> 00:13:23,550
+another angle.
+
+209
+00:13:24,120 --> 00:13:26,050
+So for some later inspiration.
+
+210
+00:13:26,300 --> 00:13:29,090
+But yeah, my download
+folder, it's wild.
+
+211
+00:13:29,180 --> 00:13:34,230
+But it's not as wild as it used
+to be because I got it organized.
+
+212
+00:13:34,240 --> 00:13:35,770
+Pick one circled moment.
+
+213
+00:13:35,920 --> 00:13:37,890
+Is there a rule you could explain?
+
+214
+00:13:38,360 --> 00:13:39,740
+What would that rule be?
+
+215
+00:13:39,740 --> 00:13:41,450
+If it needs your judgment,
+
+216
+00:13:41,500 --> 00:13:44,990
+what should someone bring
+to you before you decide?
+
+217
+00:13:45,060 --> 00:13:50,790
+You know, most of my life, I
+have always done away with rules.
+
+218
+00:13:50,920 --> 00:13:54,330
+It's always been based
+off of my judgment.
+
+219
+00:13:54,500 --> 00:13:59,270
+But since I've gotten
+into running a business,
+
+220
+00:14:00,040 --> 00:14:02,870
+running especially a
+technology company,
+
+221
+00:14:03,380 --> 00:14:07,510
+you realize that rules
+are super important.
+
+222
+00:14:07,640 --> 00:14:11,790
+Certain times you can't
+really just focus on judgment.
+
+223
+00:14:12,180 --> 00:14:14,650
+Or if the judgment becomes the rule,
+
+224
+00:14:14,660 --> 00:14:18,170
+that's something that you
+also want to pay attention to.
+
+225
+00:14:18,800 --> 00:14:22,490
+Look at the things
+that you do when I,
+
+226
+00:14:22,800 --> 00:14:27,840
+and I'm so thankful for being in
+this space because the way I make
+
+227
+00:14:27,840 --> 00:14:31,830
+decisions is really,
+is it impactful?
+
+228
+00:14:32,160 --> 00:14:33,610
+Who is it going to help?
+
+229
+00:14:33,800 --> 00:14:36,120
+These are the rules for me.
+
+230
+00:14:36,120 --> 00:14:39,780
+The judgment is how
+far do I want to go in?
+
+231
+00:14:39,780 --> 00:14:42,530
+How much time do I want to put in?
+
+232
+00:14:42,560 --> 00:14:47,710
+But the one steady rule
+is, is this impactful?
+
+233
+00:14:47,960 --> 00:14:50,030
+Is this helping people?
+
+234
+00:14:50,260 --> 00:14:54,030
+Is this moving the needle forward?
+
+235
+00:14:54,120 --> 00:14:56,770
+Is this moving the culture forward?
+
+236
+00:14:56,900 --> 00:14:59,210
+That was my only rule in life.
+
+237
+00:14:59,740 --> 00:15:01,510
+Me playing basketball,
+
+238
+00:15:02,320 --> 00:15:04,950
+me being an athlete,
+
+239
+00:15:05,420 --> 00:15:07,570
+doesn't move the culture forward.
+
+240
+00:15:07,840 --> 00:15:09,370
+Me being in technology,
+
+241
+00:15:09,900 --> 00:15:14,890
+me being in frontier
+technology, that is a rule.
+
+242
+00:15:15,080 --> 00:15:17,770
+That is something that
+moves the culture forward.
+
+243
+00:15:18,580 --> 00:15:21,390
+Doing something everybody
+else does doesn't.
+
+244
+00:15:21,880 --> 00:15:26,120
+Me being a vibe
+coder, yes, it's new.
+
+245
+00:15:26,120 --> 00:15:30,490
+Me being in AI, yes, it's new.
+
+246
+00:15:30,580 --> 00:15:37,840
+But me taking the technology and
+not just creating an app or a course
+
+247
+00:15:37,840 --> 00:15:41,730
+that doesn't help others,
+
+248
+00:15:42,100 --> 00:15:45,280
+that just doesn't
+make any sense to me.
+
+249
+00:15:45,280 --> 00:15:49,090
+So that's where my
+judgment and rule lay.
+
+250
+00:15:49,540 --> 00:15:54,210
+But when it comes to you designing,
+
+251
+00:15:54,940 --> 00:16:00,580
+building, coming from working in
+corporations where everything is the
+
+252
+00:16:00,580 --> 00:16:03,790
+rule, they don't allow
+you to use your judgment.
+
+253
+00:16:04,160 --> 00:16:07,190
+Look, I am unhireable, okay?
+
+254
+00:16:07,600 --> 00:16:10,530
+So rules, I break them.
+
+255
+00:16:10,640 --> 00:16:12,410
+It's always judgment.
+
+256
+00:16:12,600 --> 00:16:17,770
+And if that judgment continues
+along and it bears fruit,
+
+257
+00:16:18,040 --> 00:16:23,360
+well then you turn that into a rule
+until somebody else comes along with
+
+258
+00:16:23,360 --> 00:16:27,180
+better judgment and makes
+that rule a bit better.
+
+259
+00:16:27,180 --> 00:16:30,080
+Today's assignment,
+choose one recurring task.
+
+260
+00:16:30,080 --> 00:16:34,470
+Perhaps from your bottleneck
+list, write the steps,
+
+261
+00:16:34,620 --> 00:16:38,370
+circle the hidden
+decisions, label each one,
+
+262
+00:16:38,560 --> 00:16:40,750
+unwritten rule or judgment.
+
+263
+00:16:41,060 --> 00:16:44,570
+What would finishing these
+exercises make possible?
+
+264
+00:16:45,200 --> 00:16:45,570
+Okay,
+
+265
+00:16:45,960 --> 00:16:50,200
+so pick your task. I'm picking mine.
+
+266
+00:16:50,200 --> 00:16:57,420
+So I make my sub -stack article and
+I've explained a couple of ways and
+
+267
+00:16:57,420 --> 00:16:58,590
+things that I do.
+
+268
+00:16:59,000 --> 00:17:04,490
+But I'm sure there's a bunch of
+other hidden things that go down.
+
+269
+00:17:04,620 --> 00:17:09,090
+You know, whether it means that I
+have to make my hot chocolate first
+
+270
+00:17:09,460 --> 00:17:12,770
+or I need to take
+a break in between.
+
+271
+00:17:13,300 --> 00:17:16,750
+But nonetheless, once you
+go through those steps,
+
+272
+00:17:17,360 --> 00:17:23,030
+circle the ones that are an
+unwritten rule or a judgment call.
+
+273
+00:17:23,060 --> 00:17:26,750
+Because at the end of the
+day, most of what we do
+
+274
+00:17:27,160 --> 00:17:29,170
+move like that.
+
+275
+00:17:30,000 --> 00:17:36,510
+And that separates the
+really good AI businesses
+
+276
+00:17:36,900 --> 00:17:43,290
+or consultants versus those who are
+just vibe coding and playing around.
+
+277
+00:17:43,440 --> 00:17:47,490
+You need to be able to
+think like an engineer.
+
+278
+00:17:47,700 --> 00:17:50,490
+You need to be able
+to reverse engineer.
+
+279
+00:17:50,860 --> 00:17:57,230
+You need to be able to look at
+the process and with each step,
+
+280
+00:17:57,640 --> 00:18:03,500
+you have to expand and think of 10
+things that could possibly happen at
+
+281
+00:18:03,500 --> 00:18:06,610
+every spot. Some of
+us, we're good at that.
+
+282
+00:18:06,740 --> 00:18:08,830
+Some of us, we're not good at that.
+
+283
+00:18:09,100 --> 00:18:13,450
+But it helps when you write
+things out and then you test run.
+
+284
+00:18:13,540 --> 00:18:16,710
+That's why all these vibe
+coding apps don't work.
+
+285
+00:18:16,820 --> 00:18:21,880
+Because you vibe code something and
+then you deploy it and sell it as if
+
+286
+00:18:21,880 --> 00:18:23,120
+it can do everything.
+
+287
+00:18:23,120 --> 00:18:27,110
+And then it breaks in the wild
+and you don't know why it broke.
+
+288
+00:18:27,440 --> 00:18:29,790
+So trust me, make those decisions.
+
+289
+00:18:30,160 --> 00:18:35,820
+Figure out what's the judgment call
+and what is the frigging unwritten
+
+290
+00:18:35,820 --> 00:18:36,550
+rule.
+
+291
+00:18:37,080 --> 00:18:39,290
+Because once you have that sorted,
+
+292
+00:18:39,360 --> 00:18:42,950
+this is how you start
+building a system.
+
+293
+00:18:43,140 --> 00:18:46,680
+What changes when your knowledge
+becomes something another person can
+
+294
+00:18:46,680 --> 00:18:53,710
+follow. Join the reservation list
+at academy .majoraimindset .com
+
+295
+00:18:54,780 --> 00:18:56,470
+Reserving is free.
+
+296
+00:18:57,140 --> 00:19:00,250
+The cohort costs $249,
+
+297
+00:19:00,700 --> 00:19:04,850
+paid once with only 20 places.
+
+298
+00:19:05,120 --> 00:19:07,510
+Payment opens the 11th of November
+
+299
+00:19:08,000 --> 00:19:10,920
+and we start the 18th of November.
+
+300
+00:19:10,920 --> 00:19:12,190
+If this helped,
+
+301
+00:19:12,580 --> 00:19:17,610
+the free guide is at
+majoraimindset .com.
+
+302
+00:19:17,970 --> 00:19:21,870
+You can also join the
+founding cohort list there.
+
+303
+00:19:22,320 --> 00:19:25,410
+And you'll be the first
+one to hear when it opens.
+
+304
+00:19:25,700 --> 00:19:26,750
+Fix the system,
+
+305
+00:19:27,600 --> 00:19:28,710
+fix the income.

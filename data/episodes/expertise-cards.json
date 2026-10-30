@@ -1,0 +1,393 @@
+{
+  "episode": "expertise",
+  "source": "Episode 02 — What lives in your head is not expertise (Drive 1r3XQkvl2dxeDdOdGX48EYUTVILf26_Hr), 1168.75 s",
+  "note": "start = seconds in the source; 'at' = seconds after the card starts, timed to Major's word timings (faster-whisper small.en). Wording is Major's own, lightly trimmed.",
+  "cards": [
+    {
+      "id": "01-spine",
+      "start": 7.0,
+      "duration": 5.3,
+      "kind": "quote",
+      "label": "THE WHOLE IDEA",
+      "lines": [
+        "When you automate",
+        "something, you have to",
+        "itemize everything",
+        "that you do."
+      ]
+    },
+    {
+      "id": "02-q1",
+      "start": 12.4,
+      "duration": 10,
+      "kind": "question",
+      "label": "THE QUESTION",
+      "lines": [
+        "What do people leave out",
+        "when they explain",
+        "how they work?"
+      ]
+    },
+    {
+      "id": "03-q2",
+      "start": 62.0,
+      "duration": 15.5,
+      "kind": "steps",
+      "label": "CHOOSE ONE TASK",
+      "lines": [
+        "One you did this week",
+        "and will do again next week."
+      ],
+      "items": [
+        {
+          "n": "?",
+          "title": "What is it?",
+          "at": 5.1
+        },
+        {
+          "n": "?",
+          "title": "Who depends on it?",
+          "at": 6.5
+        },
+        {
+          "n": "?",
+          "title": "Why does it keep coming back to you?",
+          "at": 8.3
+        }
+      ]
+    },
+    {
+      "id": "04-workflow",
+      "start": 113.0,
+      "duration": 82,
+      "kind": "steps",
+      "label": "MY CONTENT WORKFLOW",
+      "items": [
+        {
+          "title": "Talk it out",
+          "sub": "morning musings with Major",
+          "at": 0.3
+        },
+        {
+          "title": "Transcript into NotebookLM",
+          "at": 7.7
+        },
+        {
+          "title": "Generate a podcast",
+          "sub": "two hosts debate, critique, deep dive",
+          "at": 11.2
+        },
+        {
+          "title": "Transcript back from the podcast",
+          "at": 31.6
+        },
+        {
+          "title": "My agents catch holes and blind spots",
+          "at": 43.8
+        },
+        {
+          "title": "Write the Substack article",
+          "sub": "pressure-proofed",
+          "at": 74.2
+        }
+      ]
+    },
+    {
+      "id": "05-q3",
+      "start": 228.9,
+      "duration": 11.5,
+      "kind": "steps",
+      "label": "THE QUESTION",
+      "lines": [
+        "Imagine someone taking over",
+        "that task tomorrow."
+      ],
+      "items": [
+        {
+          "n": "?",
+          "title": "What would you explain?",
+          "at": 3.9
+        },
+        {
+          "n": "?",
+          "title": "What would you assume they already knew?",
+          "at": 6.0
+        }
+      ]
+    },
+    {
+      "id": "06-q4",
+      "start": 347.2,
+      "duration": 10.5,
+      "kind": "question",
+      "label": "THE QUESTION",
+      "lines": [
+        "Where do your written",
+        "steps stop and your",
+        "instincts take over?"
+      ]
+    },
+    {
+      "id": "07-depends",
+      "start": 362.3,
+      "duration": 22.5,
+      "kind": "steps",
+      "label": "WHERE INSTINCT TAKES OVER",
+      "lines": [
+        "“It depends.”"
+      ],
+      "items": [
+        {
+          "n": "1",
+          "title": "Five images?",
+          "at": 3.2
+        },
+        {
+          "n": "2",
+          "title": "A video?",
+          "at": 6.5
+        },
+        {
+          "n": "3",
+          "title": "A motion graphic?",
+          "at": 12.2
+        }
+      ]
+    },
+    {
+      "id": "08-jordan",
+      "start": 433.0,
+      "duration": 16,
+      "kind": "quote",
+      "label": "WHY IT'S HARD TO TEACH",
+      "lines": [
+        "The things you do",
+        "instinctively, you can't",
+        "always instruct."
+      ]
+    },
+    {
+      "id": "09-q5",
+      "start": 468.5,
+      "duration": 16.5,
+      "kind": "steps",
+      "label": "WHY HAVEN'T YOU WRITTEN IT DOWN?",
+      "items": [
+        {
+          "n": "?",
+          "title": "Does it feel obvious?",
+          "at": 3.3
+        },
+        {
+          "n": "?",
+          "title": "Take too much time?",
+          "at": 5.0
+        },
+        {
+          "n": "?",
+          "title": "Does being needed feel like part of your value?",
+          "at": 6.8
+        }
+      ]
+    },
+    {
+      "id": "10-sauce",
+      "start": 486.2,
+      "duration": 10,
+      "kind": "quote",
+      "label": "THE REAL REASON",
+      "lines": [
+        "It's your special sauce.",
+        "Your special seasoning."
+      ]
+    },
+    {
+      "id": "11-q6",
+      "start": 568.6,
+      "duration": 13,
+      "kind": "steps",
+      "label": "THE QUESTION",
+      "lines": [
+        "What could somebody else",
+        "handle with clear instruction?"
+      ],
+      "items": [
+        {
+          "n": "?",
+          "title": "What still needs your experience, relationships or judgment?",
+          "at": 4.4
+        }
+      ]
+    },
+    {
+      "id": "12-trust",
+      "start": 657.2,
+      "duration": 14,
+      "kind": "quote",
+      "label": "WHAT STAYS WITH ME",
+      "lines": [
+        "Who is your audience?",
+        "You can't just hand",
+        "someone the trust",
+        "you've built."
+      ]
+    },
+    {
+      "id": "13-q7",
+      "start": 721.0,
+      "duration": 14,
+      "kind": "steps",
+      "label": "ON PAPER",
+      "lines": [
+        "Take your chosen task.",
+        "Write the steps down."
+      ],
+      "items": [
+        {
+          "n": "○",
+          "title": "Circle every place you improvise",
+          "sub": "a decision, or “it depends”",
+          "at": 6.7
+        }
+      ]
+    },
+    {
+      "id": "14-q8",
+      "start": 814.2,
+      "duration": 15,
+      "kind": "steps",
+      "label": "PICK ONE CIRCLED MOMENT",
+      "items": [
+        {
+          "n": "?",
+          "title": "Is there a rule you could explain?",
+          "at": 1.7
+        },
+        {
+          "n": "?",
+          "title": "If it needs your judgment, what should someone bring you first?",
+          "at": 5.5
+        }
+      ]
+    },
+    {
+      "id": "15-rule",
+      "start": 882.6,
+      "duration": 16,
+      "kind": "steps",
+      "label": "MY ONE STEADY RULE",
+      "items": [
+        {
+          "n": "1",
+          "title": "Is this impactful?",
+          "at": 1.9
+        },
+        {
+          "n": "2",
+          "title": "Is this helping people?",
+          "at": 5.4
+        },
+        {
+          "n": "3",
+          "title": "Is this moving the needle forward?",
+          "at": 7.7
+        },
+        {
+          "n": "4",
+          "title": "Is this moving the culture forward?",
+          "at": 11.5
+        }
+      ]
+    },
+    {
+      "id": "16-fruit",
+      "start": 972.6,
+      "duration": 14.4,
+      "kind": "quote",
+      "label": "JUDGMENT → RULE",
+      "lines": [
+        "If that judgment",
+        "bears fruit, turn it",
+        "into a rule."
+      ]
+    },
+    {
+      "id": "17-assign",
+      "start": 987.2,
+      "duration": 28,
+      "kind": "steps",
+      "label": "TODAY'S ASSIGNMENT",
+      "items": [
+        {
+          "title": "Choose one recurring task",
+          "sub": "perhaps from your bottleneck list",
+          "at": 0.3
+        },
+        {
+          "title": "Write the steps",
+          "at": 6.1
+        },
+        {
+          "title": "Circle the hidden decisions",
+          "at": 7.4
+        },
+        {
+          "title": "Label each one",
+          "sub": "unwritten rule or judgment",
+          "at": 9.7
+        }
+      ]
+    },
+    {
+      "id": "18-q9",
+      "start": 1123.1,
+      "duration": 4.1,
+      "kind": "question",
+      "label": "THE QUESTION",
+      "lines": [
+        "What changes when",
+        "your knowledge becomes",
+        "something another",
+        "person can follow?"
+      ]
+    },
+    {
+      "id": "19-cta",
+      "start": 1127.3,
+      "duration": 38.2,
+      "kind": "cta",
+      "label": "MAIM ACADEMY · FOUNDING COHORT",
+      "items": [
+        {
+          "title": "Reserve free",
+          "sub": "academy.majoraimindset.com/reserve",
+          "at": 0.3
+        },
+        {
+          "title": "US$249, paid once",
+          "sub": "only 20 places",
+          "at": 9.8
+        },
+        {
+          "title": "Payment opens 11 November",
+          "at": 17.8
+        },
+        {
+          "title": "Cohort starts 18 November",
+          "at": 20.7
+        }
+      ]
+    },
+    {
+      "id": "20-close",
+      "start": 1165.7,
+      "duration": 3.0,
+      "kind": "quote",
+      "label": "MAIM ACADEMY",
+      "lines": [
+        "Fix the system,",
+        "fix the income."
+      ]
+    }
+  ]
+}
