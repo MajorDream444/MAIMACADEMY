@@ -6,6 +6,10 @@ Authority: [MAIM Academy issue #1](https://github.com/MajorDream444/MAIMACADEMY/
 and [Major-AI-OS](https://github.com/MajorDream444/Major-AI-OS) for brand,
 website architecture, design and release gates.
 
+## Academy ABCs — Volume 2
+
+The founder-supplied [A–Z build-and-do map](docs/curriculum/ABC_VOLUME_2_ACADEMY.md) organizes workshop and project themes. It complements the [Major AI Mindset Volume 1 philosophy map](https://github.com/MajorDream444/Major-AI-OS/blob/docs/maim-abc-volume-1-map/docs/curriculum/ABC_VOLUME_1_MINDSET.md). These are curriculum maps; they do not activate checkout or certify completed lessons.
+
 V1 is a static informational preview. Start with
 [canonical architecture](docs/CANONICAL-ARCHITECTURE.md) and
 [ADR-0001](docs/adr/0001-informational-academy-directory.md).
