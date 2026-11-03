@@ -37,7 +37,8 @@
     "deploymentEnabled": {
       "codex/academy-capacity-test-packet-2026-10-27": false,
       "codex/academy-qa-followup-2026-10-27": false,
-      "codex/academy-launch-access-followup-2026-10-28": false
+      "codex/academy-launch-access-followup-2026-10-28": false,
+      "codex/academy-audit-repair-2026-11-03": false
     }
   }
 }
