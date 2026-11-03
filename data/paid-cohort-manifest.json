@@ -1,0 +1,15 @@
+{
+ "status":"editorial_draft",
+ "published":false,
+ "source_authority":"Nov 1 founder sequence and Academy ABC Volume 2; full rights-cleared teaching text not supplied",
+ "days":[
+  {"day":1,"theme":"Orientation","status":"draft","source_ref":null},
+  {"day":2,"theme":"Choose a recurring problem","status":"draft","source_ref":null},
+  {"day":3,"theme":"Observe the current workflow","status":"draft","source_ref":null},
+  {"day":4,"theme":"Prepare for Audit and Design","status":"draft","source_ref":null},
+  {"day":5,"theme":"Audit and Design live teaching","status":"draft","source_ref":null},
+  {"day":6,"theme":"Capture starting evidence","status":"draft","source_ref":null},
+  {"day":7,"theme":"Audit submission and peer feedback","status":"draft","source_ref":null}
+ ],
+ "publication_gate":"Rights-cleared source, complete teaching/action/reflection/artifact/rubric, facilitator review, source/version receipt, explicit publish approval. No generic major-moves import."
+}

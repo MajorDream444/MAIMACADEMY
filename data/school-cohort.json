@@ -1,0 +1,113 @@
+{
+  "id": "founding-2026-11-18",
+  "name": "Founding Cohort 01",
+  "decision_source": "MAIM-Academy---brand/handoffs/FOUNDER_DECISIONS_2026-11-01.md",
+  "status": "internal_preview_pending_contract_reconciliation",
+  "timezone": null,
+  "meeting_url": null,
+  "orientation": "2026-11-18",
+  "group_dates": [
+    "2026-11-22",
+    "2026-11-29",
+    "2026-12-06",
+    "2026-12-13"
+  ],
+  "office_hours": "Wednesdays; time and timezone pending",
+  "closes": "2026-12-17",
+  "projects": [
+    {
+      "id": "audit",
+      "name": "Audit",
+      "taught": "2026-11-22",
+      "due": "2026-11-24",
+      "brief": "Identify one recurring problem and the people it affects.",
+      "criteria": [
+        "Name the person and recurring problem",
+        "Describe the current workflow",
+        "Record one observable starting measure",
+        "Exclude private client data"
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "taught": "2026-11-22",
+      "due": "2026-11-27",
+      "brief": "Map the user's journey and the result they need.",
+      "criteria": [
+        "Connect the problem to a useful result",
+        "Map the steps from first contact to result",
+        "Mark human review and AI assistance",
+        "Use permissioned evidence"
+      ]
+    },
+    {
+      "id": "prototype",
+      "name": "Prototype",
+      "taught": "2026-11-29",
+      "due": "2026-12-01",
+      "brief": "Build a small version of your proposed workflow.",
+      "criteria": [
+        "Show a working sample",
+        "Bound the inputs and outputs",
+        "Identify human review",
+        "Use synthetic or authorized data"
+      ]
+    },
+    {
+      "id": "test",
+      "name": "Test",
+      "taught": "2026-11-29",
+      "due": "2026-12-04",
+      "brief": "Check whether the prototype helps with the chosen problem.",
+      "criteria": [
+        "Describe a test case",
+        "Record the observed outcome",
+        "Record a failure or uncertainty",
+        "Name the next improvement"
+      ]
+    },
+    {
+      "id": "ship",
+      "name": "Ship",
+      "taught": "2026-12-06",
+      "due": "2026-12-08",
+      "brief": "Put a bounded, useful version into real use.",
+      "criteria": [
+        "Record permission to use it",
+        "Show real-use proof",
+        "Provide operating instructions",
+        "Keep a rollback path"
+      ]
+    },
+    {
+      "id": "measure",
+      "name": "Measure",
+      "taught": "2026-12-06",
+      "due": "2026-12-12",
+      "brief": "Compare a tracked result with your starting point.",
+      "criteria": [
+        "State the baseline",
+        "Record a tracked result",
+        "Explain limitations",
+        "Choose your next move"
+      ]
+    }
+  ],
+  "project_brief_status": "editorial_draft_not_approved_paid_instruction",
+  "credentials": "Six accepted projects, four live/replay takeaways, showcase and evidence; human issuance remains unimplemented. Community contributions are separate.",
+  "access_policy": {
+    "source": "MAIM-Academy---brand/handoffs/FOUNDER_DECISIONS_2026-11-01.md",
+    "work_months_from_cohort_close": 12,
+    "expiry_warning_days": 30,
+    "exact_expiry_status": "pending_timezone_cutoff_and_customer_terms_reconciliation",
+    "continuing_community_status": "pending_terms_reconciliation"
+  },
+  "credential_requirements": [
+    "All six projects accepted, with peer feedback first and a human facilitator decision",
+    "All four Sunday group sessions attended live, or reviewed replay with a posted takeaway",
+    "Final showcase completed",
+    "Evidence saved: submissions, feedback and acceptance dates, Ship real-use proof, Measure tracked result, attendance and showcase"
+  ],
+  "credential_issuance_enabled": false
+}

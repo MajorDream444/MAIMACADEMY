@@ -1,0 +1,16 @@
+# School V1 — access and credential policy reconciliation
+
+**3 November 2026 · Development approved; production HOLD.** Policy source: Academy brand `278d882f3f3d8a32cd4e71f6e9dbcf11d0c68a5e`, `handoffs/FOUNDER_DECISIONS_2026-11-01.md`. Implementation baseline: Academy `eb4828ce64c6f77d8c6b1e5a7a2a7adff5cc18d8`.
+
+| Question | Evidence and candidate behavior | Remaining gate |
+| --- | --- | --- |
+| Workspace duration | Nov 1: 12 months from cohort close, email/export warning 30 days before. Cohort closes 17 Dec 2026. An anniversary of 17 Dec 2027 is arithmetic, not a settled access timestamp. Removed the hardcoded demo expiry; profile states the approved duration and exact-expiry pending. | Confirm timezone, inclusive/exclusive cutoff and reconcile older no-routine-content-expiry offer. Do not retroactively alter existing grants. |
+| Continuing access | Workspace, journey revisions, community belonging and public credential verification are distinct. | Reconcile entitlement terms; no unlimited lifetime service, subscription or renewal inferred. |
+| Project progress | Submitted/awaiting peer feedback, peer feedback received, awaiting facilitator review, revisions requested and accepted are visible. Profile summarizes submitted, awaiting review, revisions and accepted. | Hosted persistence and delivery staffing remain unverified. |
+| Performance credential | All six accepted projects; peer first, human facilitator decision; all four Sunday groups live or reviewed replay plus posted takeaway; final showcase; saved submissions, feedback/accept dates, Ship real-use proof, Measure tracked result, attendance and showcase. | Full credential decision/issuance and attendance subsystem are not implemented or enabled. No certificate is issued by acceptance or export. |
+| Recognition / privacy | Contribution recognition is separate; inviting someone does not require conversion and does not replace demonstrated work. Credentials are not accreditation. | Any public name/project verification needs approved privacy/consent and retention policy before implementation. |
+| Export | Versioned JSON contains the learner's submissions, versions, feedback, human reviewer references, decision dates and own activity evidence/posts. Includes explicit `credential_issued:false`. Reviewer UUIDs are provenance references, not contact records. | File attachments, source bundles and rights-cleared downloadable uploads are not implemented. Export is a work record, not a credential or full LMS backup. |
+
+Automated embedded PostgreSQL/API proof rejects other learners' private submission access and forged acceptance/role changes. An export test places a private sentinel in learner B's work and proves it absent from learner A's record; report queues, memberships, emails, sessions and provider credentials are not exported. No credential-issue action exists, even for the facilitator fixture. These are synthetic local proofs, not independently reviewed hosted acceptance.
+
+Existing customer-facing schedules, legal versions, Stripe records and grants remain unchanged. Sunday teaching/24-hour replay and older Wednesday/48-hour copy conflicts stay on the launch checklist. The conditional approval authorizes commit and draft PR only; merge, hosted migration, enrollment, invitations and production remain blocked.

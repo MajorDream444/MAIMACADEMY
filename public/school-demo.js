@@ -1,0 +1,38 @@
+export const cohort={"id": "founding-2026-11-18", "name": "Founding Cohort 01", "decision_source": "MAIM-Academy---brand/handoffs/FOUNDER_DECISIONS_2026-11-01.md", "status": "internal_preview_pending_contract_reconciliation", "timezone": null, "meeting_url": null, "orientation": "2026-11-18", "group_dates": ["2026-11-22", "2026-11-29", "2026-12-06", "2026-12-13"], "office_hours": "Wednesdays; time and timezone pending", "closes": "2026-12-17", "projects": [{"id": "audit", "name": "Audit", "taught": "2026-11-22", "due": "2026-11-24", "brief": "Identify one recurring problem and the people it affects.", "criteria": ["Name the person and recurring problem", "Describe the current workflow", "Record one observable starting measure", "Exclude private client data"]}, {"id": "design", "name": "Design", "taught": "2026-11-22", "due": "2026-11-27", "brief": "Map the user's journey and the result they need.", "criteria": ["Connect the problem to a useful result", "Map the steps from first contact to result", "Mark human review and AI assistance", "Use permissioned evidence"]}, {"id": "prototype", "name": "Prototype", "taught": "2026-11-29", "due": "2026-12-01", "brief": "Build a small version of your proposed workflow.", "criteria": ["Show a working sample", "Bound the inputs and outputs", "Identify human review", "Use synthetic or authorized data"]}, {"id": "test", "name": "Test", "taught": "2026-11-29", "due": "2026-12-04", "brief": "Check whether the prototype helps with the chosen problem.", "criteria": ["Describe a test case", "Record the observed outcome", "Record a failure or uncertainty", "Name the next improvement"]}, {"id": "ship", "name": "Ship", "taught": "2026-12-06", "due": "2026-12-08", "brief": "Put a bounded, useful version into real use.", "criteria": ["Record permission to use it", "Show real-use proof", "Provide operating instructions", "Keep a rollback path"]}, {"id": "measure", "name": "Measure", "taught": "2026-12-06", "due": "2026-12-12", "brief": "Compare a tracked result with your starting point.", "criteria": ["State the baseline", "Record a tracked result", "Explain limitations", "Choose your next move"]}], "project_brief_status": "editorial_draft_not_approved_paid_instruction", "credentials": "Six accepted projects, four live/replay takeaways, showcase and evidence; human issuance remains unimplemented. Community contributions are separate.", "access_policy": {"source": "MAIM-Academy---brand/handoffs/FOUNDER_DECISIONS_2026-11-01.md", "work_months_from_cohort_close": 12, "expiry_warning_days": 30, "exact_expiry_status": "pending_timezone_cutoff_and_customer_terms_reconciliation", "continuing_community_status": "pending_terms_reconciliation"}, "credential_requirements": ["All six projects accepted, with peer feedback first and a human facilitator decision", "All four Sunday group sessions attended live, or reviewed replay with a posted takeaway", "Final showcase completed", "Evidence saved: submissions, feedback and acceptance dates, Ship real-use proof, Measure tracked result, attendance and showcase"], "credential_issuance_enabled": false};
+const ids={'learner-a':'00000000-0000-4000-8000-000000000001','learner-b':'00000000-0000-4000-8000-000000000002',facilitator:'00000000-0000-4000-8000-000000000003'};
+const key='maim-school-synthetic-v1';
+let role='learner-a';
+let state;try{state=JSON.parse(localStorage.getItem(key));}catch{}
+if(!state||state.schema!==1)state={schema:1,submissions:[],reviews:[],history:[],posts:[],reports:[]};
+function persist(){localStorage.setItem(key,JSON.stringify(state));}
+export function setRole(value){role=value;}
+export function reset(){state={schema:1,submissions:[],reviews:[],history:[],posts:[],reports:[]};persist();}
+export async function demoRequest(action,body){
+ const uid=ids[role],fac=role==='facilitator',now=new Date().toISOString();
+ const visible=state.submissions.filter(s=>s.user_id===uid||fac||(s.shared&&s.state!=='draft'));
+ if(action==='dashboard')return {user_id:uid,membership:{role:fac?'facilitator':'learner',work_expires_at:null},cohort,submissions:visible,reviews:state.reviews.filter(r=>visible.some(s=>s.id===r.submission_id)),history:state.history.filter(h=>state.submissions.some(s=>s.id===h.submission_id&&(s.user_id===uid||fac))),posts:state.posts.filter(p=>!p.hidden||fac),reports:fac?state.reports.filter(r=>!r.resolved_at):[],lessons:[]};
+ if(action==='export')return {format:'maim-academy-work-record',schema_version:1,exported_at:now,credential_issued:false,synthetic:true,submissions:state.submissions.filter(s=>s.user_id===uid),reviews:state.reviews.filter(r=>state.submissions.some(s=>s.id===r.submission_id&&s.user_id===uid)),posts:state.posts.filter(p=>p.user_id===uid),history:state.history.filter(h=>state.submissions.some(s=>s.id===h.submission_id&&s.user_id===uid))};
+ if(action==='save'){
+  let s=state.submissions.find(s=>s.user_id===uid&&s.milestone===body.milestone);
+  if(fac||s&&!['draft','changes_requested'].includes(s.state)||body.version!==(s?.version||0))throw Error('This work cannot be edited in its current state.');
+  if(!s){s={id:crypto.randomUUID(),user_id:uid,cohort_id:cohort.id,milestone:body.milestone,version:0};state.submissions.push(s);}
+  Object.assign(s,{body:body.body,shared:body.shared,state:body.submit?'submitted':'draft',version:s.version+1,updated_at:now});
+  state.history.push({submission_id:s.id,event:s.state,version:s.version,created_at:now});
+ }else if(action==='review'){
+  const s=visible.find(s=>s.id===body.id);if(!s||s.user_id===uid||s.version!==body.version)throw Error('Review unavailable.');
+  if(body.decision==='peer'){if(fac||!s.shared||!['submitted','peer_feedback'].includes(s.state))throw Error('Peer sharing required.');s.state='peer_feedback';}
+  else{if(!fac||!['peer_feedback','facilitator_review'].includes(s.state)||!state.reviews.some(r=>r.submission_id===s.id&&r.version===s.version&&r.kind==='peer'))throw Error('Peer feedback must come first.');s.state=body.decision;}
+  state.reviews.push({id:crypto.randomUUID(),submission_id:s.id,reviewer_id:uid,version:s.version,kind:body.decision,body:body.body,created_at:now});state.history.push({submission_id:s.id,event:body.decision,version:s.version,created_at:now});
+ }else if(action==='unshare'||action==='sharing'){
+  const s=state.submissions.find(s=>s.id===body.id&&s.user_id===uid);if(!s)throw Error('Ownership required.');
+  const shared=action==='unshare'?false:body.shared;
+  if(typeof shared!=='boolean')throw Error('Choose a sharing preference.');
+  if(s.shared!==shared){s.shared=shared;state.history.push({submission_id:s.id,event:shared?'peer_sharing_enabled':'peer_sharing_revoked',version:s.version,created_at:now});}
+ }else if(action==='request-review'){
+  const s=state.submissions.find(s=>s.id===body.id&&s.user_id===uid);if(!s||s.state!=='peer_feedback')throw Error('Peer feedback required.');s.state='facilitator_review';state.history.push({submission_id:s.id,event:s.state,version:s.version,created_at:now});
+ }else if(action==='post')state.posts.unshift({id:crypto.randomUUID(),cohort_id:cohort.id,user_id:uid,channel:body.channel,body:body.body,parent_id:body.parent_id||null,hidden:false,created_at:now});
+ else if(action==='report'){if(!state.reports.some(r=>r.post_id===body.id&&r.reporter_id===uid))state.reports.push({id:crypto.randomUUID(),post_id:body.id,reporter_id:uid,reason:body.body});}
+ else if(action==='hide'){if(!fac)throw Error('Facilitator required.');state.posts.forEach(p=>{if(p.id===body.id||p.parent_id===body.id)p.hidden=true;});state.reports.forEach(r=>{if(r.post_id===body.id)r.resolved_at=now;});}
+ else throw Error('Unavailable in synthetic walkthrough.');
+ persist();return {saved:true};
+}
