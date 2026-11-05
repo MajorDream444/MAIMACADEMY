@@ -27,3 +27,7 @@ Proposed 30-Day Major Moves activities: `/major-moves`, authored from
 age-specific instructional review remain open. See
 [the curriculum proposal](docs/CURRICULUM-30-DAY-MAJOR-MOVES-PROPOSAL.md)
 and [the Work task board](docs/WORK-AGENTS-OPERATING-PLAN.md).
+
+## Founder-approved Academy commerce architecture — 5 November 2026
+
+Read [MAIM Academy Commerce Architecture](docs/commerce/MAIM_ACADEMY_COMMERCE_ARCHITECTURE_2026-11-05.md) before implementing courses, Campus Pass membership, Spark Lab sprints, institutional licensing, youth enrollment, checkout, or fulfillment. It defines the Academy's execution role while keeping SKUs, Stripe mappings, and release evidence in the separate commerce catalog.
