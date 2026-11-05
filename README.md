@@ -1,5 +1,18 @@
 # MAIM Academy
 
+## School V1 implementation candidate
+
+The original informational-site description below is historical. The repository
+now includes a restricted preview member/TEST commerce scaffold and a local
+School V1 candidate. Start with the [current truth matrix](docs/operations/SCHOOL-V1-READINESS-2026-11-03.md)
+and [implementation, QA and remaining gates](docs/school/IMPLEMENTATION-AND-QA.md).
+Run `npm run check`, then `npm run dev` and visit `/school-walkthrough` for the
+explicitly synthetic browser-local learner/peer/facilitator flow. Use fictional
+data only. `/school` is server-protected and additionally gated by
+`ENABLE_ACADEMY_SCHOOL`; the static development server does not run hosted APIs.
+The new TEST migration is unapplied. This candidate does not establish hosted
+enrollment, approved paid teaching, credentials or production release readiness.
+
 Learning and library doorway within Major AI Mindset.
 
 Authority: [MAIM Academy issue #1](https://github.com/MajorDream444/MAIMACADEMY/issues/1)

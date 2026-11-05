@@ -1,3 +1,4 @@
+import {renderSchool} from '../lib/school-view.js';
 import { mkdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
 
 const lessons = JSON.parse(await readFile('data/major-moves.json', 'utf8'));
@@ -71,7 +72,8 @@ await rm('dist', {recursive:true, force:true});
 await mkdir('dist', {recursive:true});
 await cp('public','dist',{recursive:true});
 for(const [route,page] of Object.entries(pages)) await writeFile(`dist/${route==='/'?'index':route.slice(1)}.html`,wrapper(page,route));
+await writeFile('dist/school-walkthrough.html',renderSchool(true));
 await mkdir('dist/api',{recursive:true});
 await writeFile('dist/api/checkout.json',JSON.stringify({available:false,reason:'Payment invitations may open no earlier than 11 November after release approval. Reservations are free.'}));
-await writeFile('dist/robots.txt','User-agent: *\nAllow: /\nDisallow: /member-room\nDisallow: /walkthrough\n');
+await writeFile('dist/robots.txt','User-agent: *\nAllow: /\nDisallow: /member-room\nDisallow: /walkthrough\nDisallow: /school\nDisallow: /school-walkthrough\n');
 console.log(`Built ${Object.keys(pages).length} pages. Reservations open; payment invitations remain readiness-gated for 11 November; cohort starts 18 November.`);

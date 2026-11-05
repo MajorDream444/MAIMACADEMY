@@ -1,0 +1,414 @@
+
+> maim-academy-v1@0.1.0 check
+> npm run build && npm run lint && npm test
+
+
+> maim-academy-v1@0.1.0 build
+> node scripts/build.mjs
+
+Built 10 pages. Reservations open; payment invitations remain readiness-gated for 11 November; cohort starts 18 November.
+
+> maim-academy-v1@0.1.0 lint
+> html-validate 'dist/**/*.html' && node --check scripts/build.mjs
+
+
+> maim-academy-v1@0.1.0 test
+> node --test tests/*.test.mjs tests/database/*.test.mjs
+
+TAP version 13
+# Subtest: permanent founding journey does not grant vault or other users access
+ok 1 - permanent founding journey does not grant vault or other users access
+  ---
+  duration_ms: 0.920959
+  type: 'test'
+  ...
+# Subtest: revoked, held, future and exact-expiry access denied
+ok 2 - revoked, held, future and exact-expiry access denied
+  ---
+  duration_ms: 0.104166
+  type: 'test'
+  ...
+# Subtest: vault calendar terms clamp month ends and preserve leap-year rules
+ok 3 - vault calendar terms clamp month ends and preserve leap-year rules
+  ---
+  duration_ms: 1.012334
+  type: 'test'
+  ...
+# Subtest: only a fully matched test purchase can grant journey access
+ok 4 - only a fully matched test purchase can grant journey access
+  ---
+  duration_ms: 0.165833
+  type: 'test'
+  ...
+# Subtest: progress owner cannot be supplied by caller and validation rejects invalid data
+ok 5 - progress owner cannot be supplied by caller and validation rejects invalid data
+  ---
+  duration_ms: 5.376166
+  type: 'test'
+  ...
+# Subtest: checkout remains unavailable without approved price or with live key
+ok 6 - checkout remains unavailable without approved price or with live key
+  ---
+  duration_ms: 0.118791
+  type: 'test'
+  ...
+# Subtest: closing new checkout does not disable signed payment recovery configuration
+ok 7 - closing new checkout does not disable signed payment recovery configuration
+  ---
+  duration_ms: 0.578792
+  type: 'test'
+  ...
+# Subtest: only the atomic cohort-capacity exception is presented as full
+ok 8 - only the atomic cohort-capacity exception is presented as full
+  ---
+  duration_ms: 0.3515
+  type: 'test'
+  ...
+# Subtest: 30-day group and 90-day private windows are distinct from permanent content
+ok 9 - 30-day group and 90-day private windows are distinct from permanent content
+  ---
+  duration_ms: 6.906458
+  type: 'test'
+  ...
+# Subtest: credits reject other owners, used/reserved credits, and expiry boundary
+ok 10 - credits reject other owners, used/reserved credits, and expiry boundary
+  ---
+  duration_ms: 0.13675
+  type: 'test'
+  ...
+# Subtest: preparation cannot self-approve or set identity
+ok 11 - preparation cannot self-approve or set identity
+  ---
+  duration_ms: 0.09425
+  type: 'test'
+  ...
+# Subtest: reservation requires owned reviewed brief, credit and 45-minute future slot
+ok 12 - reservation requires owned reviewed brief, credit and 45-minute future slot
+  ---
+  duration_ms: 0.0905
+  type: 'test'
+  ...
+# Subtest: advisory API is closed before provider/advisory enablement
+ok 13 - advisory API is closed before provider/advisory enablement
+  ---
+  duration_ms: 0.464292
+  type: 'test'
+  ...
+# Subtest: official schedule keeps readiness-gated November11 payments and November18 start
+ok 14 - official schedule keeps readiness-gated November11 payments and November18 start
+  ---
+  duration_ms: 15.962459
+  type: 'test'
+  ...
+# Subtest: application schema executes in PostgreSQL and enforces advisory invariants
+    # Subtest: active journey creates exactly one credit with a 90-day window
+    ok 1 - active journey creates exactly one credit with a 90-day window
+      ---
+      duration_ms: 12.451667
+      type: 'test'
+      ...
+    # Subtest: held journey and vault create no advisory credits
+    ok 2 - held journey and vault create no advisory credits
+      ---
+      duration_ms: 2.967125
+      type: 'test'
+      ...
+    # Subtest: vault requires expiry and invalid progress cannot be stored
+    ok 3 - vault requires expiry and invalid progress cannot be stored
+      ---
+      duration_ms: 3.6005
+      type: 'test'
+      ...
+    # Subtest: approval requires reviewer evidence
+    ok 4 - approval requires reviewer evidence
+      ---
+      duration_ms: 2.336083
+      type: 'test'
+      ...
+    # Subtest: appointments require 45 minutes, reject overlaps and permit adjacent slots
+    ok 5 - appointments require 45 minutes, reject overlaps and permit adjacent slots
+      ---
+      duration_ms: 4.122667
+      type: 'test'
+      ...
+    # Subtest: booking uniqueness rejects reusing a credit, brief or slot
+    ok 6 - booking uniqueness rejects reusing a credit, brief or slot
+      ---
+      duration_ms: 19.399208
+      type: 'test'
+      ...
+    # Subtest: failed transaction rolls back progress changes
+    ok 7 - failed transaction rolls back progress changes
+      ---
+      duration_ms: 3.368625
+      type: 'test'
+      ...
+    1..7
+ok 15 - application schema executes in PostgreSQL and enforces advisory invariants
+  ---
+  duration_ms: 1952.179166
+  type: 'test'
+  ...
+# Subtest: School TEST migration and API: real PostgreSQL learner journey, RLS and review authority
+    # Subtest: absent config, unauthenticated, nonmember and wrong origin deny access
+    ok 1 - absent config, unauthenticated, nonmember and wrong origin deny access
+      ---
+      duration_ms: 11.395958
+      type: 'test'
+      ...
+    # Subtest: draft instruction stays hidden even on direct lesson request
+    ok 2 - draft instruction stays hidden even on direct lesson request
+      ---
+      duration_ms: 16.276625
+      type: 'test'
+      ...
+    # Subtest: private persisted draft is invisible to peer; client cannot forge owner or direct-update state
+    ok 3 - private persisted draft is invisible to peer; client cannot forge owner or direct-update state
+      ---
+      duration_ms: 17.806584
+      type: 'test'
+      ...
+    # Subtest: optimistic versions reject stale edits; peer cannot see a shared draft
+    ok 4 - optimistic versions reject stale edits; peer cannot see a shared draft
+      ---
+      duration_ms: 12.014041
+      type: 'test'
+      ...
+    # Subtest: submit -> peer feedback -> revision -> resubmit -> new peer feedback -> human acceptance
+    ok 5 - submit -> peer feedback -> revision -> resubmit -> new peer feedback -> human acceptance
+      ---
+      duration_ms: 36.807417
+      type: 'test'
+      ...
+    # Subtest: cohort discussion, reply/report/hide and private-project separation
+    ok 6 - cohort discussion, reply/report/hide and private-project separation
+      ---
+      duration_ms: 20.029084
+      type: 'test'
+      ...
+    # Subtest: peer sharing can be withdrawn without erasing acceptance or evidence
+    ok 7 - peer sharing can be withdrawn without erasing acceptance or evidence
+      ---
+      duration_ms: 5.619667
+      type: 'test'
+      ...
+    # Subtest: other-cohort membership does not expose work, discussions or moderator reports
+    ok 8 - other-cohort membership does not expose work, discussions or moderator reports
+      ---
+      duration_ms: 3.627959
+      type: 'test'
+      ...
+    # Subtest: revoked/expired work access denies reads and writes, own export stays available
+    ok 9 - revoked/expired work access denies reads and writes, own export stays available
+      ---
+      duration_ms: 9.646625
+      type: 'test'
+      ...
+    # Subtest: anonymous and auth role cannot invoke definer functions
+    ok 10 - anonymous and auth role cannot invoke definer functions
+      ---
+      duration_ms: 2.0355
+      type: 'test'
+      ...
+    1..10
+ok 16 - School TEST migration and API: real PostgreSQL learner journey, RLS and review authority
+  ---
+  duration_ms: 2362.448584
+  type: 'test'
+  ...
+# Subtest: reviewed UUID TEST migration: actual PostgreSQL roles, RLS, sessions, capacity and recovery
+    # Subtest: RLS hides other user progress and refuses forged writes without trusting API filters
+    ok 1 - RLS hides other user progress and refuses forged writes without trusting API filters
+      ---
+      duration_ms: 10.598583
+      type: 'test'
+      ...
+    # Subtest: private lessons require active ownership and draft is never visible
+    ok 2 - private lessons require active ownership and draft is never visible
+      ---
+      duration_ms: 6.043084
+      type: 'test'
+      ...
+    # Subtest: auth role creates/revokes hash-only sessions for registered UUIDs; member cannot mint them
+    ok 3 - auth role creates/revokes hash-only sessions for registered UUIDs; member cannot mint them
+      ---
+      duration_ms: 6.824666
+      type: 'test'
+      ...
+    # Subtest: reservation consent is own-user, explicit and never a paid seat
+    ok 4 - reservation consent is own-user, explicit and never a paid seat
+      ---
+      duration_ms: 5.440791
+      type: 'test'
+      ...
+    # Subtest: reviewed private booking is owned, deadline-safe and cannot consume credit twice
+    ok 5 - reviewed private booking is owned, deadline-safe and cannot consume credit twice
+      ---
+      duration_ms: 13.755375
+      type: 'test'
+      ...
+    # Subtest: interest reservations are uncapped; checkout holds atomically protect 20 paid places
+    ok 6 - interest reservations are uncapped; checkout holds atomically protect 20 paid places
+      ---
+      duration_ms: 49.404916
+      type: 'test'
+      ...
+    # Subtest: signed-event core deduplicates fulfillment and cannot restore access after refund
+    ok 7 - signed-event core deduplicates fulfillment and cannot restore access after refund
+      ---
+      duration_ms: 11.381417
+      type: 'test'
+      ...
+    # Subtest: member role cannot bypass booking review or access MAIM/customer/Auth tables
+    ok 8 - member role cannot bypass booking review or access MAIM/customer/Auth tables
+      ---
+      duration_ms: 5.324875
+      type: 'test'
+      ...
+    1..8
+ok 17 - reviewed UUID TEST migration: actual PostgreSQL roles, RLS, sessions, capacity and recovery
+  ---
+  duration_ms: 2352.087667
+  type: 'test'
+  ...
+# Subtest: all member/payment/auth handlers fail closed with configuration absent
+ok 18 - all member/payment/auth handlers fail closed with configuration absent
+  ---
+  duration_ms: 0.81775
+  type: 'test'
+  ...
+# Subtest: receipt is gated, allowlisted, durable and never resends uncertain or accepted delivery
+ok 19 - receipt is gated, allowlisted, durable and never resends uncertain or accepted delivery
+  ---
+  duration_ms: 2.776417
+  type: 'test'
+  ...
+# Subtest: guide-only and honeypot-shaped success never claim cohort enrollment
+ok 20 - guide-only and honeypot-shaped success never claim cohort enrollment
+  ---
+  duration_ms: 16.24575
+  type: 'test'
+  ...
+# Subtest: confirmed interest-list entry states target invitation and distinguishes paid capacity
+ok 21 - confirmed interest-list entry states target invitation and distinguishes paid capacity
+  ---
+  duration_ms: 8.611292
+  type: 'test'
+  ...
+# Subtest: provider and network failures preserve retry and do not claim successful signup
+ok 22 - provider and network failures preserve retry and do not claim successful signup
+  ---
+  duration_ms: 6.940542
+  type: 'test'
+  ...
+# Subtest: School production access fails closed; no customer data or draft teaching enters static build
+ok 23 - School production access fails closed; no customer data or draft teaching enters static build
+  ---
+  duration_ms: 10.362917
+  type: 'test'
+  ...
+# Subtest: School dates are date-only newer decisions and never inherit old times/links
+ok 24 - School dates are date-only newer decisions and never inherit old times/links
+  ---
+  duration_ms: 1.2955
+  type: 'test'
+  ...
+# Subtest: protected HTML is withheld if the database transaction cannot commit
+ok 25 - protected HTML is withheld if the database transaction cannot commit
+  ---
+  duration_ms: 0.651084
+  type: 'test'
+  ...
+# Subtest: informational routes are indexable, resolve local links and take no payment or personal data
+ok 26 - informational routes are indexable, resolve local links and take no payment or personal data
+  ---
+  duration_ms: 46.703916
+  type: 'test'
+  ...
+# Subtest: checkout is explicitly unavailable and no payment functions are configured
+ok 27 - checkout is explicitly unavailable and no payment functions are configured
+  ---
+  duration_ms: 2.803458
+  type: 'test'
+  ...
+# Subtest: Foundry and book maturity remain qualified
+ok 28 - Foundry and book maturity remain qualified
+  ---
+  duration_ms: 4.320209
+  type: 'test'
+  ...
+# Subtest: journey has 30 distinct days, all pillars, private defaults and source review flags
+ok 29 - journey has 30 distinct days, all pillars, private defaults and source review flags
+  ---
+  duration_ms: 1.191208
+  type: 'test'
+  ...
+# Subtest: funnel exposes only samples, uses native disclosures and keeps paid lesson files out of dist
+ok 30 - funnel exposes only samples, uses native disclosures and keeps paid lesson files out of dist
+  ---
+  duration_ms: 4.247208
+  type: 'test'
+  ...
+# Subtest: member pages keep private lessons out and expose only the gated TEST enrollment path
+ok 31 - member pages keep private lessons out and expose only the gated TEST enrollment path
+  ---
+  duration_ms: 2.747
+  type: 'test'
+  ...
+# Subtest: reservation page collects only name and email, reserves free and takes no payment
+ok 32 - reservation page collects only name and email, reserves free and takes no payment
+  ---
+  duration_ms: 7.2055
+  type: 'test'
+  ...
+# Subtest: schedule follows the 25 Oct founder decision: payment opens 11 Nov, cohort starts 18 Nov
+ok 33 - schedule follows the 25 Oct founder decision: payment opens 11 Nov, cohort starts 18 Nov
+  ---
+  duration_ms: 2.734083
+  type: 'test'
+  ...
+# Subtest: public copy keeps payment, enrollment and replay delivery conditional on readiness
+ok 34 - public copy keeps payment, enrollment and replay delivery conditional on readiness
+  ---
+  duration_ms: 2.756625
+  type: 'test'
+  ...
+# Subtest: authoritative Airtable mapping cannot be mistaken for Academy Contacts
+ok 35 - authoritative Airtable mapping cannot be mistaken for Academy Contacts
+  ---
+  duration_ms: 1.056625
+  type: 'test'
+  ...
+# Subtest: external QA packet has one bounded two-session plan and keeps capacity fixtures local
+ok 36 - external QA packet has one bounded two-session plan and keeps capacity fixtures local
+  ---
+  duration_ms: 0.760833
+  type: 'test'
+  ...
+# Subtest: runtime refuses production, legacy identity, shared credentials and non-private schema
+ok 37 - runtime refuses production, legacy identity, shared credentials and non-private schema
+  ---
+  duration_ms: 0.476416
+  type: 'test'
+  ...
+# Subtest: PKCE sign-in stays allowlisted, never creates users; callback mints hash-only opaque session and signs out
+ok 38 - PKCE sign-in stays allowlisted, never creates users; callback mints hash-only opaque session and signs out
+  ---
+  duration_ms: 2.519083
+  type: 'test'
+  ...
+# Subtest: member save/booking response is withheld until transaction commit succeeds
+ok 39 - member save/booking response is withheld until transaction commit succeeds
+  ---
+  duration_ms: 0.600834
+  type: 'test'
+  ...
+1..39
+# tests 64
+# suites 0
+# pass 64
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2528.162458

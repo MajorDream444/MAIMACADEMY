@@ -8,6 +8,18 @@
     {
       "source": "/api/checkout",
       "destination": "/api/checkout.json"
+    },
+    {
+      "source": "/school",
+      "destination": "/api/school?action=page"
+    },
+    {
+      "source": "/school/:section",
+      "destination": "/api/school?action=page&section=:section"
+    },
+    {
+      "source": "/school/:section/:id",
+      "destination": "/api/school?action=page&section=:section&id=:id"
     }
   ],
   "headers": [
@@ -38,7 +50,8 @@
       "codex/academy-capacity-test-packet-2026-10-27": false,
       "codex/academy-qa-followup-2026-10-27": false,
       "codex/academy-launch-access-followup-2026-10-28": false,
-      "codex/academy-audit-repair-2026-11-03": false
+      "codex/academy-audit-repair-2026-11-03": false,
+      "codex/academy-school-v1": false
     }
   }
 }
