@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25-launch-revision",
+  "version": "2026-11-21-january-revision",
   "status": "reservations_open",
   "enrollment_open": false,
   "timezone": "Asia/Makassar",
@@ -7,10 +7,10 @@
   "capacity": 20,
   "duration_minutes": 60,
   "sessions": [
-    "2026-11-18T14:00:00Z",
-    "2026-11-25T14:00:00Z",
-    "2026-12-02T14:00:00Z",
-    "2026-12-09T14:00:00Z"
+    "2027-01-15T14:00:00Z",
+    "2027-01-22T14:00:00Z",
+    "2027-01-29T14:00:00Z",
+    "2027-02-05T14:00:00Z"
   ],
   "refund_request_days": 7,
   "brief_lead_hours": 48,
@@ -21,9 +21,9 @@
   "replay_publication_target_hours": 48,
   "cohort_replays_require_vault_pass": false,
   "reservations_open": true,
-  "payment_opens": "2026-11-11",
+  "payment_opens": null,
   "payment_invitations_require_release_approval": true,
-  "cohort_starts": "2026-11-18",
+  "cohort_starts": "2027-01-15",
   "followup_session_dates_status": "weekly continuation targets pending host review",
   "finish_early_policy": "Use time for marketing and QA; do not activate early."
 }
